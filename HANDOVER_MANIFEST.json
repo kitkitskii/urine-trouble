@@ -10,7 +10,7 @@
     "repository_url": "https://github.com/kitkitskii/urine-trouble",
     "repository_id": 1444184769,
     "repository_confirmed": true,
-    "status": "Published \u2014 GitHub deployment succeeded",
+    "status": "Published \u2014 expanded eight-game edition deployed successfully",
     "current_owner": "kitkitskii",
     "source": {
       "branch": "main",
@@ -20,7 +20,9 @@
     "deployment_commit": "3eee0791faca7d45125b7c1860f5caf416f1e1c3",
     "provider_confirmed_at": "2026-11-03T12:39:04Z",
     "verification_method": "GitHub Actions run and deployment-job log both report success and confirm the environment URL",
-    "direct_http_browser_verification": "Not completed: execution network restricted; web reader could not access this address"
+    "direct_http_browser_verification": "Not completed: execution network restricted; web reader could not access this address",
+    "latest_expansion_deployment_run": "https://github.com/kitkitskii/urine-trouble/actions/runs/41642356041",
+    "latest_expansion_commit": "4b525aac2a496dba926098ebedaf492d82751924"
   },
   "metrics": {
     "games": 8,
@@ -40,13 +42,13 @@
   },
   "source_archive": {
     "filename": "Urine_Trouble_Editable_Website.zip",
-    "bytes": 1378644,
-    "sha256": "74c1f8106af36eb9883c5e309063aedda7812b06ec374a885b13d502686a58b7"
+    "bytes": 1378634,
+    "sha256": "7309e1618d1ea1fbd10e87384716bf79c281e8ad5840e7e43060c4118c29087e"
   },
   "offline_html": {
     "filename": "Urine_Trouble_Editable.html",
-    "bytes": 1376295,
-    "sha256": "54193de63079b872d70aa8717aff56efbee85bc7b5c4f6c2d202440367d7c294"
+    "bytes": 1376285,
+    "sha256": "4f4c39dbd94a8f78c394bb6aa9d12184b9d730bf5dd429b85665792888095eb7"
   },
   "source_files": [
     {
@@ -67,7 +69,7 @@
     {
       "path": "content.js",
       "bytes": 972411,
-      "sha256": "6f824f65db010c105f66e335bb9494623a74eab493529ef6c879331cc0a88113"
+      "sha256": "539f712229abee97d5dcce052f4342ca5432307affcc8ab539dc260dd77354ae"
     },
     {
       "path": "assets.js",
@@ -106,13 +108,13 @@
     },
     {
       "path": "app.js",
-      "bytes": 43744,
-      "sha256": "a0c4d8069d41c07039f49953dbb92a3e45569fbb5a6995610f9e0c544e5b3902"
+      "bytes": 43739,
+      "sha256": "9db541b7b5cbf5d207067b95866ac07aebbd23466a524dbd5db884c7aec947ee"
     },
     {
       "path": "bundle.js",
-      "bytes": 234665,
-      "sha256": "792bbc018d89bb19cdc83c666a987e33da992d6c67e935d8a14ed64f0ffc2e4d"
+      "bytes": 234660,
+      "sha256": "e0cf5efeaf1010e24e64c06af66284074785d582b0572fde0d78d2ea75f6dbf5"
     },
     {
       "path": "README.txt",
@@ -143,8 +145,8 @@
     },
     {
       "filename": "PUBLISHING.md",
-      "bytes": 1645,
-      "sha256": "be192b6c169beea26d3404631bcf17258a0411bee5768a33d9a367bbea55c536"
+      "bytes": 1971,
+      "sha256": "ed956de6ce2c96c4a759ad88016fd47d42e36754e9572ca7771c1a3d9fcd3b51"
     },
     {
       "filename": "README.md",
@@ -180,8 +182,8 @@
     },
     {
       "path": "PUBLISHING.md",
-      "bytes": 1645,
-      "sha256": "be192b6c169beea26d3404631bcf17258a0411bee5768a33d9a367bbea55c536"
+      "bytes": 1971,
+      "sha256": "ed956de6ce2c96c4a759ad88016fd47d42e36754e9572ca7771c1a3d9fcd3b51"
     },
     {
       "path": "README.md",
@@ -195,8 +197,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 43744,
-      "sha256": "a0c4d8069d41c07039f49953dbb92a3e45569fbb5a6995610f9e0c544e5b3902"
+      "bytes": 43739,
+      "sha256": "9db541b7b5cbf5d207067b95866ac07aebbd23466a524dbd5db884c7aec947ee"
     },
     {
       "path": "assets.js",
@@ -205,8 +207,8 @@
     },
     {
       "path": "bundle.js",
-      "bytes": 234665,
-      "sha256": "792bbc018d89bb19cdc83c666a987e33da992d6c67e935d8a14ed64f0ffc2e4d"
+      "bytes": 234660,
+      "sha256": "e0cf5efeaf1010e24e64c06af66284074785d582b0572fde0d78d2ea75f6dbf5"
     },
     {
       "path": "content.js",
@@ -225,13 +227,13 @@
     },
     {
       "path": "downloads/Urine_Trouble_Editable.html",
-      "bytes": 1376295,
-      "sha256": "54193de63079b872d70aa8717aff56efbee85bc7b5c4f6c2d202440367d7c294"
+      "bytes": 1376285,
+      "sha256": "4f4c39dbd94a8f78c394bb6aa9d12184b9d730bf5dd429b85665792888095eb7"
     },
     {
       "path": "downloads/Urine_Trouble_Editable_Website.zip",
-      "bytes": 1378644,
-      "sha256": "74c1f8106af36eb9883c5e309063aedda7812b06ec374a885b13d502686a58b7"
+      "bytes": 1378634,
+      "sha256": "7309e1618d1ea1fbd10e87384716bf79c281e8ad5840e7e43060c4118c29087e"
     },
     {
       "path": "downloads.js",

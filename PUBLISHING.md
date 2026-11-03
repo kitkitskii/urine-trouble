@@ -26,3 +26,7 @@ Open the repository's Actions tab and look for a Pages deployment run. If no run
 If a run fails, read its error before changing settings. After future updates, verify the public website while signed out and retain the deployment record.
 
 Official guidance: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#troubleshooting-publishing-from-a-branch
+
+## Arcade expansion
+
+The expanded eight-game, 68-question edition deployed successfully in [GitHub Pages run 41642356041](https://github.com/kitkitskii/urine-trouble/actions/runs/41642356041), commit `4b525aac2a496dba926098ebedaf492d82751924`. It includes memory cards, sorting rounds, and choice-specific answer rationales.
