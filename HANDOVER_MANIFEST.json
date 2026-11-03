@@ -1,0 +1,224 @@
+{
+  "title": "Urine Trouble! \u2014 Independent website handover",
+  "technology": "HTML, CSS and plain JavaScript; no backend or build step",
+  "publication": {
+    "verified_independent_url": null,
+    "planned_provider": "GitHub Pages",
+    "planned_owner": "kitkitskii",
+    "planned_repository": "urine-trouble",
+    "planned_url": "https://kitkitskii.github.io/urine-trouble/",
+    "repository_url": "https://github.com/kitkitskii/urine-trouble",
+    "repository_id": 1444184769,
+    "repository_confirmed": true,
+    "status": "Repository confirmed; Pages activation and live address verification pending",
+    "current_owner": "kitkitskii"
+  },
+  "metrics": {
+    "games": 6,
+    "original_questions": 50,
+    "embedded_picture_clues": 32,
+    "matching_pairs": 12,
+    "matching_rounds": 3,
+    "sequences": 6,
+    "mistake_checklists": 8,
+    "scored_challenges": 67,
+    "learning_notes": 6
+  },
+  "source_archive": {
+    "filename": "Urine_Trouble_Editable_Website.zip",
+    "bytes": 1196411,
+    "sha256": "5502e465d2967d2b241b0d523263659a94fa8aa541ede89182670ace3b8a65e5"
+  },
+  "offline_html": {
+    "filename": "Urine_Trouble_Editable.html",
+    "bytes": 1194294,
+    "sha256": "d321ece3c43a88f251dc962808fc76356cbb63d795e6a8b0d22339490e0d964e"
+  },
+  "source_files": [
+    {
+      "path": "index.html",
+      "bytes": 930,
+      "sha256": "34bc36bfa14b932ea0240cad9011a46b85b065dd0987838a3149fb66d2a448f3"
+    },
+    {
+      "path": "style.css",
+      "bytes": 20258,
+      "sha256": "79ad123fbc516edbaa4d327cb9435ece5704dd1d37e3a7399f6dcdd2bdf6cefd"
+    },
+    {
+      "path": "editor.css",
+      "bytes": 8601,
+      "sha256": "f709d892556bce9db34ce982d2adac38b5dbf57e94d633d9796151676510af54"
+    },
+    {
+      "path": "content.js",
+      "bytes": 915633,
+      "sha256": "93e74b1c5e8eebd2e126daf4f06d1af4c0571bf04a4565908d7ca69f7fb26a6f"
+    },
+    {
+      "path": "assets.js",
+      "bytes": 2474,
+      "sha256": "e22818ad99b07f3c14b6bdf45f000dc5b297691db7278f76576cfe55c6d8143c"
+    },
+    {
+      "path": "engine.js",
+      "bytes": 19009,
+      "sha256": "1a08392bc068b3c872fa29b2009334645088e89c6ace81fb1f1921a0d0aa05b9"
+    },
+    {
+      "path": "zip.js",
+      "bytes": 1813,
+      "sha256": "5eaa872255ac691326d23dc58e151f259fa23bdeae4af16ea1165cdc28767520"
+    },
+    {
+      "path": "editor.js",
+      "bytes": 28971,
+      "sha256": "7e0c5459fc02c1a3cc30b6e56a82da6637f7c1f50a808a8a9511e2d492447726"
+    },
+    {
+      "path": "downloads.js",
+      "bytes": 2933,
+      "sha256": "9ed055b6850e6f149ee589425acb32bdc48ccb5378af21eb83d8dfce76a212ca"
+    },
+    {
+      "path": "app.js",
+      "bytes": 35338,
+      "sha256": "8de79d43f5fee2a9f56e0d7730a0af0864c3c6cb43d3aec83f87e57fc3615569"
+    },
+    {
+      "path": "bundle.js",
+      "bytes": 158730,
+      "sha256": "98d45fb90b661e66a09fb467000dd5d270761dfc78cc8ab6a29596511ac95d1b"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 569,
+      "sha256": "34ac17daf447a28fc2fda5ce01b7a69da74130a98fb7de0a21366763be32d89e"
+    }
+  ],
+  "handover_documents": [
+    {
+      "filename": "ADVISER_QUICK_START.pdf",
+      "bytes": 3857,
+      "sha256": "d28d757cc80ee9fd034c57dfd7790f2118b1010d8236181ff26f140856fa3eca"
+    },
+    {
+      "filename": "MAINTENANCE_GUIDE.md",
+      "bytes": 5027,
+      "sha256": "fcfc5dfdf5f5c7244df5488d17e5618db221f984c8caed8201b83cd48e38f826"
+    },
+    {
+      "filename": "PROJECT_HANDOVER.md",
+      "bytes": 4501,
+      "sha256": "b23a5f22a96584c4ec117ef027f664d1b8a7ba949c0b72d2e0596b9fe8f18176"
+    },
+    {
+      "filename": "README.md",
+      "bytes": 4181,
+      "sha256": "555ebc3b222b0d280b2aa463ab33e79411f3da9f34a056c50dc1d30a7681202c"
+    }
+  ],
+  "release_files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ADVISER_QUICK_START.pdf",
+      "bytes": 3857,
+      "sha256": "d28d757cc80ee9fd034c57dfd7790f2118b1010d8236181ff26f140856fa3eca"
+    },
+    {
+      "path": "MAINTENANCE_GUIDE.md",
+      "bytes": 5027,
+      "sha256": "fcfc5dfdf5f5c7244df5488d17e5618db221f984c8caed8201b83cd48e38f826"
+    },
+    {
+      "path": "PROJECT_HANDOVER.md",
+      "bytes": 4501,
+      "sha256": "b23a5f22a96584c4ec117ef027f664d1b8a7ba949c0b72d2e0596b9fe8f18176"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4181,
+      "sha256": "555ebc3b222b0d280b2aa463ab33e79411f3da9f34a056c50dc1d30a7681202c"
+    },
+    {
+      "path": "app.js",
+      "bytes": 35338,
+      "sha256": "8de79d43f5fee2a9f56e0d7730a0af0864c3c6cb43d3aec83f87e57fc3615569"
+    },
+    {
+      "path": "assets.js",
+      "bytes": 2475,
+      "sha256": "b1607559ecb04e8570a4907f8738ef1123a0b4f48368b6c7905a669ef040beb2"
+    },
+    {
+      "path": "bundle.js",
+      "bytes": 158730,
+      "sha256": "98d45fb90b661e66a09fb467000dd5d270761dfc78cc8ab6a29596511ac95d1b"
+    },
+    {
+      "path": "content.js",
+      "bytes": 915674,
+      "sha256": "18eeec6377cc4c1ec971613f3489a332f068f5fba003edb65bca66b4d3f2565a"
+    },
+    {
+      "path": "downloads/START_HERE.txt",
+      "bytes": 1651,
+      "sha256": "7469b2e85899b766abfba8a44c81d211c3db0db085a0f2c6a302b895699ff881"
+    },
+    {
+      "path": "downloads/Urine_Trouble_Content_Backup.json",
+      "bytes": 926828,
+      "sha256": "a317504afa0ff13ecc690e3d36b132421ce4e1e93923ac84c05906832386ceaf"
+    },
+    {
+      "path": "downloads/Urine_Trouble_Editable.html",
+      "bytes": 1194294,
+      "sha256": "d321ece3c43a88f251dc962808fc76356cbb63d795e6a8b0d22339490e0d964e"
+    },
+    {
+      "path": "downloads/Urine_Trouble_Editable_Website.zip",
+      "bytes": 1196411,
+      "sha256": "5502e465d2967d2b241b0d523263659a94fa8aa541ede89182670ace3b8a65e5"
+    },
+    {
+      "path": "downloads.js",
+      "bytes": 2933,
+      "sha256": "9ed055b6850e6f149ee589425acb32bdc48ccb5378af21eb83d8dfce76a212ca"
+    },
+    {
+      "path": "editor.css",
+      "bytes": 8601,
+      "sha256": "f709d892556bce9db34ce982d2adac38b5dbf57e94d633d9796151676510af54"
+    },
+    {
+      "path": "editor.js",
+      "bytes": 28971,
+      "sha256": "7e0c5459fc02c1a3cc30b6e56a82da6637f7c1f50a808a8a9511e2d492447726"
+    },
+    {
+      "path": "engine.js",
+      "bytes": 19009,
+      "sha256": "1a08392bc068b3c872fa29b2009334645088e89c6ace81fb1f1921a0d0aa05b9"
+    },
+    {
+      "path": "index.html",
+      "bytes": 952,
+      "sha256": "70adbe8ec27ffe83d25f5aee16b23d5ccc23560e3308938ba27d86ce4b197a05"
+    },
+    {
+      "path": "style.css",
+      "bytes": 20258,
+      "sha256": "79ad123fbc516edbaa4d327cb9435ece5704dd1d37e3a7399f6dcdd2bdf6cefd"
+    },
+    {
+      "path": "zip.js",
+      "bytes": 1813,
+      "sha256": "5eaa872255ac691326d23dc58e151f259fa23bdeae4af16ea1165cdc28767520"
+    }
+  ],
+  "release_inventory_note": "The manifest excludes itself to avoid a recursive checksum. Hashes identify this handover snapshot and change after later content updates."
+}
