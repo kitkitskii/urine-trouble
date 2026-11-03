@@ -3,11 +3,11 @@ URINE TROUBLE! — THE KIDNEY ARCADE
 PLAY
 Choose a game, then solo practice or classroom mode. Check the clue, read the explanation, and continue. Solo first-try answers earn points. Retrying and revealing are for practice. Classroom hosts reveal, then mark each correct team. An award can be undone with a second click.
 
-SIX GAMES
-Urine It to Win It: quick quiz. Spell Relief: word tiles and medical terms. Match Made in the Medulla: match four pairs per round. The Flow Show: put the steps in order. Pee-k at the Clues: enlarge four pictures and find the word. Spot the Leak: find the incorrect clinical step.
+EIGHT GAMES
+Double Trouble: memory cards. Filter Files: sorting cards. Urine It to Win It: quick quiz. Spell Relief: word tiles and medical terms. Match Made in the Medulla: match four pairs per round. The Flow Show: put the steps in order. Pee-k at the Clues: enlarge four pictures and find the word. Spot the Leak: find the incorrect clinical step.
 
 EDIT CONTENT
-Use Edit Content to change the title, theme, game names and instructions. Add or edit questions, correct choices, accepted answers, points, explanations and picture clues. The More Content tab edits matching pairs, ordered steps, mistake checklists and learning notes. Applying changes starts a fresh score session.
+Use Edit Content to change the title, theme, game names and instructions. Add or edit questions, correct choices, accepted answers, points, explanations and picture clues. The More Content tab edits matching pairs, ordered steps, mistake checklists, sorting rounds and learning notes. Applying changes starts a fresh score session.
 
 SHARE YOUR CHANGES
 Edits save in the browser on this device. Download an updated HTML or website ZIP to share the new version. JSON import/export is available for backups. This editor does not publish changes automatically to other devices.

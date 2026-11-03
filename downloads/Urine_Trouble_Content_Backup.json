@@ -3,7 +3,7 @@
   "site": {
     "title": "Urine Trouble!",
     "tagline": "The kidney arcade",
-    "intro": "A little renal rivalry. A lot of learning. Choose a game, check the explanation, and keep the knowledge flowing."
+    "intro": "Eight ways to test your urinary-system knowledge. Match, sort, spell, solve\u2014and learn why each answer fits."
   },
   "settings": {
     "defaultPoints": 100,
@@ -22,6 +22,20 @@
       "title": "Spell Relief",
       "subtitle": "Medical word tiles",
       "instructions": "Use the clue to name the medical term. Build the answer with the letter tiles or type the term when a text box appears.",
+      "enabled": true
+    },
+    {
+      "id": "memory",
+      "title": "Double Trouble",
+      "subtitle": "Memory cards",
+      "instructions": "Flip two cards. Match each urinary term with its definition.",
+      "enabled": true
+    },
+    {
+      "id": "sort",
+      "title": "Filter Files",
+      "subtitle": "Sort the cards",
+      "instructions": "Choose a category for each card. Read the rationale, then continue.",
       "enabled": true
     },
     {
@@ -75,6 +89,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "choiceRationales": [
+        "A nephron filters blood and modifies the filtrate to make urine.",
+        "The ureter carries urine to the bladder; it is not a microscopic filtering unit.",
+        "The bladder stores urine after the kidneys have made it.",
+        "The renal pelvis collects urine before it enters the ureter."
       ]
     },
     {
@@ -96,6 +119,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+      ],
+      "choiceRationales": [
+        "True. The liver occupies space above the right kidney, usually placing it lower.",
+        "False is not correct here: the liver usually makes the right kidney sit slightly lower."
       ]
     },
     {
@@ -117,7 +147,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ],
+      "wrongAnswerRationale": "This clue asks for the act of passing urine, also called voiding or micturition; it is not urine production in the kidney."
     },
     {
       "number": 4,
@@ -135,7 +169,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ],
+      "wrongAnswerRationale": "The bladder stores urine. The kidneys make it, the ureters carry it, and the urethra provides the exit."
     },
     {
       "number": 5,
@@ -160,7 +198,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "wrongAnswerRationale": "The bean-shaped organs that filter blood and form urine are the kidneys; the bladder stores their urine."
     },
     {
       "number": 6,
@@ -182,6 +224,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+      ],
+      "choiceRationales": [
+        "This statement is true: the kidneys are retroperitoneal, behind the peritoneum.",
+        "This statement is true: the cortex is the outer kidney region.",
+        "This is the false statement: the medulla lies inside the cortex."
       ]
     },
     {
@@ -205,6 +255,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+      ],
+      "choiceRationales": [
+        "The cortex is the outer region; the pyramids are in the medulla.",
+        "The medulla contains the renal pyramids and their tubules and collecting ducts.",
+        "The urethra carries urine out of the body; it is not a kidney layer.",
+        "The fibrous capsule covers the kidney; it does not contain the pyramids."
       ]
     },
     {
@@ -226,6 +285,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ],
+      "choiceRationales": [
+        "True. Ureteric smooth muscle contracts in waves to propel urine toward the bladder.",
+        "The statement is true: urine movement through the ureters uses peristalsis, not gravity alone."
       ]
     },
     {
@@ -246,7 +312,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ],
+      "wrongAnswerRationale": "The detrusor is the bladder-wall muscle. The urethral sphincters help control the outlet rather than form the bladder wall."
     },
     {
       "number": 10,
@@ -255,7 +325,7 @@
       "prompt": "Filtering tuft of capillaries in a nephron.",
       "options": [],
       "answer": "GLOMERULUS",
-      "explanation": "Filtration occurs in the glomerulus, enclosed by Bowman’s capsule.",
+      "explanation": "Filtration occurs in the glomerulus, enclosed by Bowman\u2019s capsule.",
       "scramble": "LLSOUGRUME",
       "images": [],
       "points": 100,
@@ -264,7 +334,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "wrongAnswerRationale": "The clue describes a tuft of filtering capillaries: the glomerulus. Bowman\u2019s capsule surrounds it but is not the capillary tuft."
     },
     {
       "number": 11,
@@ -289,7 +363,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "wrongAnswerRationale": "Filtration moves water and small solutes out of glomerular blood; reabsorption and secretion then modify the filtrate."
     },
     {
       "number": 12,
@@ -297,13 +375,13 @@
       "type": "MULTIPLE CHOICE",
       "prompt": "Which option best approximates a typical adult bladder capacity?",
       "options": [
-        "50–100 mL",
-        "150–200 mL",
-        "400–500 mL",
-        "1,000–1,500 mL"
+        "50\u2013100 mL",
+        "150\u2013200 mL",
+        "400\u2013500 mL",
+        "1,000\u20131,500 mL"
       ],
-      "answer": "400–500 mL",
-      "explanation": "A typical adult bladder capacity is approximately 400–500 mL, although capacity varies among individuals.",
+      "answer": "400\u2013500 mL",
+      "explanation": "A typical adult bladder capacity is approximately 400\u2013500 mL, although capacity varies among individuals.",
       "scramble": null,
       "images": [],
       "points": 100,
@@ -312,6 +390,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ],
+      "choiceRationales": [
+        "This is much less than the approximate storage capacity of a typical adult bladder.",
+        "This volume may produce an urge to void, but is below typical adult storage capacity.",
+        "About 400\u2013500 mL is the closest option to a typical adult capacity of roughly two cups.",
+        "This is far above usual adult capacity and may indicate excessive distension rather than normal storage."
       ]
     },
     {
@@ -333,6 +420,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "choiceRationales": [
+        "True. The tubules return nearly all filtered water to the circulation; only a small fraction becomes urine.",
+        "The statement is true: most filtrate is reclaimed rather than excreted as urine."
       ]
     },
     {
@@ -353,7 +447,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "wrongAnswerRationale": "The oxygen-sensing kidney signal for red-cell production is erythropoietin. Renin instead helps regulate blood pressure."
     },
     {
       "number": 15,
@@ -375,6 +473,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "choiceRationales": [
+        "This statement is true: pressure drives fluid across the glomerular filtration barrier.",
+        "This is false: reabsorption moves needed glucose from tubular fluid back into blood.",
+        "This statement is true: secretion moves selected substances from blood into tubular fluid."
       ]
     },
     {
@@ -385,7 +491,7 @@
       "options": [
         "Bladder and prostate",
         "Urethra and bladder",
-        "Bladder and urethra",
+        "Urethra and prostate",
         "Kidneys and ureters"
       ],
       "answer": "Kidneys and ureters",
@@ -398,6 +504,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "choiceRationales": [
+        "The bladder and prostate belong to the lower urinary tract.",
+        "The urethra and bladder are lower-tract structures, not the upper urinary tract.",
+        "The urethra and prostate are lower-tract structures, not the upper urinary tract.",
+        "The kidneys and ureters make up the upper urinary tract; infection involving the kidney is pyelonephritis."
       ]
     },
     {
@@ -416,7 +531,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "wrongAnswerRationale": "The prefix dys- signals difficulty or pain; dysuria describes painful urination, unlike hematuria, which means blood in urine."
     },
     {
       "number": 18,
@@ -437,6 +556,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "choiceRationales": [
+        "True. Pyelonephritis is an infection involving the kidney, often after infection ascends from the bladder.",
+        "Pyelonephritis does involve the kidney; cystitis refers to a bladder infection."
       ]
     },
     {
@@ -463,7 +589,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "wrongAnswerRationale": "A UTI is an infection, usually bacterial. Inflammation alone does not prove a microorganism is present."
     },
     {
       "number": 20,
@@ -486,6 +616,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+      ],
+      "choiceRationales": [
+        "Overflow leakage occurs when a bladder does not empty adequately, often with dribbling.",
+        "Coughing or sneezing raises abdominal pressure and can cause stress incontinence.",
+        "Functional incontinence involves difficulty reaching or using a toilet despite urinary control mechanisms.",
+        "Urge incontinence is leakage associated with a sudden, strong need to urinate."
       ]
     },
     {
@@ -506,13 +645,17 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+      ],
+      "wrongAnswerRationale": "Poor emptying can leave an overfull bladder that leaks: overflow incontinence. Cough-related leakage is stress incontinence."
     },
     {
       "number": 22,
       "level": "EASY",
       "type": "TRUE OR FALSE",
-      "prompt": "Kegel exercises are included in first-line behavioral management for urinary incontinence.",
+      "prompt": "Pelvic-floor muscle exercises are a conservative treatment option for stress urinary incontinence.",
       "options": [
         "TRUE",
         "FALSE"
@@ -527,6 +670,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment"
+      ],
+      "choiceRationales": [
+        "True. Pelvic-floor training can strengthen support and improve leakage in stress incontinence.",
+        "Pelvic-floor muscle exercises are a conservative option for stress incontinence, so this statement is true."
       ]
     },
     {
@@ -549,6 +699,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ],
+      "choiceRationales": [
+        "This is appropriate care: a closed system reduces opportunities for microorganisms to enter.",
+        "This is appropriate care: unobstructed tubing permits urine to drain freely.",
+        "This is the unsafe instruction: keep the bag below the bladder to reduce backflow."
       ]
     },
     {
@@ -578,7 +736,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/treatment"
+      ],
+      "wrongAnswerRationale": "A calculus, or stone, is a solid deposit of minerals or other substances; it is different from a blood clot or a tumor."
     },
     {
       "number": 25,
@@ -601,19 +763,28 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/hematuria-blood-urine"
+      ],
+      "choiceRationales": [
+        "Hematuria means blood is present in the urine, whether visible or detected by testing.",
+        "Protein in urine is proteinuria; albumin in urine is albuminuria.",
+        "Absent or extremely low urine output is described as anuria, not hematuria.",
+        "Painful urination is dysuria, not hematuria."
       ]
     },
     {
       "number": 26,
       "level": "MEDIUM",
       "type": "TRUE OR FALSE",
-      "prompt": "Chronic kidney disease includes kidney damage or a GFR below 60 mL/min/1.73 m² persisting for at least three months.",
+      "prompt": "Chronic kidney disease includes kidney damage or a GFR below 60 mL/min/1.73 m\u00b2 persisting for at least three months.",
       "options": [
         "TRUE",
         "FALSE"
       ],
       "answer": "TRUE",
-      "explanation": "CKD involves abnormalities of kidney structure or function present for at least three months, including kidney damage or a GFR below 60 mL/min/1.73 m².",
+      "explanation": "CKD involves abnormalities of kidney structure or function present for at least three months, including kidney damage or a GFR below 60 mL/min/1.73 m\u00b2.",
       "scramble": null,
       "images": [],
       "points": 200,
@@ -622,6 +793,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.kidney.org/what-criteria-ckd"
+      ],
+      "choiceRationales": [
+        "True. Persistence for at least three months distinguishes chronic kidney abnormalities from an isolated acute change.",
+        "The statement is true: CKD can be present with kidney-damage markers or persistently reduced GFR."
       ]
     },
     {
@@ -645,6 +823,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/nephrotic-syndrome-adults"
+      ],
+      "choiceRationales": [
+        "No urine glucose does not identify nephrotic syndrome; marked urinary protein loss is the key finding.",
+        "Urine ketones suggest altered fat metabolism; isolated ketonuria is not the defining nephrotic finding.",
+        "Marked protein loss through damaged glomeruli is characteristic of nephrotic syndrome.",
+        "Dysuria points toward urinary irritation or infection, not the defining nephrotic protein leak."
       ]
     },
     {
@@ -654,7 +841,7 @@
       "prompt": "What condition is defined by inflammation of the glomerular capillaries?",
       "options": [],
       "answer": "GLOMERULONEPHRITIS",
-      "explanation": "Glomerulonephritis is an inflammation of the kidney’s glomerular filters.",
+      "explanation": "Glomerulonephritis is an inflammation of the kidney\u2019s glomerular filters.",
       "scramble": null,
       "images": [],
       "points": 200,
@@ -663,7 +850,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/glomerular-disease"
+      ],
+      "wrongAnswerRationale": "Glomerulonephritis names inflammation of the glomerular filters. Pyelonephritis instead describes kidney infection."
     },
     {
       "number": 29,
@@ -672,7 +863,7 @@
       "prompt": "The kidney-released enzyme involved in blood-pressure regulation.",
       "options": [],
       "answer": "RENIN",
-      "explanation": "The kidneys release renin, an enzyme that initiates the renin–angiotensin–aldosterone system in response to reduced renal perfusion.",
+      "explanation": "The kidneys release renin, an enzyme that initiates the renin\u2013angiotensin\u2013aldosterone system in response to reduced renal perfusion.",
       "scramble": "IRENN",
       "images": [],
       "points": 200,
@@ -681,7 +872,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ],
+      "wrongAnswerRationale": "Renin starts a hormonal pathway that helps regulate blood pressure. Erythropoietin stimulates red-cell production."
     },
     {
       "number": 30,
@@ -691,10 +886,10 @@
       "options": [
         "Cola-colored urine can occur.",
         "It is defined by entirely normal, noninflamed glomeruli.",
-        "It can follow streptococcal throat infection after 2–3 weeks."
+        "It can develop about 10 days after streptococcal throat infection."
       ],
       "answer": "It is defined by entirely normal, noninflamed glomeruli.",
-      "explanation": "Glomerulonephritis involves inflammation of the glomeruli. Poststreptococcal disease may cause cola-colored urine after a preceding throat infection.",
+      "explanation": "Glomerulonephritis involves inflamed glomeruli. Poststreptococcal disease can cause dark urine about 10 days after strep throat; the interval can be longer after a skin infection.",
       "scramble": null,
       "images": [],
       "points": 200,
@@ -703,6 +898,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.cdc.gov/group-a-strep/about/post-streptococcal-glomerulonephritis.html"
+      ],
+      "choiceRationales": [
+        "This statement is true: blood in the urine can produce a dark, cola-like appearance.",
+        "This is false: glomerulonephritis involves inflamed glomeruli.",
+        "This statement is true: poststreptococcal glomerulonephritis may develop about 10 days after strep throat."
       ]
     },
     {
@@ -728,7 +931,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.merckmanuals.com/professional/nephrology/fluid-metabolism/overview-of-disorders-of-fluid-volume"
+      ],
+      "wrongAnswerRationale": "Edema is swelling from fluid in body tissues. It describes a physical finding, not a specific kidney diagnosis."
     },
     {
       "number": 32,
@@ -751,6 +958,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.kidney.org/kidney-topics/acute-kidney-injury-aki"
+      ],
+      "choiceRationales": [
+        "Prerenal AKI begins with reduced blood flow to the kidneys, rather than an outflow obstruction.",
+        "Intrarenal AKI results from injury within kidney tissue, not the obstructing stone described here.",
+        "Cortical is an anatomical description, not the standard obstruction-related AKI category.",
+        "A blocked urinary outflow is a postrenal cause of AKI."
       ]
     },
     {
@@ -772,6 +988,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.merckmanuals.com/professional/nephrology/fluid-metabolism/overview-of-disorders-of-fluid-volume",
+        "https://www.merckmanuals.com/professional/nephrology/acute-kidney-injury/acute-kidney-injury-aki"
+      ],
+      "choiceRationales": [
+        "True. High urine output during recovery can exceed intake and cause water and electrolyte depletion.",
+        "Rising urine output does not prove fluid balance is normal; dehydration remains possible during diuresis."
       ]
     },
     {
@@ -793,7 +1017,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/diagnosis"
+      ],
+      "wrongAnswerRationale": "A bladder scanner estimates the urine left after voiding using ultrasound; a catheter can measure it invasively."
     },
     {
       "number": 35,
@@ -811,7 +1039,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/diagnosis"
+      ],
+      "wrongAnswerRationale": "A urine culture grows and identifies microorganisms. Susceptibility testing helps show which antibiotics are likely to work."
     },
     {
       "number": 36,
@@ -824,7 +1056,7 @@
         "Progressive damage may lead to ESKD."
       ],
       "answer": "Symptoms are always sudden and severe between infections.",
-      "explanation": "Chronic pyelonephritis may cause subtle or absent symptoms between infections. Repeated infections can scar the kidneys and contribute to ESKD.",
+      "explanation": "Repeated or persistent kidney infection can cause scarring and progressive loss of function. Symptoms can be mild or absent between episodes; severe kidney damage may lead to kidney failure.",
       "scramble": null,
       "images": [],
       "points": 200,
@@ -833,6 +1065,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/definition-facts"
+      ],
+      "choiceRationales": [
+        "This is false: chronic kidney infection can be subtle or cause few symptoms between episodes.",
+        "This statement is true: repeated or persistent kidney infection can leave renal scars.",
+        "This statement is true: severe progressive damage can eventually cause kidney failure."
       ]
     },
     {
@@ -856,7 +1096,12 @@
       "aliases": [],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/hemodialysis",
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/peritoneal-dialysis"
+      ],
+      "wrongAnswerRationale": "Dialysis removes wastes and excess fluid when kidney function is insufficient. It differs from a kidney transplant."
     },
     {
       "number": 38,
@@ -879,6 +1124,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "choiceRationales": [
+        "Fever together with flank or costovertebral-angle tenderness supports an upper urinary infection.",
+        "Ankle swelling alone is nonspecific and does not especially indicate an acute kidney infection.",
+        "Stress incontinence describes pressure-related leakage, rather than a typical kidney-infection presentation.",
+        "A painless mass alone is not the usual acute pyelonephritis pattern of fever and flank pain."
       ]
     },
     {
@@ -900,6 +1154,13 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ],
+      "choiceRationales": [
+        "True. Limiting catheter use and duration reduces catheter-associated infection risk.",
+        "An unnecessary catheter should not remain in place simply for convenience; removal reduces exposure risk."
       ]
     },
     {
@@ -922,7 +1183,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/treatment"
+      ],
+      "wrongAnswerRationale": "Lithotripsy breaks urinary stones into fragments. In ESWL, focused shock waves act from outside the body."
     },
     {
       "number": 41,
@@ -944,21 +1209,30 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.kidney.org/kidney-topics/hyperkalemia-high-potassium",
+        "https://www.merckmanuals.com/professional/nephrology/acute-kidney-injury/acute-kidney-injury-aki"
+      ],
+      "choiceRationales": [
+        "This statement is true: impaired renal potassium removal can cause dangerous hyperkalemia.",
+        "This statement is true: peaked T waves may occur with hyperkalemia, although ECG findings vary.",
+        "This is false: the diuretic phase can increase water and electrolyte losses and dehydration risk."
       ]
     },
     {
       "number": 42,
       "level": "HARD",
       "type": "MULTIPLE CHOICE",
-      "prompt": "Which sequence best matches the nephrotic-syndrome “domino effect”?",
+      "prompt": "Which sequence best matches the nephrotic-syndrome \u201cdomino effect\u201d?",
       "options": [
-        "Edema → albumin gain → protein loss",
-        "Massive proteinuria → hypoalbuminemia → edema",
-        "Anuria → bacterial invasion → hyperglycemia",
-        "Hypertension → increased albumin → dehydration"
+        "Edema \u2192 albumin gain \u2192 protein loss",
+        "Massive proteinuria \u2192 hypoalbuminemia \u2192 edema",
+        "Anuria \u2192 bacterial invasion \u2192 hyperglycemia",
+        "Hypertension \u2192 increased albumin \u2192 dehydration"
       ],
-      "answer": "Massive proteinuria → hypoalbuminemia → edema",
-      "explanation": "Increased glomerular permeability causes albumin loss in urine, then hypoalbuminemia, followed by diffuse edema.",
+      "answer": "Massive proteinuria \u2192 hypoalbuminemia \u2192 edema",
+      "explanation": "Damaged glomeruli leak albumin into urine. Falling blood albumin can promote edema, and renal sodium retention can also contribute. This is a simplified chain, not the only mechanism.",
       "scramble": null,
       "images": [],
       "points": 300,
@@ -967,6 +1241,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/nephrotic-syndrome-adults"
+      ],
+      "choiceRationales": [
+        "This reverses the key mechanism: albumin is lost in urine before blood albumin falls and edema develops.",
+        "Urinary albumin loss can lower plasma albumin and contribute to edema; sodium retention also contributes.",
+        "Anuria, infection and hyperglycemia are not the defining nephrotic cause-and-effect sequence.",
+        "An increase in blood albumin and dehydration are not the characteristic nephrotic sequence."
       ]
     },
     {
@@ -989,7 +1272,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/polycystic-kidney-disease/autosomal-dominant-pkd"
+      ],
+      "wrongAnswerRationale": "Ultrasound can show kidney cysts without ionizing radiation. CT and MRI can also be used, but ultrasound is a common initial study."
     },
     {
       "number": 44,
@@ -1007,7 +1294,11 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e507a317-0acc-4415-f6ec-3ec757565f31"
+      ],
+      "wrongAnswerRationale": "Tolvaptan is used for selected adults with rapidly progressing ADPKD. It requires liver monitoring and is not a treatment for every form of PKD."
     },
     {
       "number": 45,
@@ -1016,7 +1307,7 @@
       "prompt": "Four pics, one word: Identify the transplant complication shown.",
       "options": [],
       "answer": "REJECTION",
-      "explanation": "The recipient’s immune system can attack a transplanted kidney. Possible signs include fever, graft pain, weight gain, or reduced urine output.",
+      "explanation": "Rejection occurs when the immune system attacks a transplanted kidney. It can begin without noticeable symptoms, so scheduled blood tests and follow-up remain important. Reduced urine output, fever or graft pain need assessment because rejection and other complications can overlap.",
       "scramble": null,
       "images": [
         "data:image/jpeg;base64,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",
@@ -1033,7 +1324,11 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant"
+      ],
+      "wrongAnswerRationale": "Rejection is an immune attack on the transplanted kidney. Infection and other complications can cause similar symptoms, so assessment and tests are needed."
     },
     {
       "number": 46,
@@ -1046,7 +1341,7 @@
         "Kidney-transplant recipients never need immunosuppressive medication."
       ],
       "answer": "Kidney-transplant recipients never need immunosuppressive medication.",
-      "explanation": "Hemodialysis circulates blood through a dialyzer, while PD uses the peritoneal membrane. Kidney transplants require lifelong immunosuppression.",
+      "explanation": "Hemodialysis uses an external dialyzer, while peritoneal dialysis uses the abdominal lining. A functioning transplant generally requires ongoing prescribed immunosuppression; medicine should not be stopped independently.",
       "scramble": null,
       "images": [],
       "points": 300,
@@ -1055,6 +1350,14 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant"
+      ],
+      "choiceRationales": [
+        "This statement is true: a dialyzer acts as the external blood filter in hemodialysis.",
+        "This statement is true: peritoneal dialysis uses the abdominal lining as its exchange membrane.",
+        "This is false: transplant recipients generally need ongoing prescribed anti-rejection treatment."
       ]
     },
     {
@@ -1069,7 +1372,7 @@
         "Clear urine with comfortable voiding"
       ],
       "answer": "Flank pain, dizziness, and pallor",
-      "explanation": "Post-biopsy nursing guidance calls for frequent vital signs and watching for flank pain, dizziness, and pallor.",
+      "explanation": "New flank pain, dizziness and pallor after kidney biopsy may indicate bleeding. Assess vital signs and the patient promptly and escalate suspected bleeding through the clinical care team.",
       "scramble": null,
       "images": [],
       "points": 300,
@@ -1078,6 +1381,15 @@
       "aliases": [],
       "gameIds": [
         "quiz"
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/diagnostic-tests/kidney-biopsy"
+      ],
+      "choiceRationales": [
+        "Hunger and thirst alone are nonspecific; they are not the combination most suggestive of post-biopsy bleeding.",
+        "Improved appetite and sleep do not indicate the possible acute blood loss described in the correct option.",
+        "New flank pain, dizziness and pallor can indicate bleeding and need prompt assessment and escalation.",
+        "Clear urine and comfortable voiding are reassuring, but do not replace routine post-biopsy monitoring."
       ]
     },
     {
@@ -1098,7 +1410,11 @@
       ],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-diversion"
+      ],
+      "wrongAnswerRationale": "An ileal conduit uses a short bowel segment to route urine to an abdominal stoma and external pouch; it is not a neobladder."
     },
     {
       "number": 49,
@@ -1123,16 +1439,20 @@
       ],
       "gameIds": [
         "pictures"
-      ]
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-diversion"
+      ],
+      "wrongAnswerRationale": "A neobladder is an internal bowel-made reservoir attached to the urethra. An ileal conduit drains through a stoma into an external pouch."
     },
     {
       "number": 50,
       "level": "HARD",
       "type": "JUMBLED LETTERS",
-      "prompt": "AKI’s most immediate life-threatening electrolyte imbalance.",
+      "prompt": "A potentially life-threatening electrolyte imbalance caused by potassium retention in AKI.",
       "options": [],
       "answer": "HYPERKALEMIA",
-      "explanation": "AKI can cause dangerous potassium retention, including tall, peaked T waves on ECG.",
+      "explanation": "Impaired kidney potassium removal can cause hyperkalemia and dangerous cardiac dysrhythmias. Tall, peaked T waves may occur, but ECG findings alone do not exclude or confirm the severity.",
       "scramble": "YEKALIPMEHAR",
       "images": [],
       "points": 300,
@@ -1141,7 +1461,607 @@
       "aliases": [],
       "gameIds": [
         "words"
-      ]
+      ],
+      "sources": [
+        "https://www.kidney.org/kidney-topics/hyperkalemia-high-potassium"
+      ],
+      "wrongAnswerRationale": "Hyperkalemia means elevated blood potassium. Poor renal potassium removal can cause dangerous cardiac rhythm disturbances."
+    },
+    {
+      "id": "ut_51",
+      "number": 51,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Stress incontinence",
+        "Kidney infection",
+        "Normal bladder filling",
+        "An isolated pelvic-floor weakness"
+      ],
+      "correctIndex": 1,
+      "answer": "Kidney infection",
+      "choiceRationales": [
+        "Stress leakage occurs with exertion; it does not explain fever and flank pain.",
+        "This combination raises concern for an upper urinary infection.",
+        "Normal filling does not cause systemic illness.",
+        "Pelvic-floor weakness may cause leakage, but not this febrile pattern."
+      ],
+      "explanation": "Fever and flank pain accompanying urinary symptoms raise concern for pyelonephritis and warrant prompt clinical assessment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis"
+      ],
+      "prompt": "A patient with burning urination now reports fever, chills, and flank pain. Which possibility needs prompt assessment?"
+    },
+    {
+      "id": "ut_52",
+      "number": 52,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Urine culture",
+        "Bladder ultrasound",
+        "Serum sodium",
+        "Urine output measurement"
+      ],
+      "correctIndex": 0,
+      "answer": "Urine culture",
+      "choiceRationales": [
+        "A culture grows and identifies bacteria in the sample.",
+        "Ultrasound shows structures and retained urine, not bacterial identity.",
+        "Serum sodium assesses electrolyte balance, not the organism.",
+        "Output measures urine volume, not which bacteria are present."
+      ],
+      "explanation": "Urine culture helps identify an infecting organism and supports treatment decisions.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/diagnosis"
+      ],
+      "prompt": "Which test most directly identifies bacteria growing in a urine specimen?"
+    },
+    {
+      "id": "ut_53",
+      "number": 53,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Raise the bag onto the bed",
+        "Disconnect the drainage system",
+        "Relieve the kink and reassess drainage",
+        "Instill an unprescribed irrigation solution"
+      ],
+      "correctIndex": 2,
+      "answer": "Relieve the kink and reassess drainage",
+      "choiceRationales": [
+        "Elevating the bag may promote backflow.",
+        "Disconnection opens a route for contamination.",
+        "Correct the visible obstruction while preserving the closed system.",
+        "Routine unprescribed irrigation is not the first response to a visible kink."
+      ],
+      "explanation": "Maintain unobstructed drainage. Correct the kink, keep the bag below the bladder, and reassess; persistent poor drainage requires further assessment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ],
+      "prompt": "An indwelling catheter has stopped draining, and the tubing is visibly kinked beneath the patient. What should be addressed first?"
+    },
+    {
+      "id": "ut_54",
+      "number": 54,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Pour urine from the drainage bag",
+        "Disconnect the tubing and collect from its end",
+        "Squeeze urine from a used absorbent pad",
+        "Use the disinfected needleless sampling port with sterile equipment"
+      ],
+      "correctIndex": 3,
+      "answer": "Use the disinfected needleless sampling port with sterile equipment",
+      "choiceRationales": [
+        "Bag urine is not the recommended source for a culture.",
+        "Opening the tubing breaks the closed system.",
+        "A used pad can contaminate the specimen.",
+        "Aseptic sampling from the cleaned port preserves specimen quality."
+      ],
+      "explanation": "Collect a fresh culture sample aseptically from the disinfected sampling port using appropriate sterile equipment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ],
+      "prompt": "A small fresh urine specimen for culture is ordered for a catheterized patient. Which collection method is appropriate?"
+    },
+    {
+      "id": "ut_55",
+      "number": 55,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Acute urinary retention",
+        "Convenience in caring for an otherwise stable incontinent patient",
+        "Accurate output measurement in a critically ill patient",
+        "A selected perioperative indication"
+      ],
+      "correctIndex": 1,
+      "answer": "Convenience in caring for an otherwise stable incontinent patient",
+      "choiceRationales": [
+        "Acute retention can be an appropriate indication.",
+        "Incontinence convenience alone does not justify an indwelling catheter.",
+        "Precise output monitoring may justify catheterization in critical illness.",
+        "Some operations have a valid short-term catheter indication."
+      ],
+      "explanation": "Use indwelling catheters only for clinical indications; they should not replace routine continence care.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.cdc.gov/uti/hcp/clinical-safety/index.html",
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ],
+      "prompt": "Which proposed reason alone is inappropriate for inserting an indwelling urinary catheter?"
+    },
+    {
+      "id": "ut_56",
+      "number": 56,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Aseptic technique and sterile equipment",
+        "Any clean household equipment",
+        "A previously used catheter after a water rinse",
+        "Opening the drainage system repeatedly during insertion"
+      ],
+      "correctIndex": 0,
+      "answer": "Aseptic technique and sterile equipment",
+      "choiceRationales": [
+        "Sterile equipment and aseptic technique reduce introduction of organisms.",
+        "Household equipment does not meet acute-care insertion requirements.",
+        "A water rinse does not make used equipment sterile.",
+        "Unnecessary openings can contaminate the drainage system."
+      ],
+      "explanation": "Acute-care indwelling catheter insertion uses aseptic technique and sterile equipment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.cdc.gov/uti/hcp/clinical-safety/index.html"
+      ],
+      "prompt": "In an acute care hospital, what is required when inserting an indwelling urinary catheter?"
+    },
+    {
+      "id": "ut_57",
+      "number": 57,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Wait until the next routine visit",
+        "Restrict all fluids and give no report",
+        "Arrange immediate assessment for acute urinary retention",
+        "Assume the bladder has already emptied"
+      ],
+      "correctIndex": 2,
+      "answer": "Arrange immediate assessment for acute urinary retention",
+      "choiceRationales": [
+        "Painful inability to void requires prompt attention.",
+        "Unassessed fluid restriction does not resolve the cause.",
+        "This presentation can represent acute retention requiring urgent assessment.",
+        "Pain and inability to void do not demonstrate an empty bladder."
+      ],
+      "explanation": "Acute inability to urinate with lower abdominal pain is a reason for immediate clinical assessment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes"
+      ],
+      "prompt": "A patient suddenly cannot pass urine and has severe lower abdominal pain. Which response is appropriate?"
+    },
+    {
+      "id": "ut_58",
+      "number": 58,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "It always causes dramatic pain",
+        "It can develop gradually with few symptoms",
+        "It always means complete absence of urine production",
+        "It cannot occur if small amounts of urine are passed"
+      ],
+      "correctIndex": 1,
+      "answer": "It can develop gradually with few symptoms",
+      "choiceRationales": [
+        "Chronic retention can be subtle rather than intensely painful.",
+        "Gradual retention may go unnoticed despite incomplete emptying.",
+        "Retention concerns bladder emptying, not necessarily kidney urine production.",
+        "Passing small amounts does not prove that the bladder empties completely."
+      ],
+      "explanation": "Chronic retention may cause few symptoms; a patient may still void while retaining substantial urine.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-retention/symptoms-causes"
+      ],
+      "prompt": "Which statement about chronic urinary retention is accurate?"
+    },
+    {
+      "id": "ut_59",
+      "number": 59,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Reduced blood flow to the kidneys",
+        "Direct kidney-tissue injury is established",
+        "A urinary-outflow blockage is proven",
+        "Chronic scarring alone explains the abrupt illness"
+      ],
+      "correctIndex": 0,
+      "answer": "Reduced blood flow to the kidneys",
+      "choiceRationales": [
+        "Severe fluid loss can reduce kidney perfusion.",
+        "Intrinsic injury is possible in AKI, but this history most strongly suggests reduced perfusion.",
+        "The history does not establish urinary obstruction.",
+        "Chronic disease can coexist, but does not by itself explain the acute volume-loss event."
+      ],
+      "explanation": "Dehydration and low blood pressure can reduce renal perfusion and contribute to AKI.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.nhs.uk/conditions/acute-kidney-injury/"
+      ],
+      "prompt": "After prolonged vomiting and diarrhea, a patient becomes hypotensive and develops AKI. Which mechanism best fits the history?"
+    },
+    {
+      "id": "ut_60",
+      "number": 60,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "A single urine-color reading and diet recall",
+        "Blood type and white blood cell count",
+        "Temperature and pain rating alone",
+        "Serum creatinine trend and urine output"
+      ],
+      "correctIndex": 3,
+      "answer": "Serum creatinine trend and urine output",
+      "choiceRationales": [
+        "These can provide context but do not reliably track acute filtration changes.",
+        "White cells may help assess infection; this pair does not track filtration and output.",
+        "These are useful observations, but the pair misses direct renal monitoring.",
+        "Creatinine trends and output help assess an acute renal change."
+      ],
+      "explanation": "Compare serum creatinine with the patient\u2019s baseline and monitor urine output as part of a full AKI assessment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.kidney.org/kidney-topics/acute-kidney-injury-aki"
+      ],
+      "prompt": "Which pair is especially useful for tracking a suspected acute change in kidney function?"
+    },
+    {
+      "id": "ut_61",
+      "number": 61,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Blood pressure and body weight alone",
+        "Blood eGFR and urine albumin",
+        "Urine appearance and symptoms alone",
+        "Serum sodium and hemoglobin"
+      ],
+      "correctIndex": 1,
+      "answer": "Blood eGFR and urine albumin",
+      "choiceRationales": [
+        "These support assessment but do not replace filtration and damage markers.",
+        "eGFR estimates filtration; urine albumin can indicate kidney damage.",
+        "Appearance and symptoms can be normal despite kidney disease.",
+        "These may reveal complications, but are not the central CKD-detection pair."
+      ],
+      "explanation": "Kidney assessment combines a blood estimate of filtration with urine testing for albumin leakage.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis"
+      ],
+      "prompt": "Which two tests are central to detecting and monitoring chronic kidney disease?"
+    },
+    {
+      "id": "ut_62",
+      "number": 62,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Stop all prescribed medicines when feeling well",
+        "Avoid follow-up while symptoms are absent",
+        "Follow the individualized blood-pressure and glucose plan",
+        "Use high-dose nonprescription pain medicines daily"
+      ],
+      "correctIndex": 2,
+      "answer": "Follow the individualized blood-pressure and glucose plan",
+      "choiceRationales": [
+        "Feeling well is not a reason to stop prescribed treatment.",
+        "CKD may progress without obvious symptoms.",
+        "Managing blood pressure and diabetes helps limit further kidney damage.",
+        "Some pain medicines can harm kidneys and require clinician review."
+      ],
+      "explanation": "Follow the agreed blood-pressure and diabetes treatment plan, review medicines, and attend kidney monitoring visits.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/managing"
+      ],
+      "prompt": "A patient has CKD and diabetes. Which long-term self-management goal helps protect remaining kidney function?"
+    },
+    {
+      "id": "ut_63",
+      "number": 63,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Agree an appropriate daily fluid target with the care team",
+        "Avoid water so that minerals stay dissolved",
+        "Everyone must drink the same large volume regardless of other illness",
+        "Only drink when urine is already very dark"
+      ],
+      "correctIndex": 0,
+      "answer": "Agree an appropriate daily fluid target with the care team",
+      "choiceRationales": [
+        "Adequate intake helps dilute urine; the target should fit the patient.",
+        "Less water generally concentrates urine rather than diluting minerals.",
+        "Heart or kidney conditions may change safe fluid advice.",
+        "Waiting for marked concentration is not a prevention plan."
+      ],
+      "explanation": "Adequate fluid intake is important for stone prevention, with an individualized target when other health conditions affect fluid management.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition"
+      ],
+      "prompt": "A stone-former asks about fluids. Which teaching is most appropriate?"
+    },
+    {
+      "id": "ut_64",
+      "number": 64,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "To confirm that recurrence is impossible",
+        "To identify its composition and guide prevention",
+        "To replace future clinical and laboratory assessment",
+        "To determine whether all dietary calcium must be stopped"
+      ],
+      "correctIndex": 1,
+      "answer": "To identify its composition and guide prevention",
+      "choiceRationales": [
+        "One passed stone does not rule out recurrence.",
+        "Stone composition helps tailor diet and prevention advice.",
+        "Stone analysis complements rather than permanently replaces other assessments.",
+        "Prevention is individualized; indiscriminate calcium avoidance is not the purpose of analysis."
+      ],
+      "explanation": "Knowing the stone type helps the clinical team recommend measures to reduce recurrence.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/treatment",
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition"
+      ],
+      "prompt": "Why may a passed kidney stone be collected for analysis?"
+    },
+    {
+      "id": "ut_65",
+      "number": 65,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Stress incontinence",
+        "Overflow incontinence",
+        "Urgency incontinence",
+        "Urinary retention without leakage"
+      ],
+      "correctIndex": 2,
+      "answer": "Urgency incontinence",
+      "choiceRationales": [
+        "Stress leakage is linked to exertion or raised abdominal pressure.",
+        "Overflow leakage is associated with incomplete emptying and an overfull bladder.",
+        "A sudden compelling urge followed by leakage fits urgency incontinence.",
+        "The described event is leakage, not simply inability to empty."
+      ],
+      "explanation": "Urgency incontinence occurs when urine leaks with a strong urge to void.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+      ],
+      "prompt": "Urine leaks immediately after a strong, sudden urge, before the person reaches a toilet. Which type best matches?"
+    },
+    {
+      "id": "ut_66",
+      "number": 66,
+      "type": "MULTIPLE CHOICE",
+      "level": "EASY",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Stress incontinence",
+        "Reflex incontinence",
+        "Overflow incontinence",
+        "Functional incontinence"
+      ],
+      "correctIndex": 3,
+      "answer": "Functional incontinence",
+      "choiceRationales": [
+        "Coughing or exertion is not the stated trigger.",
+        "Reflex leakage occurs without normal warning, unlike this situation.",
+        "The case does not establish an overfull, incompletely emptied bladder.",
+        "A mobility or environmental barrier prevents timely toileting."
+      ],
+      "explanation": "Functional incontinence results when barriers prevent a person from reaching or using the toilet in time.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+      ],
+      "prompt": "A patient recognizes the need to void but cannot reach the toilet because of limited mobility and an inaccessible bathroom. Which type best fits?"
+    },
+    {
+      "id": "ut_67",
+      "number": 67,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Use the fistula arm for routine blood-pressure readings",
+        "Avoid routine blood-pressure cuffs and blood draws on the access arm",
+        "Place a tight compression band over the fistula all day",
+        "Use the fistula for a routine IV without dialysis-team direction"
+      ],
+      "correctIndex": 1,
+      "answer": "Avoid routine blood-pressure cuffs and blood draws on the access arm",
+      "choiceRationales": [
+        "Cuff compression can harm the access.",
+        "Protect the access arm; coordinate alternatives with the care team.",
+        "Sustained compression can interfere with access blood flow.",
+        "Routine IV use can damage access vessels and needs appropriate direction."
+      ],
+      "explanation": "Protect a fistula or graft from compression and unnecessary punctures, following the dialysis team\u2019s access-care instructions.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.kidney.org/kidney-topics/how-to-protect-your-veins-when-you-have-kidney-disease"
+      ],
+      "prompt": "A patient has a functioning AV fistula in the left arm. Which plan protects this dialysis access?"
+    },
+    {
+      "id": "ut_68",
+      "number": 68,
+      "type": "MULTIPLE CHOICE",
+      "level": "MEDIUM",
+      "gameIds": [
+        "quiz"
+      ],
+      "options": [
+        "Treat the findings as an expected effect of every exchange",
+        "Store the used fluid for a week before reporting",
+        "Add a household disinfectant to the next bag",
+        "Seek immediate assessment for possible peritonitis"
+      ],
+      "correctIndex": 3,
+      "answer": "Seek immediate assessment for possible peritonitis",
+      "choiceRationales": [
+        "These findings can indicate infection rather than a routine exchange effect.",
+        "Delaying assessment can allow infection to worsen.",
+        "Household disinfectants must never be added to dialysis solution.",
+        "Prompt assessment is needed for this possible peritoneal infection."
+      ],
+      "explanation": "Abdominal pain, fever, and cloudy effluent can indicate peritonitis and need immediate clinical assessment.",
+      "points": 100,
+      "images": [],
+      "imageAlt": [],
+      "aliases": [],
+      "scramble": null,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/peritoneal-dialysis"
+      ],
+      "prompt": "A patient using peritoneal dialysis develops abdominal pain, fever, and cloudy used dialysis fluid. What is the priority?"
     }
   ],
   "matching": [
@@ -1156,7 +2076,7 @@
       "id": "match-glomerulus",
       "term": "Glomerulus",
       "definition": "The capillary tuft where nephron filtration begins.",
-      "explanation": "The glomerulus is enclosed by Bowman’s capsule.",
+      "explanation": "The glomerulus is enclosed by Bowman\u2019s capsule.",
       "points": 100
     },
     {
@@ -1211,7 +2131,7 @@
     {
       "id": "match-renin",
       "term": "Renin",
-      "definition": "A kidney-released enzyme that initiates the renin–angiotensin–aldosterone system.",
+      "definition": "A kidney-released enzyme that initiates the renin\u2013angiotensin\u2013aldosterone system.",
       "explanation": "Renin participates in the response to reduced renal perfusion.",
       "points": 100
     },
@@ -1233,7 +2153,7 @@
   "sequences": [
     {
       "id": "flow-urine-route",
-      "title": "Urine’s Itinerary",
+      "title": "Urine\u2019s Itinerary",
       "prompt": "Arrange the main route urine follows to leave the body.",
       "steps": [
         "Kidneys",
@@ -1286,7 +2206,7 @@
     {
       "id": "flow-epo",
       "title": "A Little More Red",
-      "prompt": "Order the kidney’s erythropoietin response to low oxygen availability.",
+      "prompt": "Order the kidney\u2019s erythropoietin response to low oxygen availability.",
       "steps": [
         "Oxygen availability falls",
         "The kidneys release erythropoietin",
@@ -1321,7 +2241,15 @@
       ],
       "wrongIndex": 1,
       "explanation": "The collection bag belongs below bladder level. Raising it above the bladder increases the risk of backflow.",
-      "points": 100
+      "points": 100,
+      "stepRationales": [
+        "This is appropriate: a bag below the bladder supports gravity drainage and reduces backflow.",
+        "This is the unsafe statement: raising the bag can allow urine to flow back toward the bladder.",
+        "This is appropriate: keeping the drainage system closed helps prevent microorganisms entering."
+      ],
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ]
     },
     {
       "id": "leak-tubing",
@@ -1334,7 +2262,15 @@
       ],
       "wrongIndex": 0,
       "explanation": "Kinked or tightly folded tubing obstructs drainage. Keep urine flowing freely through an intact closed system.",
-      "points": 100
+      "points": 100,
+      "stepRationales": [
+        "This is unsafe: a tight fold or kink obstructs urine drainage.",
+        "This is appropriate: straight, unkinked tubing helps maintain unobstructed flow.",
+        "This is appropriate: the bag should remain below bladder level."
+      ],
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ]
     },
     {
       "id": "leak-catheter-need",
@@ -1347,7 +2283,15 @@
       ],
       "wrongIndex": 2,
       "explanation": "An indwelling catheter should be removed as soon as it is no longer necessary. Hospital discharge is not the default reason to keep it.",
-      "points": 100
+      "points": 100,
+      "stepRationales": [
+        "This is appropriate: regular review helps identify when the catheter can be removed.",
+        "This is appropriate: remove an unnecessary catheter promptly according to the authorized plan.",
+        "This is unsafe: discharge is not a reason to retain a catheter that has no ongoing indication."
+      ],
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ]
     },
     {
       "id": "leak-diuresis",
@@ -1360,7 +2304,16 @@
       ],
       "wrongIndex": 1,
       "explanation": "During the diuretic phase, increased urine output can cause water and electrolyte losses. Rising output does not remove dehydration risk.",
-      "points": 200
+      "points": 200,
+      "stepRationales": [
+        "This is true: large urine losses can leave the patient volume depleted.",
+        "This is false: rising urine output does not protect against dehydration and can worsen it.",
+        "This is true: the diuretic phase can involve water and electrolyte losses."
+      ],
+      "sources": [
+        "https://www.merckmanuals.com/professional/nephrology/acute-kidney-injury/acute-kidney-injury-aki",
+        "https://www.merckmanuals.com/professional/nephrology/fluid-metabolism/overview-of-disorders-of-fluid-volume"
+      ]
     },
     {
       "id": "leak-transplant",
@@ -1368,16 +2321,24 @@
       "prompt": "Which transplant-care statement is unsafe?",
       "steps": [
         "Stop prescribed immunosuppressive medicine whenever the recipient feels well.",
-        "A transplanted kidney can be attacked by the recipient’s immune system.",
+        "A transplanted kidney can be attacked by the recipient\u2019s immune system.",
         "Reduced urine output or graft pain can warrant assessment for a complication."
       ],
       "wrongIndex": 0,
       "explanation": "Transplant recipients require ongoing prescribed immunosuppression. Feeling well is not a reason to stop it independently.",
-      "points": 200
+      "points": 200,
+      "stepRationales": [
+        "This is unsafe: feeling well does not mean anti-rejection treatment can be stopped independently.",
+        "This is true: the immune system may recognize the donor kidney as foreign.",
+        "This is appropriate: these findings need assessment for rejection or another transplant complication."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant"
+      ]
     },
     {
       "id": "leak-biopsy",
-      "title": "Biopsy, Don’t Bye-opsy",
+      "title": "Biopsy, Don\u2019t Bye-opsy",
       "prompt": "Find the unsafe post-biopsy statement.",
       "steps": [
         "Watch for flank pain and changes in vital signs.",
@@ -1386,7 +2347,15 @@
       ],
       "wrongIndex": 2,
       "explanation": "After kidney biopsy, flank pain, dizziness, and pallor may indicate bleeding and warrant prompt assessment.",
-      "points": 200
+      "points": 200,
+      "stepRationales": [
+        "This is appropriate: pain and vital-sign changes may help identify bleeding.",
+        "This is appropriate: dizziness and pallor can indicate blood loss and warrant prompt assessment.",
+        "This is unsafe: new dizziness and pallor should not be dismissed after an invasive kidney procedure."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/diagnostic-tests/kidney-biopsy"
+      ]
     },
     {
       "id": "leak-continence",
@@ -1399,7 +2368,16 @@
       ],
       "wrongIndex": 1,
       "explanation": "Overflow incontinence involves leakage from an overdistended bladder. Leakage with coughing or sneezing is associated with stress incontinence.",
-      "points": 100
+      "points": 100,
+      "stepRationales": [
+        "This is true: coughing or sneezing can cause stress leakage by raising abdominal pressure.",
+        "This is false: overflow leakage results from incomplete emptying and bladder overdistension, not coughing alone.",
+        "This is true: pelvic-floor training is a conservative treatment for stress incontinence."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts",
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/treatment"
+      ]
     },
     {
       "id": "leak-potassium",
@@ -1412,7 +2390,15 @@
       ],
       "wrongIndex": 0,
       "explanation": "Tall, peaked T waves can signal hyperkalemia. Potassium retention is a major danger in AKI.",
-      "points": 200
+      "points": 200,
+      "stepRationales": [
+        "This is false: tall, peaked T waves may accompany high potassium; low potassium has different typical ECG changes.",
+        "This is true: reduced renal potassium removal can lead to hyperkalemia.",
+        "This is true: peaked T waves are a possible hyperkalemia finding, although ECG findings vary."
+      ],
+      "sources": [
+        "https://www.kidney.org/kidney-topics/hyperkalemia-high-potassium"
+      ]
     }
   ],
   "articles": [
@@ -1452,8 +2438,8 @@
       "id": "learn-kidney-functions",
       "title": "Small Organs, Big Assignments",
       "body": [
-        "Kidneys form urine and help regulate fluid and dissolved substances. They release erythropoietin, which stimulates red blood cell production, and renin, an enzyme that initiates the renin–angiotensin–aldosterone system.",
-        "Chronic kidney disease involves abnormalities of kidney structure or function present for at least three months. These include kidney damage or a GFR below 60 mL/min/1.73 m². Hemodialysis uses a dialyzer; peritoneal dialysis uses the peritoneal membrane."
+        "Kidneys form urine and help regulate fluid and dissolved substances. They release erythropoietin, which stimulates red blood cell production, and renin, an enzyme that initiates the renin\u2013angiotensin\u2013aldosterone system.",
+        "Chronic kidney disease involves abnormalities of kidney structure or function present for at least three months. These include kidney damage or a GFR below 60 mL/min/1.73 m\u00b2. Hemodialysis uses a dialyzer; peritoneal dialysis uses the peritoneal membrane."
       ]
     },
     {
@@ -1465,5 +2451,459 @@
         "After a kidney biopsy, flank pain together with dizziness and pallor warrants assessment for bleeding. Transplant recipients need prescribed immunosuppression and assessment of possible graft complications."
       ]
     }
-  ]
+  ],
+  "legacyQuestionSignatures": {
+    "q1": "[\"What is the structural and functional unit of the kidney?\",\"Nephron\",0,[\"Nephron\",\"Ureter\",\"Bladder\",\"Renal pelvis\"]]",
+    "q2": "[\"The right kidney usually sits slightly lower than the left kidney.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q3": "[\"What is the medical term for urination?\",\"MICTURITION\",null,[]]",
+    "q4": "[\"Urine-storage organ.\",\"BLADDER\",null,[]]",
+    "q5": "[\"Four pics, one word: Name the organ.\",\"KIDNEY\",null,[]]",
+    "q6": "[\"Two truths and one lie: Select the FALSE statement.\",\"The renal medulla is the outermost kidney layer.\",2,[\"The kidneys lie behind the abdominal cavity.\",\"The renal cortex is the outer layer.\",\"The renal medulla is the outermost kidney layer.\"]]",
+    "q7": "[\"Which kidney layer contains the renal pyramids?\",\"Medulla\",1,[\"Cortex\",\"Medulla\",\"Urethra\",\"Capsule only\"]]",
+    "q8": "[\"The ureters transport urine toward the bladder through peristalsis.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q9": "[\"What smooth muscle of the bladder wall contracts during urination?\",\"DETRUSOR\",null,[]]",
+    "q10": "[\"Filtering tuft of capillaries in a nephron.\",\"GLOMERULUS\",null,[]]",
+    "q11": "[\"Four pics, one word: Identify the first step of urine formation.\",\"FILTRATION\",null,[]]",
+    "q12": "[\"Which option best approximates a typical adult bladder capacity?\",\"400\u2013500 mL\",2,[\"50\u2013100 mL\",\"150\u2013200 mL\",\"400\u2013500 mL\",\"1,000\u20131,500 mL\"]]",
+    "q13": "[\"About 99% of the glomerular filtrate is reabsorbed into the bloodstream.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q14": "[\"What hormone released by the kidneys stimulates red blood cell production?\",\"ERYTHROPOIETIN\",null,[]]",
+    "q15": "[\"Two truths and one lie: Select the FALSE statement about urine formation.\",\"Tubular reabsorption removes essential glucose from blood into urine.\",1,[\"Glomerular filtration happens under pressure.\",\"Tubular reabsorption removes essential glucose from blood into urine.\",\"Tubular secretion transfers some wastes and drugs into filtrate.\"]]",
+    "q16": "[\"Which structures are involved in an upper UTI?\",\"Kidneys and ureters\",3,[\"Bladder and prostate\",\"Urethra and bladder\",\"Bladder and urethra\",\"Kidneys and ureters\"]]",
+    "q17": "[\"The term for painful or burning urination.\",\"DYSURIA\",null,[]]",
+    "q18": "[\"Pyelonephritis is an infection of the kidney.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q19": "[\"Four pics, one word: Identify the process that can cause UTI symptoms.\",\"INFECTION\",null,[]]",
+    "q20": "[\"Urine leaking when coughing or sneezing is what type of incontinence?\",\"Stress\",1,[\"Overflow\",\"Stress\",\"Functional\",\"Urge\"]]",
+    "q21": "[\"Which incontinence type involves continual leakage from an overdistended bladder?\",\"OVERFLOW\",null,[]]",
+    "q22": "[\"Kegel exercises are included in first-line behavioral management for urinary incontinence.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q23": "[\"Two truths and one lie: Select the FALSE catheter-care instruction.\",\"Raise the collection bag above bladder level.\",2,[\"Maintain a closed drainage system.\",\"Keep catheter tubing free of kinks.\",\"Raise the collection bag above bladder level.\"]]",
+    "q24": "[\"Four pics, one word: Name the hard urinary deposit.\",\"STONE\",null,[]]",
+    "q25": "[\"What does hematuria mean?\",\"Blood in urine\",0,[\"Blood in urine\",\"Protein in urine\",\"No urine output\",\"Painful urination\"]]",
+    "q26": "[\"Chronic kidney disease includes kidney damage or a GFR below 60 mL/min/1.73 m\u00b2 persisting for at least three months.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q27": "[\"Which finding particularly characterizes nephrotic syndrome?\",\"Massive proteinuria\",2,[\"Absent urine glucose\",\"High urine ketones only\",\"Massive proteinuria\",\"Isolated dysuria\"]]",
+    "q28": "[\"What condition is defined by inflammation of the glomerular capillaries?\",\"GLOMERULONEPHRITIS\",null,[]]",
+    "q29": "[\"The kidney-released enzyme involved in blood-pressure regulation.\",\"RENIN\",null,[]]",
+    "q30": "[\"Two truths and one lie: Select the FALSE glomerulonephritis statement.\",\"It is defined by entirely normal, noninflamed glomeruli.\",1,[\"Cola-colored urine can occur.\",\"It is defined by entirely normal, noninflamed glomeruli.\",\"It can follow streptococcal throat infection after 2\u20133 weeks.\"]]",
+    "q31": "[\"Four pics, one word: Name the swelling caused by excess fluid.\",\"EDEMA\",null,[]]",
+    "q32": "[\"A kidney stone blocks urinary outflow and causes AKI. Which cause category is this?\",\"Postrenal\",3,[\"Prerenal\",\"Intrarenal\",\"Cortical\",\"Postrenal\"]]",
+    "q33": "[\"During the diuretic phase of AKI, rising urine output can increase the risk of dehydration.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q34": "[\"Which portable device noninvasively measures postvoid residual urine?\",\"BLADDER SCANNER\",null,[]]",
+    "q35": "[\"The diagnostic test used with sensitivity results to guide antibiotics.\",\"CULTURE\",null,[]]",
+    "q36": "[\"Two truths and one lie: Select the FALSE statement about chronic pyelonephritis.\",\"Symptoms are always sudden and severe between infections.\",0,[\"Symptoms are always sudden and severe between infections.\",\"Repeated infections can cause kidney scarring.\",\"Progressive damage may lead to ESKD.\"]]",
+    "q37": "[\"Four pics, one word: Name the renal replacement treatment.\",\"DIALYSIS\",null,[]]",
+    "q38": "[\"Which finding is especially characteristic of acute pyelonephritis?\",\"Fever with flank/CVA tenderness\",0,[\"Fever with flank/CVA tenderness\",\"Painless ankle swelling alone\",\"Only stress-related urine leakage\",\"A painless flank mass only\"]]",
+    "q39": "[\"An indwelling urinary catheter should be removed as soon as it is no longer necessary.\",\"TRUE\",0,[\"TRUE\",\"FALSE\"]]",
+    "q40": "[\"What procedure uses focused shock waves to fragment urinary stones?\",\"LITHOTRIPSY\",null,[]]",
+    "q41": "[\"Two truths and one lie: Select the FALSE AKI statement.\",\"The diuretic phase eliminates dehydration risk.\",2,[\"Hyperkalemia is a major danger in AKI.\",\"Tall, peaked T waves can signal hyperkalemia.\",\"The diuretic phase eliminates dehydration risk.\"]]",
+    "q42": "[\"Which sequence best matches the nephrotic-syndrome \u201cdomino effect\u201d?\",\"Massive proteinuria \u2192 hypoalbuminemia \u2192 edema\",1,[\"Edema \u2192 albumin gain \u2192 protein loss\",\"Massive proteinuria \u2192 hypoalbuminemia \u2192 edema\",\"Anuria \u2192 bacterial invasion \u2192 hyperglycemia\",\"Hypertension \u2192 increased albumin \u2192 dehydration\"]]",
+    "q43": "[\"Which imaging test is commonly used first to evaluate suspected polycystic kidney disease?\",\"ULTRASOUND\",null,[]]",
+    "q44": "[\"A medication that can slow kidney-function decline in eligible adults with autosomal dominant PKD at risk of rapid progression.\",\"TOLVAPTAN\",null,[]]",
+    "q45": "[\"Four pics, one word: Identify the transplant complication shown.\",\"REJECTION\",null,[]]",
+    "q46": "[\"Two truths and one lie: Select the FALSE renal-replacement statement.\",\"Kidney-transplant recipients never need immunosuppressive medication.\",2,[\"Hemodialysis circulates blood through a dialyzer.\",\"Peritoneal dialysis uses the abdominal peritoneal membrane.\",\"Kidney-transplant recipients never need immunosuppressive medication.\"]]",
+    "q47": "[\"After a kidney biopsy, which combination warrants close assessment for bleeding?\",\"Flank pain, dizziness, and pallor\",2,[\"Mild hunger and thirst\",\"Improved appetite and sleep\",\"Flank pain, dizziness, and pallor\",\"Clear urine with comfortable voiding\"]]",
+    "q48": "[\"Which urinary diversion uses an ileal segment to carry urine into an external ostomy pouch?\",\"ILEAL CONDUIT\",null,[]]",
+    "q49": "[\"Four pics, one word: Name the new bladder constructed from intestinal tissue.\",\"NEOBLADDER\",null,[]]",
+    "q50": "[\"AKI\u2019s most immediate life-threatening electrolyte imbalance.\",\"HYPERKALEMIA\",null,[]]"
+  },
+  "newQuestionIds": [
+    "ut_51",
+    "ut_52",
+    "ut_53",
+    "ut_54",
+    "ut_55",
+    "ut_56",
+    "ut_57",
+    "ut_58",
+    "ut_59",
+    "ut_60",
+    "ut_61",
+    "ut_62",
+    "ut_63",
+    "ut_64",
+    "ut_65",
+    "ut_66",
+    "ut_67",
+    "ut_68"
+  ],
+  "sorting": [
+    {
+      "id": "sort_01",
+      "title": "Urine the right place",
+      "prompt": "Sort each job by the organ that performs it.",
+      "categories": [
+        {
+          "id": "kidney",
+          "label": "Kidneys"
+        },
+        {
+          "id": "ureter",
+          "label": "Ureters"
+        },
+        {
+          "id": "bladder",
+          "label": "Bladder"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_01_card_1",
+          "text": "Filter blood to begin urine formation",
+          "categoryId": "kidney",
+          "explanation": "Kidney nephrons filter blood; the bladder stores urine and ureters transport it."
+        },
+        {
+          "id": "sort_01_card_2",
+          "text": "Move urine from a kidney toward the bladder",
+          "categoryId": "ureter",
+          "explanation": "Ureters are muscular tubes connecting the kidneys to the bladder."
+        },
+        {
+          "id": "sort_01_card_3",
+          "text": "Hold urine until voiding",
+          "categoryId": "bladder",
+          "explanation": "The bladder expands to store urine between trips to the toilet."
+        },
+        {
+          "id": "sort_01_card_4",
+          "text": "Remove extra water and dissolved wastes from blood",
+          "categoryId": "kidney",
+          "explanation": "Kidneys adjust water and waste removal while producing urine."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works",
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ]
+    },
+    {
+      "id": "sort_02",
+      "title": "Back to the bloodstream",
+      "prompt": "Follow the direction of movement, then choose the nephron process.",
+      "categories": [
+        {
+          "id": "filtration",
+          "label": "Filtration"
+        },
+        {
+          "id": "reabsorption",
+          "label": "Reabsorption"
+        },
+        {
+          "id": "secretion",
+          "label": "Secretion"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_02_card_1",
+          "text": "Water passes from glomerular blood into the first filtrate",
+          "categoryId": "filtration",
+          "explanation": "Filtration moves water and small solutes across the glomerular filter into the nephron."
+        },
+        {
+          "id": "sort_02_card_2",
+          "text": "Needed nutrients return from tubular fluid to the blood",
+          "categoryId": "reabsorption",
+          "explanation": "Reabsorption recovers filtered substances by returning them to the circulation."
+        },
+        {
+          "id": "sort_02_card_3",
+          "text": "Hydrogen ions move from the blood into tubular fluid",
+          "categoryId": "secretion",
+          "explanation": "Tubular secretion adds substances to tubular fluid, helping the kidneys remove excess acid."
+        },
+        {
+          "id": "sort_02_card_4",
+          "text": "Most filtered water is recovered into the circulation",
+          "categoryId": "reabsorption",
+          "explanation": "Water recovery from tubular fluid into blood is reabsorption, rather than a new filtration step."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ]
+    },
+    {
+      "id": "sort_03",
+      "title": "Hold it\u2014or let it flow?",
+      "prompt": "Sort each normal bladder action into the correct phase.",
+      "categories": [
+        {
+          "id": "storage",
+          "label": "Storage"
+        },
+        {
+          "id": "voiding",
+          "label": "Voiding"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_03_card_1",
+          "text": "The bladder wall relaxes as urine arrives",
+          "categoryId": "storage",
+          "explanation": "Relaxation lets the bladder fill while its outlet remains closed."
+        },
+        {
+          "id": "sort_03_card_2",
+          "text": "The bladder wall contracts to push urine out",
+          "categoryId": "voiding",
+          "explanation": "Bladder contraction provides the pressure used to empty it."
+        },
+        {
+          "id": "sort_03_card_3",
+          "text": "Urethral sphincters relax so urine can leave",
+          "categoryId": "voiding",
+          "explanation": "The outlet must relax during voiding so bladder contraction can move urine out."
+        },
+        {
+          "id": "sort_03_card_4",
+          "text": "Sphincters stay closed between toilet visits",
+          "categoryId": "storage",
+          "explanation": "A closed outlet helps retain urine during filling."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ]
+    },
+    {
+      "id": "sort_04",
+      "title": "Leak detective",
+      "prompt": "Choose the incontinence pattern described by each clue.",
+      "categories": [
+        {
+          "id": "stress",
+          "label": "Stress"
+        },
+        {
+          "id": "urgency",
+          "label": "Urgency"
+        },
+        {
+          "id": "overflow",
+          "label": "Overflow"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_04_card_1",
+          "text": "Urine leaks during a cough or sneeze",
+          "categoryId": "stress",
+          "explanation": "A pressure-related leak during exertion is characteristic of stress incontinence."
+        },
+        {
+          "id": "sort_04_card_2",
+          "text": "A sudden strong urge is followed by leakage before reaching the toilet",
+          "categoryId": "urgency",
+          "explanation": "Urgency incontinence involves leakage linked to an urgent need to void."
+        },
+        {
+          "id": "sort_04_card_3",
+          "text": "The bladder stays overfull after incomplete emptying, with dribbling",
+          "categoryId": "overflow",
+          "explanation": "Overflow leakage occurs when retained urine overfills the bladder."
+        },
+        {
+          "id": "sort_04_card_4",
+          "text": "Laughing or lifting triggers a small leak",
+          "categoryId": "stress",
+          "explanation": "Laughing and lifting can raise abdominal pressure and trigger stress leakage."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-control-problems/definition-facts"
+      ]
+    },
+    {
+      "id": "sort_05",
+      "title": "Blood or bottle?",
+      "prompt": "Sort each kidney assessment by the sample it uses.",
+      "categories": [
+        {
+          "id": "blood",
+          "label": "Blood sample"
+        },
+        {
+          "id": "urine",
+          "label": "Urine sample"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_05_card_1",
+          "text": "Serum creatinine measurement",
+          "categoryId": "blood",
+          "explanation": "Serum is obtained from blood; creatinine helps estimate kidney filtration."
+        },
+        {
+          "id": "sort_05_card_2",
+          "text": "Urine albumin-to-creatinine ratio (UACR)",
+          "categoryId": "urine",
+          "explanation": "UACR compares albumin with creatinine in the same urine sample."
+        },
+        {
+          "id": "sort_05_card_3",
+          "text": "A dipstick test for urinary albumin",
+          "categoryId": "urine",
+          "explanation": "The dipstick is placed in urine to look for albumin."
+        },
+        {
+          "id": "sort_05_card_4",
+          "text": "Creatinine-based estimated glomerular filtration rate (eGFR)",
+          "categoryId": "blood",
+          "explanation": "This estimate uses blood creatinine with other patient factors; it is not a urine dipstick result."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/tests-diagnosis"
+      ]
+    },
+    {
+      "id": "sort_06",
+      "title": "More than a filter",
+      "prompt": "Sort these kidney functions by their main role.",
+      "categories": [
+        {
+          "id": "waste",
+          "label": "Waste removal"
+        },
+        {
+          "id": "balance",
+          "label": "Fluid and mineral balance"
+        },
+        {
+          "id": "hormone",
+          "label": "Hormone functions"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_06_card_1",
+          "text": "Clear metabolic wastes from the blood",
+          "categoryId": "waste",
+          "explanation": "Wastes are removed from circulation and leave in urine."
+        },
+        {
+          "id": "sort_06_card_2",
+          "text": "Adjust how much water and sodium the body retains",
+          "categoryId": "balance",
+          "explanation": "Kidneys regulate water and mineral handling to support internal balance."
+        },
+        {
+          "id": "sort_06_card_3",
+          "text": "Release erythropoietin to support red blood cell production",
+          "categoryId": "hormone",
+          "explanation": "Erythropoietin is a kidney hormone that signals the bone marrow to make red cells."
+        },
+        {
+          "id": "sort_06_card_4",
+          "text": "Produce signals involved in blood pressure control",
+          "categoryId": "hormone",
+          "explanation": "The kidneys contribute hormone signals to blood pressure regulation."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/kidneys-how-they-work"
+      ]
+    },
+    {
+      "id": "sort_07",
+      "title": "Range ranger",
+      "prompt": "For this activity, the lab prints a creatinine reference interval of 0.6\u20131.2 mg/dL. Sort each result against that interval.",
+      "categories": [
+        {
+          "id": "low",
+          "label": "Below interval"
+        },
+        {
+          "id": "within",
+          "label": "Within interval"
+        },
+        {
+          "id": "high",
+          "label": "Above interval"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_07_card_1",
+          "text": "Creatinine: 0.4 mg/dL",
+          "categoryId": "low",
+          "explanation": "0.4 is below the stated lower limit of 0.6 mg/dL."
+        },
+        {
+          "id": "sort_07_card_2",
+          "text": "Creatinine: 1.0 mg/dL",
+          "categoryId": "within",
+          "explanation": "1.0 lies between the two limits printed in this activity."
+        },
+        {
+          "id": "sort_07_card_3",
+          "text": "Creatinine: 1.8 mg/dL",
+          "categoryId": "high",
+          "explanation": "1.8 exceeds this activity\u2019s upper limit of 1.2 mg/dL."
+        },
+        {
+          "id": "sort_07_card_4",
+          "text": "Creatinine: 1.2 mg/dL",
+          "categoryId": "within",
+          "explanation": "The upper endpoint is included in the stated reference interval."
+        }
+      ],
+      "points": 100,
+      "sources": []
+    },
+    {
+      "id": "sort_08",
+      "title": "Keep it closed",
+      "prompt": "Sort the catheter-care action into the correct group.",
+      "categories": [
+        {
+          "id": "safe",
+          "label": "Supports safe drainage"
+        },
+        {
+          "id": "correct",
+          "label": "Needs correction"
+        }
+      ],
+      "cards": [
+        {
+          "id": "sort_08_card_1",
+          "text": "Keep the collection bag below bladder level and off the floor",
+          "categoryId": "safe",
+          "explanation": "This positioning supports downward drainage and follows catheter-maintenance recommendations."
+        },
+        {
+          "id": "sort_08_card_2",
+          "text": "Leave a kink in the drainage tubing",
+          "categoryId": "correct",
+          "explanation": "Kinking obstructs urine flow; catheter tubing should remain unobstructed."
+        },
+        {
+          "id": "sort_08_card_3",
+          "text": "Collect a culture sample from the disinfected sampling port using sterile equipment",
+          "categoryId": "safe",
+          "explanation": "Fresh urine for culture is collected aseptically from the sampling port."
+        },
+        {
+          "id": "sort_08_card_4",
+          "text": "Disconnect the closed system routinely to inspect the urine",
+          "categoryId": "correct",
+          "explanation": "Routine disconnection compromises the closed system; maintain it unless a clinical need requires action."
+        }
+      ],
+      "points": 100,
+      "sources": [
+        "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+      ]
+    }
+  ],
+  "contentRevision": 3
 }

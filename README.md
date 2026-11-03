@@ -20,11 +20,13 @@ GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirme
 | **Urine It to Win It** | Answer multiple-choice and true/false questions. |
 | **Spell Relief** | Build medical terms with letter tiles or enter a term. |
 | **Match Made in the Medulla** | Connect matching terms and definitions. |
+| **Double Trouble** | Flip cards to match terms with definitions. |
+| **Filter Files** | Sort urinary-system cards into categories. |
 | **The Flow Show** | Put anatomical routes and processes in order. |
 | **Pee-k at the Clues** | Enlarge picture clues and find their connecting term. |
 | **Spot the Leak** | Identify an incorrect or unsafe clinical statement. |
 
-The project includes 50 original urinary-system questions, 32 picture clues, 12 matching pairs in three rounds, six ordering activities, eight clinical-mistake checklists, six learning notes, and flashcards. Together, the games contain 67 scored challenges.
+The project includes 68 urinary-system questions, 32 picture clues, 12 matching pairs in three rounds, six ordering activities, eight clinical-mistake checklists, six learning notes, eight sorting rounds, three memory rounds, and flashcards. Together, the games contain 96 scored challenges.
 
 Choose solo practice or classroom mode for two to four teams. Solo first attempts earn points. In classroom mode, teams answer first, then the host reveals the solution and marks each correct team. Scores remain in the browser; a CSV score sheet can be exported.
 

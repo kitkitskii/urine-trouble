@@ -14,7 +14,7 @@ The public address is https://kitkitskii.github.io/urine-trouble/. The saved sou
 ## Update questions, pictures, or game titles
 
 1. Open the website and choose **Edit Content**.
-2. Make the changes. The editor supports the site title and theme, game labels and instructions, question choices and answer keys, accepted answers, picture clues, matching pairs, ordered steps, mistake checklists, and learning notes.
+2. Make the changes. The editor supports the site title and theme, game labels and instructions, question choices and answer keys, accepted answers, per-choice rationales, sorting cards, picture clues, matching pairs, ordered steps, mistake checklists, and learning notes.
 3. Use **Apply changes** to make the edited content active in that browser. Applying changes starts a fresh score session.
 4. Test the changed questions and read their explanations.
 5. Export an updated **website ZIP**. The export includes the current content and the editor.

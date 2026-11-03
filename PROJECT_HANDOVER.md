@@ -21,11 +21,11 @@ Complete these fields before submitting the project.
 
 ## What the project includes
 
-- Six games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, and **Spot the Leak**.
-- The 50 original urinary-system questions and 32 embedded picture clues.
-- Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists: **67 scored challenges** in total.
+- Eight games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, **Spot the Leak**, **Double Trouble**, and **Filter Files**.
+- 68 urinary-system questions, including the 50 original items, and 32 embedded picture clues.
+- Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists, eight sorting rounds, and three memory rounds: **96 scored challenges** in total.
 - Six learning notes, flashcards, solo scores, classroom team awards, and score-sheet export.
-- A teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, pictures, points, and learning content.
+- A teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
 - Editable HTML and a complete website ZIP that can run independently of ChatGPT.
 
 ## Ownership and long-term access

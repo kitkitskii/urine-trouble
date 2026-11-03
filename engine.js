@@ -1,7 +1,7 @@
 (function (root) {
   'use strict';
   const VERSION = 1;
-  const GAME_IDS = ['quiz', 'words', 'match', 'flow', 'pictures', 'leak'];
+  const GAME_IDS = ['quiz', 'words', 'match', 'flow', 'pictures', 'leak', 'sort', 'memory'];
   const CHOICE_TYPES = ['MULTIPLE CHOICE', 'TRUE OR FALSE', 'TWO TRUTHS, ONE LIE'];
   const QUESTION_TYPES = [...CHOICE_TYPES, 'IDENTIFICATION', 'JUMBLED LETTERS', '4 PICS, 1 WORD'];
   const own = (object, key) => Object.prototype.hasOwnProperty.call(object || {}, key);
@@ -31,6 +31,22 @@
     if (options.length) return Number.isInteger(index) && index >= 0 && index < options.length && normalize(value) === String.fromCharCode(65 + index);
     if (question.type === 'JUMBLED LETTERS') return false;
     return Array.isArray(question.aliases) && question.aliases.some(alias => equivalent(value, alias));
+  }
+
+  function answerRationale(question, value) {
+    if (!isObject(question)) return '';
+    const options = Array.isArray(question.options) ? question.options : [];
+    let index = -1;
+    if (Number.isInteger(value) && value >= 0 && value < options.length) index = value;
+    else if (typeof value === 'boolean' && question.type === 'TRUE OR FALSE') index = options.findIndex(option => equivalent(option, value ? 'TRUE' : 'FALSE'));
+    else if (typeof value === 'string' && text(value)) {
+      index = options.findIndex(option => equivalent(option, value));
+      if (index < 0 && /^[A-H]$/i.test(value.trim())) index = value.trim().toUpperCase().charCodeAt(0) - 65;
+    }
+    if (index >= 0 && index < options.length && Array.isArray(question.choiceRationales) && text(question.choiceRationales[index])) return question.choiceRationales[index].trim();
+    const attempted = typeof value === 'number' || typeof value === 'boolean' || text(value);
+    if (attempted && !checkAnswer(question, value) && text(question.wrongAnswerRationale)) return question.wrongAnswerRationale.trim();
+    return text(question.explanation) ? question.explanation.trim() : '';
   }
 
   function blankRecord() {
@@ -171,6 +187,11 @@
       if (!Array.isArray(project[key])) { fail(key, 'Use a list of items.'); lists[key] = []; }
       else { lists[key] = project[key]; ids(lists[key], key); }
     }
+    lists.sorting = [];
+    if (own(project, 'sorting')) {
+      if (!Array.isArray(project.sorting)) fail('sorting', 'Use a list of sorting rounds.');
+      else { lists.sorting = project.sorting; ids(lists.sorting, 'sorting'); }
+    }
     const knownGames = new Set();
     lists.games.forEach((game, i) => {
       if (!isObject(game)) return;
@@ -195,6 +216,8 @@
         else if (!equivalent(question.answer, question.options[question.correctIndex])) fail(label + ' answer', 'The answer must match the selected correct choice.');
         if (question.type === 'TRUE OR FALSE' && (question.options.length !== 2 || !question.options.some(option => normalize(option) === 'TRUE') || !question.options.some(option => normalize(option) === 'FALSE'))) fail(label + ' options', 'True/False needs one TRUE choice and one FALSE choice.');
       }
+      if (own(question, 'choiceRationales') && (!Array.isArray(question.choiceRationales) || !Array.isArray(question.options) || question.choiceRationales.length !== question.options.length || question.choiceRationales.some(value => typeof value !== 'string'))) fail(label + ' choice rationales', 'Use one rationale text for each answer option, or omit this field.');
+      if (own(question, 'wrongAnswerRationale') && typeof question.wrongAnswerRationale !== 'string') fail(label + ' wrong-answer rationale', 'Use text for the wrong-answer rationale.');
       if (!Array.isArray(question.aliases) || question.aliases.some(alias => !text(alias))) fail(label + ' accepted answers', 'Use a list of nonempty alternative answers, or an empty list.');
       if (question.type === 'JUMBLED LETTERS' && (!text(question.scramble) || tileInventory(question.scramble) !== tileInventory(question.answer))) fail(label + ' word tiles', 'The tiles must use exactly the same letters as the correct answer.');
       if (!Array.isArray(question.images)) fail(label + ' pictures', 'Use a list of images.');
@@ -204,7 +227,7 @@
           if (typeof image !== 'string' || !/^data:image\/(?:png|jpeg|webp|gif);base64,[A-Za-z0-9+/=\s]+$/i.test(image)) fail(label + ' picture ' + (n + 1), 'Upload an embedded PNG, JPEG, WebP, or GIF image so the website also works offline.');
         });
       }
-      if (!Array.isArray(question.gameIds) || question.gameIds.some(id => !knownGames.has(id))) fail(label + ' games', 'Use only enabled or available game IDs from the game list.');
+      if (!Array.isArray(question.gameIds) || question.gameIds.some(id => !knownGames.has(id) || !['quiz', 'words', 'pictures'].includes(id))) fail(label + ' games', 'Use quiz, words, or pictures game IDs available in the game list.');
     });
     const matchTerms = new Set(), matchDefinitions = new Set();
     lists.matching.forEach((pair, i) => {
@@ -227,7 +250,25 @@
       const label = 'Find-the-mistake item ' + (i + 1);
       requireText(item.title, label + ' title'); requireText(item.prompt, label + ' prompt'); requireText(item.explanation, label + ' explanation', true); requirePoints(item.points, label + ' points');
       if (!Array.isArray(item.steps) || item.steps.length < 2 || item.steps.some(step => !text(step))) fail(label + ' statements', 'Enter at least two nonempty statements.');
+      if (own(item, 'stepRationales') && (!Array.isArray(item.stepRationales) || !Array.isArray(item.steps) || item.stepRationales.length !== item.steps.length || item.stepRationales.some(value => typeof value !== 'string'))) fail(label + ' statement rationales', 'Use one rationale text for each statement, or omit this field.');
       if (!Number.isInteger(item.wrongIndex) || !Array.isArray(item.steps) || item.wrongIndex < 0 || item.wrongIndex >= item.steps.length) fail(label + ' incorrect statement', 'Select the incorrect statement.');
+    });
+    lists.sorting.forEach((item, i) => {
+      if (!isObject(item)) return;
+      const label = 'Sorting round ' + (i + 1);
+      requireText(item.title, label + ' title'); requireText(item.prompt, label + ' prompt'); requirePoints(item.points, label + ' points');
+      if (!Array.isArray(item.categories) || item.categories.length < 2 || item.categories.length > 4) fail(label + ' categories', 'Enter two to four categories.');
+      else { ids(item.categories, label + ' categories'); item.categories.forEach((category, n) => { if (isObject(category)) requireText(category.label, label + ' category ' + (n + 1)); }); if (new Set(item.categories.filter(isObject).map(category => normalize(category.label))).size !== item.categories.length) fail(label + ' categories', 'Use distinct category labels.'); }
+      const categoryIds = new Set((Array.isArray(item.categories) ? item.categories : []).filter(isObject).map(category => category.id));
+      if (!Array.isArray(item.cards) || (item.cards.length < 4 || item.cards.length > 12)) fail(label + ' cards', 'Enter four to twelve cards.');
+      else {
+        ids(item.cards, label + ' cards');
+        item.cards.forEach((card, n) => {
+          if (!isObject(card)) return;
+          requireText(card.text, label + ' card ' + (n + 1)); requireText(card.explanation, label + ' card ' + (n + 1) + ' rationale');
+          if (!categoryIds.has(card.categoryId)) fail(label + ' card ' + (n + 1), 'Choose an available category.');
+        });
+      }
     });
     lists.articles.forEach((article, i) => {
       if (!isObject(article)) return;
@@ -235,9 +276,9 @@
       requireText(article.title, label + ' title');
       if (!Array.isArray(article.body) || !article.body.length || article.body.some(paragraph => !text(paragraph))) fail(label + ' text', 'Enter at least one paragraph.');
     });
-    const counts = { quiz: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('quiz')).length, words: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('words')).length, pictures: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('pictures')).length, match: lists.matching.length, flow: lists.sequences.length, leak: lists.mistakes.length };
+    const counts = { quiz: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('quiz')).length, words: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('words')).length, pictures: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('pictures')).length, match: lists.matching.length, flow: lists.sequences.length, leak: lists.mistakes.length, sort: lists.sorting.length, memory: lists.matching.length >= 2 ? lists.matching.length : 0 };
     for (const game of lists.games) if (isObject(game) && game.enabled && !counts[game.id]) warn(game.title || game.id, 'This game has no items yet.');
     return { valid: errors.length === 0, errors, warnings };
   }
-  root.UTEngine = Object.freeze({ VERSION, GAME_IDS: Object.freeze(GAME_IDS.slice()), normalize, checkAnswer, validateProject, createSession, record, submit, reveal, award, summary, restoreSession, shuffle, seeded, selectTile, undoTile });
+  root.UTEngine = Object.freeze({ VERSION, GAME_IDS: Object.freeze(GAME_IDS.slice()), normalize, checkAnswer, answerRationale, validateProject, createSession, record, submit, reveal, award, summary, restoreSession, shuffle, seeded, selectTile, undoTile });
 })(typeof window !== 'undefined' ? window : globalThis);
