@@ -2,7 +2,7 @@
   "title": "Urine Trouble! \u2014 Independent website handover",
   "technology": "HTML, CSS and plain JavaScript; no backend or build step",
   "publication": {
-    "verified_independent_url": null,
+    "verified_independent_url": "https://kitkitskii.github.io/urine-trouble/",
     "planned_provider": "GitHub Pages",
     "planned_owner": "kitkitskii",
     "planned_repository": "urine-trouble",
@@ -10,8 +10,17 @@
     "repository_url": "https://github.com/kitkitskii/urine-trouble",
     "repository_id": 1444184769,
     "repository_confirmed": true,
-    "status": "Repository confirmed; Pages activation and live address verification pending",
-    "current_owner": "kitkitskii"
+    "status": "Published \u2014 GitHub deployment succeeded",
+    "current_owner": "kitkitskii",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "deployment_run_url": "https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097",
+    "deployment_commit": "3eee0791faca7d45125b7c1860f5caf416f1e1c3",
+    "provider_confirmed_at": "2026-11-03T12:39:04Z",
+    "verification_method": "GitHub Actions run and deployment-job log both report success and confirm the environment URL",
+    "direct_http_browser_verification": "Not completed: execution network restricted; web reader could not access this address"
   },
   "metrics": {
     "games": 6,
@@ -99,23 +108,28 @@
   "handover_documents": [
     {
       "filename": "ADVISER_QUICK_START.pdf",
-      "bytes": 3857,
-      "sha256": "d28d757cc80ee9fd034c57dfd7790f2118b1010d8236181ff26f140856fa3eca"
+      "bytes": 3603,
+      "sha256": "71da5fa4c6a66ce27d23917f0ce596234b2a5ebd36a43e566fcb851eea5eb787"
     },
     {
       "filename": "MAINTENANCE_GUIDE.md",
-      "bytes": 5027,
-      "sha256": "fcfc5dfdf5f5c7244df5488d17e5618db221f984c8caed8201b83cd48e38f826"
+      "bytes": 5038,
+      "sha256": "296ef242eababc30b233093e5b1537dc8e1a2296243e0774548481d78c05bbf7"
     },
     {
       "filename": "PROJECT_HANDOVER.md",
-      "bytes": 4501,
-      "sha256": "b23a5f22a96584c4ec117ef027f664d1b8a7ba949c0b72d2e0596b9fe8f18176"
+      "bytes": 4495,
+      "sha256": "15a8c62be3b6a450e3e6ca6e7a163a6e0515da8afd7d00da83397e285160b364"
     },
     {
       "filename": "README.md",
-      "bytes": 4181,
-      "sha256": "555ebc3b222b0d280b2aa463ab33e79411f3da9f34a056c50dc1d30a7681202c"
+      "bytes": 4147,
+      "sha256": "6b004470810a4ba486df21c2bfbb3c647e212a78797b2978c3396b2a7a2293b8"
+    },
+    {
+      "filename": "PUBLISHING.md",
+      "bytes": 1645,
+      "sha256": "be192b6c169beea26d3404631bcf17258a0411bee5768a33d9a367bbea55c536"
     }
   ],
   "release_files": [
@@ -126,23 +140,28 @@
     },
     {
       "path": "ADVISER_QUICK_START.pdf",
-      "bytes": 3857,
-      "sha256": "d28d757cc80ee9fd034c57dfd7790f2118b1010d8236181ff26f140856fa3eca"
+      "bytes": 3603,
+      "sha256": "71da5fa4c6a66ce27d23917f0ce596234b2a5ebd36a43e566fcb851eea5eb787"
     },
     {
       "path": "MAINTENANCE_GUIDE.md",
-      "bytes": 5027,
-      "sha256": "fcfc5dfdf5f5c7244df5488d17e5618db221f984c8caed8201b83cd48e38f826"
+      "bytes": 5038,
+      "sha256": "296ef242eababc30b233093e5b1537dc8e1a2296243e0774548481d78c05bbf7"
     },
     {
       "path": "PROJECT_HANDOVER.md",
-      "bytes": 4501,
-      "sha256": "b23a5f22a96584c4ec117ef027f664d1b8a7ba949c0b72d2e0596b9fe8f18176"
+      "bytes": 4495,
+      "sha256": "15a8c62be3b6a450e3e6ca6e7a163a6e0515da8afd7d00da83397e285160b364"
+    },
+    {
+      "path": "PUBLISHING.md",
+      "bytes": 1645,
+      "sha256": "be192b6c169beea26d3404631bcf17258a0411bee5768a33d9a367bbea55c536"
     },
     {
       "path": "README.md",
-      "bytes": 4181,
-      "sha256": "555ebc3b222b0d280b2aa463ab33e79411f3da9f34a056c50dc1d30a7681202c"
+      "bytes": 4147,
+      "sha256": "6b004470810a4ba486df21c2bfbb3c647e212a78797b2978c3396b2a7a2293b8"
     },
     {
       "path": "app.js",

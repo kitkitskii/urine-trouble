@@ -15,7 +15,7 @@ Complete these fields before submitting the project.
 | Current repository owner | `kitkitskii` |
 | Website maintainer | ______________________________ |
 | Adviser’s GitHub username | ______________________________ |
-| Final public website URL | Pending Pages activation and verification |
+| Final public website URL | https://kitkitskii.github.io/urine-trouble/ |
 | Repository URL | https://github.com/kitkitskii/urine-trouble |
 | Optional custom-domain owner / contact | ______________________________ |
 
@@ -34,7 +34,7 @@ The group or institution should control the source-code repository and the hosti
 
 GitHub Pages is one suitable static-hosting option. Visitors to a public GitHub Pages website do not need a GitHub or ChatGPT account. A maintainer needs a GitHub account only to update the published files or repository settings.
 
-The public project repository is confirmed at https://github.com/kitkitskii/urine-trouble, under the GitHub account `kitkitskii` (repository ID `1444184769`). Its expected GitHub Pages address is `https://kitkitskii.github.io/urine-trouble/` after Pages is enabled and the deployment succeeds. Pages activation and the live address have not yet been verified in this handover record.
+The public project repository is confirmed at https://github.com/kitkitskii/urine-trouble, under the GitHub account `kitkitskii` (repository ID `1444184769`). The website is published at https://kitkitskii.github.io/urine-trouble/. GitHub confirmed a [successful Pages deployment](https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097) from `main` / `/(root)`.
 
 Add the adviser as a repository collaborator with permission to maintain the website. That invitation has not been recorded as completed here. Record the agreed long-term owner and maintainer above; repository ownership can later be transferred if the institution requires it. A public repository makes its source code and question bank visible.
 

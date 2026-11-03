@@ -1,6 +1,6 @@
 # Urine Trouble! — Adviser maintenance guide
 
-## First publication with GitHub Pages
+## GitHub Pages configuration
 
 1. Open the confirmed public repository: https://github.com/kitkitskii/urine-trouble.
 2. Confirm the complete website files have been committed to `main`. `index.html` must be at the repository root, alongside `app.js`, `content.js`, and the other source files. If an upload is still needed, extract the website ZIP and upload its contents rather than only the ZIP or an extra nested folder.
@@ -9,7 +9,7 @@
 5. Wait for GitHub’s Pages deployment to finish. Open the website address shown by GitHub and test it in a private/incognito browser window. Public visitors should reach the game without a ChatGPT login.
 6. Add the adviser under **Settings → Collaborators** and give the agreed maintenance permission. Complete the project record in `PROJECT_HANDOVER.md`.
 
-The expected address for this confirmed owner and repository is `https://kitkitskii.github.io/urine-trouble/`. It remains pending until Pages is enabled and a successful deployment is verified. Use GitHub’s returned website address as the final record.
+The public address is https://kitkitskii.github.io/urine-trouble/. The saved source is `main` / `/(root)`, and GitHub confirmed the [successful deployment](https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097). See `PUBLISHING.md` for the publication record.
 
 ## Update questions, pictures, or game titles
 

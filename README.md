@@ -8,10 +8,10 @@ An editable urinary-system learning website for solo practice and classroom play
 | --- | --- |
 | Source repository | [kitkitskii/urine-trouble](https://github.com/kitkitskii/urine-trouble) — confirmed public repository |
 | Repository owner | `kitkitskii` |
-| Public website | **Pending GitHub Pages activation and verification** |
-| Expected website address | `https://kitkitskii.github.io/urine-trouble/` — not confirmed live yet |
+| Public website | **Published — GitHub deployment succeeded** |
+| Public website address | [Open Urine Trouble!](https://kitkitskii.github.io/urine-trouble/) |
 
-To enable publication, a repository administrator must open **Settings → Pages → Deploy from a branch**, select **main** and **/(root)**, and save. After deployment, verify the returned website address in a private/incognito window. Public visitors will not need a GitHub or ChatGPT account.
+GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirmed the [successful publication](https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097). Public visitors need no GitHub or ChatGPT account. See [the publishing record](PUBLISHING.md).
 
 ## Play and learn
 
