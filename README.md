@@ -15,7 +15,7 @@ GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirme
 
 ## Homepage and dashboard
 
-[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=5) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=5) contains the games, session controls and playcard.
+[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=7) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=7) contains the games, session controls and playcard.
 
 Wrong attempts remain retryable; an eventual correct answer earns the challenge’s points once. Hints do not lock the answer. Sorting retries retain earlier correct cards.
 
@@ -50,7 +50,7 @@ Open the standalone HTML in a full modern browser on a computer. No account, ins
 
 ## Update the content
 
-Use **Edit Content** to change questions, answers, accepted terms, pictures, game titles, instructions, points, learning notes, and website settings.
+Unlock **Edit Content** with the instructor password to change questions, answers, accepted terms, pictures, game titles, instructions, points, learning notes, and website settings.
 
 **Edits save in the current browser. They do not automatically update the public website on other devices.**
 
@@ -62,6 +62,12 @@ To publish a change:
 4. Commit the changes, wait for the Pages deployment, and verify the published copy.
 
 The adviser can maintain the project through a GitHub collaborator account. Maintaining the site requires no ChatGPT login and no coding for ordinary content changes.
+
+## Instructor editing password
+
+The editor locks when you leave it, apply changes, reload, or choose **Lock editor**. Use **Change password** while unlocked; it requires the current password and a new one of 12–128 characters. The change is local until the downloaded `editor-access.js` or a full updated website export is committed to the hosting repository. Render normally redeploys the connected site after that commit.
+
+This offline/static prompt deters casual editor access; it is not server authentication. Visitors can change their own local copies, while publishing changes to the shared website still requires authorized repository access. Only a salted PBKDF2 verifier is exported. Keep the password privately, separate from public files. See [instructor access instructions](EDITOR_ACCESS.md).
 
 ## Adviser handover
 
@@ -86,4 +92,4 @@ The homepage offers an organ explorer, flip facts and a study trail. Solo sessio
 
 Use **Downloads → Download CI transfer kit** for the current editable website, standalone offline copy, JSON backup, Render blueprint and [CI handover guide](CI_HANDOVER.md). Ending ChatGPT Plus does not remove the separately hosted files. Deleting the actual source account or repository can remove its hosted copy. Keep independent copies and agree a CI/school-controlled hosting account.
 
-A free project-named address on another host is pending a connected hosting account and verified deployment. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.
+The owner reports having created a Render Blueprint; its service URL and successful deployment have not been verified in this record. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.

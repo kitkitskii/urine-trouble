@@ -21,11 +21,11 @@ Complete these fields before submitting the project.
 
 ## What the project includes
 
-- Nine games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, **Spot the Leak**, **Double Trouble**, and **Filter Files**.
+- Nine games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, **Spot the Leak**, **Double Trouble**, **Filter Files**, and **Word on the Wee**.
 - 68 urinary-system questions, including the 50 original items, and 32 embedded picture clues.
 - Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists, eight sorting rounds, and three memory rounds: **100 scored challenges** in total.
-- Six learning notes, flashcards, solo scores, classroom team awards, and score-sheet export.
-- A teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
+- Ten learning notes, flashcards, solo scores, classroom team awards, and score-sheet export.
+- A password-prompted teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
 - Editable HTML and a complete website ZIP that can run independently of ChatGPT.
 
 The game menu includes an optional five-stage **Arcade Run**, illustrated previews, a session playcard, and direct free play. The word game accepts keyboard letters and Backspace.
@@ -44,9 +44,15 @@ An optional school or project domain can later point to the host. No custom doma
 
 ## Editing and publication model
 
-**Edit Content saves a draft in the current browser. It does not automatically change the website that other visitors see.**
+**Edit Content requires the instructor password and saves a draft in the current browser. It does not automatically change the website that other visitors see.**
 
 To share an update, apply and export the edited website, then publish those exported files to the hosting repository. See `MAINTENANCE_GUIDE.md` for the complete workflow. This process requires no ChatGPT login and no code changes for routine content updates.
+
+## Instructor password custody
+
+Keep the instructor password private and hand it over separately from public source files. The editor locks on exit, apply, reload, or **Lock editor**. **Change password** requires the current password and a new one of 12–128 characters. A change first applies to the current browser; publish the downloaded `editor-access.js` or a complete website export to update other devices. The connected Render site normally redeploys committed repository changes. No Render service URL has been verified in this handover record.
+
+Only a salted PBKDF2 verifier is stored in the exported files. This offline/static interface lock deters casual editor access; it is not server authentication. Visitors may change their own local copies. Publishing shared changes still requires authorized repository access. A genuine instructor-only shared administration system would need an authenticated backend. See `EDITOR_ACCESS.md` for use, updating, and recovery limits.
 
 ## Technical summary
 

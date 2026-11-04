@@ -13,7 +13,7 @@ The public address is https://kitkitskii.github.io/urine-trouble/. The saved sou
 
 ## Update questions, pictures, or game titles
 
-1. Open the website and choose **Edit Content**.
+1. Open the website, choose **Edit Content**, and enter the instructor password.
 2. Make the changes. The editor supports the site title and theme, game labels and instructions, question choices and answer keys, accepted answers, per-choice rationales, sorting cards, picture clues, matching pairs, ordered steps, mistake checklists, and learning notes.
 3. Use **Apply changes** to make the edited content active in that browser. Applying changes starts a fresh score session.
 4. Test the changed questions and read their explanations.
@@ -22,6 +22,16 @@ The public address is https://kitkitskii.github.io/urine-trouble/. The saved sou
 7. Wait for the Pages deployment to finish. Reload the public website and test the changed item. A hard refresh or a private/incognito window helps confirm the new published copy rather than a browser’s saved draft.
 
 Changes are shared with other visitors **after the hosting files are updated and published**. A local browser draft or **Apply changes** alone does not publish them.
+
+## Maintain the instructor password
+
+The editor locks when you leave it, apply changes, reload, or choose **Lock editor**. To replace the password, unlock the editor, choose **Change password**, enter the current password, and confirm a new password of **12–128 characters**.
+
+Saving first changes the password in the current browser. Choose **Download editor-access.js**, then sign into GitHub with repository maintenance access. Upload that file at the repository root to replace `editor-access.js`, and commit the change. The connected Render site normally deploys the committed update automatically; wait for **Live**, refresh, and test the new password. A complete exported website ZIP carries the new verifier too.
+
+Do not publish or include the plaintext password in source files, guides, or the transfer kit. Give it privately to the instructor. The source contains only a salted PBKDF2 verifier. Content JSON imports and restoring question defaults do not replace password settings. If the password is forgotten, the project maintainer must create and publish a replacement verifier; there is no online recovery service.
+
+The static/offline prompt deters casual editor access. It is **not server authentication**: visitors can modify their own browser or downloaded copies. Only authorized repository maintainers can overwrite the shared published website. A shared instructor admin service with server-enforced permissions would require an authenticated backend. See `EDITOR_ACCESS.md`.
 
 ## Keep backups
 
@@ -44,6 +54,7 @@ To resume saved local progress, use the same browser and keep the file in the sa
 | A recent edit is visible only on one device | Export the edited website, replace the hosting files, and wait for publication. Local drafts are device/browser specific. |
 | An old title or question still appears | Check the latest Pages deployment, then try a hard refresh or private/incognito window. A saved local draft may override the published default content in that browser. Back up the draft before restoring defaults. |
 | Images disappear after a file update | Upload the complete exported source set. Do not remove `content.js` or `assets.js`. Uploaded clue images should remain embedded through the editor. |
+| The instructor password screen appears | Enter the instructor password. If verification is unavailable, use the HTTPS website in a current full browser. The editor stays locked when verification is unavailable. |
 | The editor blocks a change | Read the validation message. Check correct-answer choices, word-tile letter counts, required pictures, unique matching pairs, and ordered steps. |
 | Scores need to start again | Choose **New session**. In classroom mode, click a marked team again to correct an award. |
 

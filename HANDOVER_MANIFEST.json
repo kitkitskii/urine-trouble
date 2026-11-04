@@ -10,7 +10,7 @@
     "repository_url": "https://github.com/kitkitskii/urine-trouble",
     "repository_id": 1444184769,
     "repository_confirmed": true,
-    "status": "Published \u2014 expanded eight-game edition deployed successfully",
+    "status": "Published independent website; instructor password interface included in this release",
     "current_owner": "kitkitskii",
     "source": {
       "branch": "main",
@@ -43,24 +43,24 @@
   },
   "source_archive": {
     "filename": "Urine_Trouble_Editable_Website.zip",
-    "bytes": 1766205,
-    "sha256": "710a9f6db19be3f88ac3cd1e3e3a61573e1b6d7bbf5c24f00cf0e0ac0b0ee7cb"
+    "bytes": 1801835,
+    "sha256": "04a1a902177197fcc1857df41b10f835f5205a75564409f0fdf9daf47fb9f1ec"
   },
   "offline_html": {
     "filename": "Urine_Trouble_Editable.html",
-    "bytes": 1762348,
-    "sha256": "f8ee7ff131e18e9ce3a616fd718636abc6f050f1ff310a45628b5f834b7add28"
+    "bytes": 1797320,
+    "sha256": "91687699698ea5b4ce2e221ef64f2d33868dc3e7a85900b2bade018cfe061c12"
   },
   "source_files": [
     {
       "path": "index.html",
-      "bytes": 1121,
-      "sha256": "57469ceba870e4f50026c54a40ff070b02f2b9816d7240386d9fcdd4f4cb6cac"
+      "bytes": 1280,
+      "sha256": "118fb7d29778bd4188cc4bec6256682a7be068e4fefb78c7eef92732e745f1bc"
     },
     {
       "path": "dashboard.html",
-      "bytes": 1126,
-      "sha256": "56943d452251f0e69c485b3fabe1bd82df4340127556226417cbe688fcac0b2e"
+      "bytes": 1285,
+      "sha256": "0e9f062522694c5f0930a9b93029e6a1602c90ef2dc37467a7081a5f5fef4919"
     },
     {
       "path": "style.css",
@@ -69,18 +69,18 @@
     },
     {
       "path": "editor.css",
-      "bytes": 8601,
-      "sha256": "f709d892556bce9db34ce982d2adac38b5dbf57e94d633d9796151676510af54"
+      "bytes": 9610,
+      "sha256": "f6ff7126296b3800a4d8f69f73bb21cff8b9ae2ae243cce2f9df64e6c742881c"
     },
     {
       "path": "content.js",
-      "bytes": 973942,
-      "sha256": "e5b631508d0a18f70114043d7d0e36862f1a146990fd274662170cc40bfd6d46"
+      "bytes": 973913,
+      "sha256": "3df8d01dddd7430da4ef01aa9d7d7965ccc903280ddb6b9eb1c5efc741a61e56"
     },
     {
       "path": "assets.js",
-      "bytes": 2474,
-      "sha256": "e22818ad99b07f3c14b6bdf45f000dc5b297691db7278f76576cfe55c6d8143c"
+      "bytes": 2475,
+      "sha256": "b1607559ecb04e8570a4907f8738ef1123a0b4f48368b6c7905a669ef040beb2"
     },
     {
       "path": "engine.js",
@@ -113,56 +113,71 @@
       "sha256": "5eaa872255ac691326d23dc58e151f259fa23bdeae4af16ea1165cdc28767520"
     },
     {
+      "path": "editor-access.js",
+      "bytes": 278,
+      "sha256": "dd377b8d46ff46ebba75f510daaac57cbc02e32ae21730f1c7d38863372b4407"
+    },
+    {
+      "path": "access.js",
+      "bytes": 5861,
+      "sha256": "517e6cef93ae32beae071b2def3b0c17c4cea856aca7df325b8ab6a2464d8d31"
+    },
+    {
       "path": "editor.js",
-      "bytes": 33778,
-      "sha256": "1520c3ee5b228186e751824ff5486cf5f730a2f2cc405fb113fa856c528fae81"
+      "bytes": 34040,
+      "sha256": "c1cd8c0a4bd41b421febc211e18b9cb857496a171cd97e4a845c6088defe5186"
     },
     {
       "path": "downloads.js",
-      "bytes": 3860,
-      "sha256": "3ae7442fe231cebabfeec4afce1ac46445e0a32c43ca400eba06f6bfb81af8ee"
-    },
-    {
-      "path": "app.js",
-      "bytes": 66214,
-      "sha256": "a4b8b52ce3d16745963480a42dff2c942e33978bc43015b1f0fcae993abb063a"
+      "bytes": 4709,
+      "sha256": "ad608c107696ee9763e057d8bf6bb76ed5c566b59c23ed73284d648f91f369fa"
     },
     {
       "path": "bundle.js",
-      "bytes": 484738,
-      "sha256": "12372c7cd8de0c10a697f1b93513a67c620a89c1242908b471d7b26c68007f96"
+      "bytes": 505718,
+      "sha256": "15864bb653caaa0773eb9e1c77bead4036e9717c38eb975d7ca6ad85bb563fbe"
     },
     {
-      "path": "README.txt",
-      "bytes": 574,
-      "sha256": "6d83d32d30a1521a672a028eb3ebd09e3a526a6f5b8d511457288f18bae3275a"
+      "path": "app.js",
+      "bytes": 71930,
+      "sha256": "b4dc9473a72f8c666c2b845e4899295d6929a6dc0c401e0c9c1f27ebd5ae50eb"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 224,
+      "sha256": "ec2a85b4a59bf34d0ac7296a9ab6416ca113ad16184b113098d2339a5276bce8"
+    },
+    {
+      "path": "CI_HANDOVER.md",
+      "bytes": 10062,
+      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
+    },
+    {
+      "path": "EDITOR_ACCESS.md",
+      "bytes": 2880,
+      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
     }
   ],
   "handover_documents": [
     {
-      "filename": "ADVISER_QUICK_START.pdf",
-      "bytes": 3694,
-      "sha256": "924fabf015f3996a8dc4f4cd6053f1d96c8833ba61df92c7bc377898b6165610"
-    },
-    {
-      "filename": "CI_HANDOVER.md",
-      "bytes": 8486,
-      "sha256": "f64913095c9992e6374542164d992b0f84f0239cf735ab010425a43464fb946d"
-    },
-    {
-      "filename": "CONTENT_REFERENCES.md",
-      "bytes": 3572,
-      "sha256": "5c8082cbcb5a642c636638107d8d3904927a20145c12f6230ef5591c95ce54f9"
-    },
-    {
-      "filename": "MAINTENANCE_GUIDE.md",
-      "bytes": 6233,
-      "sha256": "dd8a46298573b0c6a4a0803dbcfbd91f732e72420520218db1c573c26f3dd512"
+      "filename": "README.md",
+      "bytes": 7100,
+      "sha256": "78056cdd711beb25dc7ff106118363e1c3492e762f76a19bc7faabecc7811da7"
     },
     {
       "filename": "PROJECT_HANDOVER.md",
-      "bytes": 5352,
-      "sha256": "30f6184c0aeb6af66fa98109e4de4a00189d15ad1189b1f4e92135e0b68c774c"
+      "bytes": 6415,
+      "sha256": "09c246fc521acd7c0707f419500b0be9cb2da2cb2162403a6e15345791c99ca0"
+    },
+    {
+      "filename": "MAINTENANCE_GUIDE.md",
+      "bytes": 7980,
+      "sha256": "dbfe3cecaf678ea64b9f0856f853418218ff89497e5cdfb2254395de7b2b6419"
+    },
+    {
+      "filename": "ADVISER_QUICK_START.pdf",
+      "bytes": 4009,
+      "sha256": "e4b41b15448fdafff334c1ee2bbb03b7eb7e7e072feb3f82f6058a4faca78920"
     },
     {
       "filename": "PUBLISHING.md",
@@ -170,9 +185,14 @@
       "sha256": "84674f7865ecce7393632ad13156bc921fb6a3d71a5484809dcd2f187e3e6bc2"
     },
     {
-      "filename": "README.md",
-      "bytes": 6234,
-      "sha256": "7ab7aa9311eb4a5197f9f86eea7f70a371ef10076d57734b73ae0a05fd59a47b"
+      "filename": "CI_HANDOVER.md",
+      "bytes": 10062,
+      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
+    },
+    {
+      "filename": "EDITOR_ACCESS.md",
+      "bytes": 2880,
+      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
     }
   ],
   "release_files": [
@@ -183,13 +203,13 @@
     },
     {
       "path": "ADVISER_QUICK_START.pdf",
-      "bytes": 3694,
-      "sha256": "924fabf015f3996a8dc4f4cd6053f1d96c8833ba61df92c7bc377898b6165610"
+      "bytes": 4009,
+      "sha256": "e4b41b15448fdafff334c1ee2bbb03b7eb7e7e072feb3f82f6058a4faca78920"
     },
     {
       "path": "CI_HANDOVER.md",
-      "bytes": 8486,
-      "sha256": "f64913095c9992e6374542164d992b0f84f0239cf735ab010425a43464fb946d"
+      "bytes": 10062,
+      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
     },
     {
       "path": "CONTENT_REFERENCES.md",
@@ -197,14 +217,19 @@
       "sha256": "5c8082cbcb5a642c636638107d8d3904927a20145c12f6230ef5591c95ce54f9"
     },
     {
+      "path": "EDITOR_ACCESS.md",
+      "bytes": 2880,
+      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
+    },
+    {
       "path": "MAINTENANCE_GUIDE.md",
-      "bytes": 6233,
-      "sha256": "dd8a46298573b0c6a4a0803dbcfbd91f732e72420520218db1c573c26f3dd512"
+      "bytes": 7980,
+      "sha256": "dbfe3cecaf678ea64b9f0856f853418218ff89497e5cdfb2254395de7b2b6419"
     },
     {
       "path": "PROJECT_HANDOVER.md",
-      "bytes": 5352,
-      "sha256": "30f6184c0aeb6af66fa98109e4de4a00189d15ad1189b1f4e92135e0b68c774c"
+      "bytes": 6415,
+      "sha256": "09c246fc521acd7c0707f419500b0be9cb2da2cb2162403a6e15345791c99ca0"
     },
     {
       "path": "PUBLISHING.md",
@@ -213,8 +238,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6234,
-      "sha256": "7ab7aa9311eb4a5197f9f86eea7f70a371ef10076d57734b73ae0a05fd59a47b"
+      "bytes": 7100,
+      "sha256": "78056cdd711beb25dc7ff106118363e1c3492e762f76a19bc7faabecc7811da7"
+    },
+    {
+      "path": "access.js",
+      "bytes": 5861,
+      "sha256": "517e6cef93ae32beae071b2def3b0c17c4cea856aca7df325b8ab6a2464d8d31"
     },
     {
       "path": "activities.js",
@@ -223,8 +253,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 66214,
-      "sha256": "a4b8b52ce3d16745963480a42dff2c942e33978bc43015b1f0fcae993abb063a"
+      "bytes": 71930,
+      "sha256": "b4dc9473a72f8c666c2b845e4899295d6929a6dc0c401e0c9c1f27ebd5ae50eb"
     },
     {
       "path": "assets.js",
@@ -233,8 +263,8 @@
     },
     {
       "path": "bundle.js",
-      "bytes": 484738,
-      "sha256": "12372c7cd8de0c10a697f1b93513a67c620a89c1242908b471d7b26c68007f96"
+      "bytes": 505718,
+      "sha256": "15864bb653caaa0773eb9e1c77bead4036e9717c38eb975d7ca6ad85bb563fbe"
     },
     {
       "path": "content.js",
@@ -243,13 +273,13 @@
     },
     {
       "path": "dashboard.html",
-      "bytes": 1204,
-      "sha256": "d4c0c45eb599e7d4a63ec412d090a45c51b287d0fe1e87b5a4146f134fcf6df2"
+      "bytes": 1285,
+      "sha256": "0e9f062522694c5f0930a9b93029e6a1602c90ef2dc37467a7081a5f5fef4919"
     },
     {
       "path": "downloads/START_HERE.txt",
-      "bytes": 1883,
-      "sha256": "bf75f77f35c1201be5eb38175e9fc0050a62442bc24b259303f4a61594f6d30d"
+      "bytes": 2348,
+      "sha256": "87a8d9d99691816989ceb72ecb13d64f830b76e2fff2b6ba5667b449a0e59c54"
     },
     {
       "path": "downloads/Urine_Trouble_Content_Backup.json",
@@ -258,28 +288,33 @@
     },
     {
       "path": "downloads/Urine_Trouble_Editable.html",
-      "bytes": 1762348,
-      "sha256": "f8ee7ff131e18e9ce3a616fd718636abc6f050f1ff310a45628b5f834b7add28"
+      "bytes": 1797320,
+      "sha256": "91687699698ea5b4ce2e221ef64f2d33868dc3e7a85900b2bade018cfe061c12"
     },
     {
       "path": "downloads/Urine_Trouble_Editable_Website.zip",
-      "bytes": 1766205,
-      "sha256": "710a9f6db19be3f88ac3cd1e3e3a61573e1b6d7bbf5c24f00cf0e0ac0b0ee7cb"
+      "bytes": 1801835,
+      "sha256": "04a1a902177197fcc1857df41b10f835f5205a75564409f0fdf9daf47fb9f1ec"
     },
     {
       "path": "downloads.js",
-      "bytes": 3860,
-      "sha256": "3ae7442fe231cebabfeec4afce1ac46445e0a32c43ca400eba06f6bfb81af8ee"
+      "bytes": 4709,
+      "sha256": "ad608c107696ee9763e057d8bf6bb76ed5c566b59c23ed73284d648f91f369fa"
+    },
+    {
+      "path": "editor-access.js",
+      "bytes": 278,
+      "sha256": "dd377b8d46ff46ebba75f510daaac57cbc02e32ae21730f1c7d38863372b4407"
     },
     {
       "path": "editor.css",
-      "bytes": 8601,
-      "sha256": "f709d892556bce9db34ce982d2adac38b5dbf57e94d633d9796151676510af54"
+      "bytes": 9610,
+      "sha256": "f6ff7126296b3800a4d8f69f73bb21cff8b9ae2ae243cce2f9df64e6c742881c"
     },
     {
       "path": "editor.js",
-      "bytes": 33778,
-      "sha256": "1520c3ee5b228186e751824ff5486cf5f730a2f2cc405fb113fa856c528fae81"
+      "bytes": 34040,
+      "sha256": "c1cd8c0a4bd41b421febc211e18b9cb857496a171cd97e4a845c6088defe5186"
     },
     {
       "path": "engine.js",
@@ -288,8 +323,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 1199,
-      "sha256": "5b8b4462dd5fc1c5f78da53047464e3000d5670e7309134204838fa8ac2e92f4"
+      "bytes": 1280,
+      "sha256": "118fb7d29778bd4188cc4bec6256682a7be068e4fefb78c7eef92732e745f1bc"
     },
     {
       "path": "memory.js",
@@ -328,7 +363,7 @@
     "textbook_access": "Not read: uploaded PDF exceeds 32 MiB transfer limit",
     "answer_specific_rationales": true
   },
-  "interface_revision": 6,
+  "interface_revision": 7,
   "features": {
     "arcade_run_max_stages": 5,
     "arcade_run_pause_resume": true,
@@ -343,7 +378,12 @@
     "interactive_organ_explorer": 4,
     "homepage_fact_deck": true,
     "guided_learning_trail": true,
-    "ci_transfer_kit_export": true
+    "ci_transfer_kit_export": true,
+    "instructor_password_prompt": true,
+    "password_change": true,
+    "password_relocks_on_exit": true,
+    "password_verifier_only": true,
+    "server_authentication": false
   },
   "entries": {
     "home": "index.html",
@@ -353,9 +393,16 @@
   "hosting_transition": {
     "requested": "free project-branded address without personal username",
     "provider_prepared": "Render static site",
-    "connection": "not connected",
+    "connection": "Owner reports creating a Render Blueprint; integration not connected and public Render address not provided for verification",
     "verified_new_url": null,
     "ci_guide": "CI_HANDOVER.md",
     "blueprint": "render.yaml"
+  },
+  "editor_access": {
+    "configuration": "editor-access.js",
+    "guide": "EDITOR_ACCESS.md",
+    "password_custody": "Hand the password privately to the instructor; never add it to this package or repository",
+    "scope": "Static/offline interface lock, not server-enforced authentication",
+    "shared_update": "Publish the new editor-access.js or a full website export; browser edits are local"
   }
 }

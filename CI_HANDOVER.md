@@ -48,7 +48,15 @@ This is an operational recommendation, not a promise that a free provider will r
 
 ## Maintaining the teaching content
 
-Use **Edit Content**, apply and test the changes, then export a new website ZIP. Publish the exported files to share the update. Browser drafts and scores are local to a device; they are not a shared database. Keep JSON and website backups after significant revisions.
+Unlock **Edit Content** with the instructor password, apply and test the changes, then export a new website ZIP. Publish the exported files to share the update. Browser drafts and scores are local to a device; they are not a shared database. Keep JSON and website backups after significant revisions.
+
+## Instructor password and publication
+
+Give the instructor the editing password privately, separately from this kit. **Edit Content** asks for it; leaving the editor, applying changes, reloading, or choosing **Lock editor** locks it again. Games remain available without the password.
+
+To replace it, unlock the editor and choose **Change password**. Enter the current password, then a new password of **12–128 characters** twice. A saved password change first applies only to that browser. Choose **Download editor-access.js**, sign into the project GitHub repository with maintenance access, upload that file at the repository root to replace its previous version, and commit. The connected Render site normally redeploys after the commit; wait for **Live** and refresh before testing the new password. Full website exports also carry the current password settings. Content JSON imports and question-default restoration do not change the lock.
+
+This is a static/offline interface lock, not server authentication. Visitors can modify their own local copies, but cannot overwrite the published website without authorized repository access. The public files contain a salted PBKDF2 verifier, not the plaintext password or an unlocked session. A genuine instructor-only shared admin service would require an authenticated backend. Keep the password private and agree how the maintainer will replace its verifier if it is forgotten.
 
 ## Custody record — complete before submission
 
@@ -68,7 +76,7 @@ No new free-host address, ownership transfer, or CI access is claimed as complet
 
 ## Supplied Render setup
 
-The included render.yaml defines a static site with no database or server process. Render documents free static sites and project onrender.com addresses at https://render.com/docs/static-sites. Use an agreed CI/school-controlled workspace. The clean project address is pending a confirmed Render connection and successful deployment; this kit does not claim to have reserved one. Usage allowances and account terms still apply.
+The included render.yaml defines a static site with no database or server process. Render documents free static sites and project onrender.com addresses at https://render.com/docs/static-sites. Use an agreed CI/school-controlled workspace. The owner reports having created a Render Blueprint, but its service URL and successful deployment have not been verified in this record. Record the returned project address after checking the live site; this kit does not claim to have reserved one. Usage allowances and account terms still apply.
 
 ## Solo identities
 
