@@ -1,9 +1,9 @@
 {
   "version": 1,
   "site": {
-    "title": "Urine Trouble!",
+    "title": "Are You Kidney Me?",
     "tagline": "The kidney arcade",
-    "intro": "Eight ways to test your urinary-system knowledge. Match, sort, spell, solve\u2014and learn why each answer fits."
+    "intro": "Play, explore, and discover the urinary system. Every try is a chance to learn."
   },
   "settings": {
     "defaultPoints": 100,
@@ -2905,5 +2905,5 @@
       ]
     }
   ],
-  "contentRevision": 3
+  "contentRevision": 5
 }

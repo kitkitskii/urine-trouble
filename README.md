@@ -1,4 +1,4 @@
-# Urine Trouble! — The Kidney Arcade
+# Are You Kidney Me? — The Kidney Arcade
 
 An editable urinary-system learning website for solo practice and classroom play. The game files run independently of ChatGPT and include their own images, editor, scoring, and offline export tools.
 
@@ -9,9 +9,15 @@ An editable urinary-system learning website for solo practice and classroom play
 | Source repository | [kitkitskii/urine-trouble](https://github.com/kitkitskii/urine-trouble) — confirmed public repository |
 | Repository owner | `kitkitskii` |
 | Public website | **Published — GitHub deployment succeeded** |
-| Public website address | [Open Urine Trouble!](https://kitkitskii.github.io/urine-trouble/) |
+| Public website address | [Open Are You Kidney Me?](https://kitkitskii.github.io/urine-trouble/) |
 
 GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirmed the [successful publication](https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097). Public visitors need no GitHub or ChatGPT account. See [the publishing record](PUBLISHING.md).
+
+## Homepage and dashboard
+
+[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=5) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=5) contains the games, session controls and playcard.
+
+Wrong attempts remain retryable; an eventual correct answer earns the challenge’s points once. Hints do not lock the answer. Sorting retries retain earlier correct cards.
 
 ## Arcade Run and free play
 
@@ -32,7 +38,7 @@ Choose **Arcade Run** for a mix of up to five unfinished challenges, with a stag
 
 The project includes 68 urinary-system questions, 32 picture clues, 12 matching pairs in three rounds, six ordering activities, eight clinical-mistake checklists, six learning notes, eight sorting rounds, three memory rounds, and flashcards. Together, the games contain 96 scored challenges.
 
-Choose solo practice or classroom mode for two to four teams. Solo first attempts earn points. In classroom mode, teams answer first, then the host reveals the solution and marks each correct team. Scores remain in the browser; a CSV score sheet can be exported.
+Choose solo practice or classroom mode for two to four teams. Solo players earn points once when a challenge is solved, including after mistakes. In classroom mode, teams answer first, then the host reveals the solution and marks each correct team. Scores remain in the browser; a CSV score sheet can be exported.
 
 ## Offline and editable copies
 

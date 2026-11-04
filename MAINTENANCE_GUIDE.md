@@ -1,4 +1,4 @@
-# Urine Trouble! — Adviser maintenance guide
+# Are You Kidney Me? — Adviser maintenance guide
 
 ## GitHub Pages configuration
 
@@ -54,3 +54,7 @@ The source ZIP is portable. Publish the folder containing `index.html` on a stat
 ## Arcade Run
 
 The run chooses up to five unfinished challenges across different enabled games. Pause returns to the menu; Continue Arcade Run resumes the stage sequence. A new session or applied content update resets it. Its score rules are the same as free play. The question bank, game labels, and rationales remain editable through Edit Content.
+
+## Home, dashboard and retries
+
+Retain both index.html and dashboard.html when updating the hosting files. The standalone HTML includes both screens. Brand title: Are You Kidney Me? Wrong attempts do not remove points; corrected solutions earn the item’s points once. A sorting card must be corrected before the next card.

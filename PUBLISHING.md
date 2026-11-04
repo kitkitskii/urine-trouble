@@ -34,3 +34,7 @@ The expanded eight-game, 68-question edition deployed successfully in [GitHub Pa
 ## Illustrated arcade interface
 
 The interface includes illustrated game previews, optional five-stage Arcade Run, a compact question selector, keyboard word tiles, numbered memory cards, and folder sorting. Hosted assets use a version query so the new interface loads together; portable ZIP exports use local asset paths.
+
+## Homepage and forgiving play
+
+The site retains the title Are You Kidney Me?, provides separate index.html and dashboard.html entries, and supports hints and unlimited answer retries. Scoring awards solved challenges once after correction.

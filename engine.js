@@ -72,9 +72,9 @@
     if (!validSession(session) || session.mode !== 'solo' || !safeKey(key) || typeof correct !== 'boolean') return session;
     const previous = record(session, key);
     if (previous.solved || previous.revealed) return session;
-    const value = previous.pointsLocked ? previous.points : pointsValue(points);
+    const value = pointsValue(previous.pointsLocked ? previous.points : points);
     const first = previous.attempts === 0 && correct;
-    return put(session, key, { ...previous, attempts: previous.attempts + 1, submitted: true, solved: correct, lastCorrect: correct, firstTryCorrect: first, score: first ? value : 0, points: value, pointsLocked: true });
+    return put(session, key, { ...previous, attempts: previous.attempts + 1, submitted: true, solved: correct, lastCorrect: correct, firstTryCorrect: first, score: correct ? value : 0, points: value, pointsLocked: true });
   }
   function reveal(session, key) {
     key = String(key);
@@ -104,7 +104,7 @@
       if (item.solved || item.revealed) result.completed++;
       if (item.revealed) result.revealed++;
       if (item.firstTryCorrect) result.firstTryCorrect++;
-      if (session.mode === 'solo' && item.firstTryCorrect && item.solved && item.attempts === 1) result.score += pointsValue(item.points);
+      if (session.mode === 'solo' && item.submitted && item.solved && item.attempts > 0) result.score += pointsValue(item.points);
       if (session.mode === 'classroom' && item.revealed) for (const index of new Set(item.awards)) if (Number.isInteger(index) && result.teamScores[index]) result.teamScores[index].score += pointsValue(item.points);
     }
     return result;
@@ -125,7 +125,7 @@
         item.firstTryCorrect = item.solved && item.attempts === 1 && source.firstTryCorrect === true;
         item.points = pointsValue(source.points);
         item.pointsLocked = source.pointsLocked === true || item.submitted;
-        item.score = item.firstTryCorrect ? item.points : 0;
+        item.score = item.solved ? item.points : 0;
         item.awards = session.mode === 'classroom' && item.revealed && Array.isArray(source.awards) ? [...new Set(source.awards.filter(index => Number.isInteger(index) && index >= 0 && index < session.teamNames.length))].sort((a, b) => a - b) : [];
         if (item.awards.length) item.pointsLocked = true;
         session.records[key] = item;

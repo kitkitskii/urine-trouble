@@ -1,4 +1,4 @@
-# Urine Trouble! — Project handover
+# Are You Kidney Me? — Project handover
 
 An editable urinary-system learning website for solo practice and classroom use.
 
@@ -63,3 +63,7 @@ Use a modern full browser on a computer for offline HTML. Saved progress for a l
 5. The repository URL, final website URL, and agreed maintainer details.
 
 `HANDOVER_MANIFEST.json` records this supplied release and its checksums. Legitimate content updates will change those hashes. No hosting credentials or account passwords are included in the project package.
+
+## Learning through mistakes
+
+Players may retry incorrect answers and use hints. A solved challenge earns its points once, even after earlier mistakes. Classroom awards remain controlled by the host. The welcome homepage and game dashboard are separate pages.

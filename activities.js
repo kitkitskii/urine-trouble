@@ -6,15 +6,15 @@
   const answersOf = state => state && Array.isArray(state.answers) ? state.answers : [];
   const labelOf = (round, id) => { const value = categoriesOf(round).find(category => category.id === id); return value ? value.label : ''; };
 
-  function freshSort() { return { index: 0, answers: [], feedback: null }; }
+  function freshSort() { return { index: 0, answers: [], feedback: null, mistakes: 0 }; }
 
   function sortComplete(round, state) {
     const cards = cardsOf(round), answers = answersOf(state);
-    return cards.length > 0 && answers.length === cards.length && answers.every((answer, index) => answer.cardId === cards[index].id);
+    return cards.length > 0 && answers.length === cards.length && answers.every((answer, index) => answer.cardId === cards[index].id && answer.correct === true && answer.selectedCategoryId === cards[index].categoryId && answer.correctCategoryId === cards[index].categoryId);
   }
 
   function sortPerfect(round, state) {
-    return sortComplete(round, state) && answersOf(state).every(answer => answer.correct === true);
+    return sortComplete(round, state) && !(Number(state && state.mistakes) > 0);
   }
 
   function chooseSort(round, state, categoryId) {
@@ -29,13 +29,21 @@
       correct: categoryId === card.categoryId,
       explanation: String(card.explanation || '')
     };
-    return { index: state.index, answers: answers.concat(answer), feedback: { ...answer } };
+    const mistakes = Number.isInteger(state.mistakes) && state.mistakes >= 0 ? state.mistakes : 0;
+    return { ...state, index: state.index, answers: answers.concat(answer), feedback: { ...answer }, mistakes: mistakes + (answer.correct ? 0 : 1) };
+  }
+
+  function retrySort(round, state) {
+    const cards = cardsOf(round), answers = answersOf(state), index = state && state.index;
+    if (!state || !state.feedback || state.feedback.correct !== false || !Number.isInteger(index) || index < 0 || index >= cards.length || answers.length !== index + 1 || answers[index].cardId !== cards[index].id || answers[index].correct !== false || state.feedback.cardId !== cards[index].id) return state;
+    const mistakes = Number.isInteger(state.mistakes) && state.mistakes > 0 ? state.mistakes : 1;
+    return { ...state, index, answers: answers.slice(0, index).map(answer => ({ ...answer })), feedback: null, mistakes };
   }
 
   function advanceSort(round, state) {
     const cards = cardsOf(round);
-    if (!state || !state.feedback || !Number.isInteger(state.index) || state.index < 0 || state.index >= cards.length) return state;
-    return { index: Math.min(cards.length, state.index + 1), answers: answersOf(state).map(answer => ({ ...answer })), feedback: null };
+    if (!state || !state.feedback || state.feedback.correct !== true || !Number.isInteger(state.index) || state.index < 0 || state.index >= cards.length) return state;
+    return { ...state, index: Math.min(cards.length, state.index + 1), answers: answersOf(state).map(answer => ({ ...answer })), feedback: null };
   }
 
   function sortReviewMarkup(round, state) {
@@ -65,5 +73,5 @@
     return '<div class="sort-game"><div class="sort-progress"><span>Card ' + (index + 1) + ' / ' + cards.length + '</span><span>' + correct + ' correct</span></div>' + trail + '<div class="sort-card-stack"><span class="sort-paper-sheet" aria-hidden="true"></span><div class="sort-card' + (feedback ? ' is-filed ' + (feedback.correct ? 'is-correct' : 'is-review') : '') + '"><span class="sort-document-mark" aria-hidden="true">' + String(index + 1).padStart(2, '0') + '</span><span class="sort-card-label">FILE THIS UNDER…</span><p>' + esc(card.text) + '</p></div></div><div class="sort-categories" role="group" aria-label="Choose the category">' + choices + '</div>' + result + '</div>';
   }
 
-  root.UTActivities = { freshSort, chooseSort, advanceSort, sortComplete, sortPerfect, sortMarkup, sortReviewMarkup };
+  root.UTActivities = { freshSort, chooseSort, retrySort, advanceSort, sortComplete, sortPerfect, sortMarkup, sortReviewMarkup };
 })(typeof window !== 'undefined' ? window : globalThis);
