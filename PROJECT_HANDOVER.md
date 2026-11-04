@@ -21,9 +21,9 @@ Complete these fields before submitting the project.
 
 ## What the project includes
 
-- Eight games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, **Spot the Leak**, **Double Trouble**, and **Filter Files**.
+- Nine games: **Urine It to Win It**, **Spell Relief**, **Match Made in the Medulla**, **The Flow Show**, **Pee-k at the Clues**, **Spot the Leak**, **Double Trouble**, and **Filter Files**.
 - 68 urinary-system questions, including the 50 original items, and 32 embedded picture clues.
-- Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists, eight sorting rounds, and three memory rounds: **96 scored challenges** in total.
+- Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists, eight sorting rounds, and three memory rounds: **100 scored challenges** in total.
 - Six learning notes, flashcards, solo scores, classroom team awards, and score-sheet export.
 - A teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
 - Editable HTML and a complete website ZIP that can run independently of ChatGPT.
@@ -67,3 +67,5 @@ Use a modern full browser on a computer for offline HTML. Saved progress for a l
 ## Learning through mistakes
 
 Players may retry incorrect answers and use hints. A solved challenge earns its points once, even after earlier mistakes. Classroom awards remain controlled by the host. The welcome homepage and game dashboard are separate pages.
+
+The discovery homepage uses the Kidney/Ureter/Bladder/Urethra learning notes and matching definitions. The CI transfer kit includes a complete current website and recovery copies. Read CI_HANDOVER.md for account ownership, Plus independence and recovery planning.

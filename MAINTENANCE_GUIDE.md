@@ -58,3 +58,7 @@ The run chooses up to five unfinished challenges across different enabled games.
 ## Home, dashboard and retries
 
 Retain both index.html and dashboard.html when updating the hosting files. The standalone HTML includes both screens. Brand title: Are You Kidney Me? Wrong attempts do not remove points; corrected solutions earn the item’s points once. A sorting card must be corrected before the next card.
+
+## Homepage, player names and word search
+
+Edit the homepage organ content in the four learning notes named Kidneys, Ureters, Bladder and Urethra. Matching definitions supply the homepage flip facts and the matching, memory and word-search games. Word search uses distinct terms of 1–20 letters. Solo names are entered when a session starts and remain in the browser; export a CSV to keep the score record. Download a fresh CI transfer kit after significant content edits.

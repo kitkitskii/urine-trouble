@@ -1,10 +1,10 @@
 ARE YOU KIDNEY ME? — THE KIDNEY ARCADE
 
 PLAY
-Choose Arcade Run for a five-stage mix, or select an individual game. Choose a game, then solo practice or classroom mode. Check the clue, read the explanation, and continue. A solved challenge earns its points once, even after mistakes. Retry as often as needed. Classroom hosts reveal, then mark each correct team. An award can be undone with a second click.
+Enter a name or nickname for solo play. Choose Arcade Run for a five-stage mix, or select an individual game. Choose a game, then solo practice or classroom mode. Check the clue, read the explanation, and continue. A solved challenge earns its points once, even after mistakes. Retry as often as needed. Classroom hosts reveal, then mark each correct team. An award can be undone with a second click.
 
-EIGHT GAMES
-Double Trouble: memory cards. Filter Files: sorting cards. Urine It to Win It: quick quiz. Spell Relief: word tiles and medical terms. Match Made in the Medulla: match four pairs per round. The Flow Show: put the steps in order. Pee-k at the Clues: enlarge four pictures and find the word. Spot the Leak: find the incorrect clinical step.
+NINE GAMES
+Word on the Wee: word search. Double Trouble: memory cards. Filter Files: sorting cards. Urine It to Win It: quick quiz. Spell Relief: word tiles and medical terms. Match Made in the Medulla: match four pairs per round. The Flow Show: put the steps in order. Pee-k at the Clues: enlarge four pictures and find the word. Spot the Leak: find the incorrect clinical step.
 
 EDIT CONTENT
 Use Edit Content to change the title, theme, game names and instructions. Add or edit questions, correct choices, accepted answers, points, explanations and picture clues. The More Content tab edits matching pairs, ordered steps, mistake checklists, sorting rounds and learning notes. Applying changes starts a fresh score session.

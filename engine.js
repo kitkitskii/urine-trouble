@@ -1,7 +1,7 @@
 (function (root) {
   'use strict';
   const VERSION = 1;
-  const GAME_IDS = ['quiz', 'words', 'match', 'flow', 'pictures', 'leak', 'sort', 'memory'];
+  const GAME_IDS = ['quiz', 'words', 'match', 'flow', 'pictures', 'leak', 'sort', 'memory', 'wordsearch'];
   const CHOICE_TYPES = ['MULTIPLE CHOICE', 'TRUE OR FALSE', 'TWO TRUTHS, ONE LIE'];
   const QUESTION_TYPES = [...CHOICE_TYPES, 'IDENTIFICATION', 'JUMBLED LETTERS', '4 PICS, 1 WORD'];
   const own = (object, key) => Object.prototype.hasOwnProperty.call(object || {}, key);
@@ -60,10 +60,13 @@
     const source = Array.isArray(values) && values.length >= 2 ? values : ['Team 1', 'Team 2'];
     return source.slice(0, 4).map((value, index) => String(value == null ? '' : value).trim().slice(0, 40) || 'Team ' + (index + 1));
   }
+  function playerName(value) {
+    return (typeof value === 'string' ? value.replace(/[\u0000-\u001f\u007f]/g, ' ').trim().slice(0, 60).trim() : '') || 'Player';
+  }
   function createSession(config) {
     config = isObject(config) ? config : {};
     const mode = config.mode === 'classroom' ? 'classroom' : 'solo';
-    return { version: VERSION, mode, teamNames: mode === 'classroom' ? names(config.teamNames) : [], projectId: typeof config.projectId === 'string' ? config.projectId.slice(0, 120) : '', records: {} };
+    return { version: VERSION, mode, playerName: mode === 'solo' ? playerName(config.playerName) : '', teamNames: mode === 'classroom' ? names(config.teamNames) : [], projectId: typeof config.projectId === 'string' ? config.projectId.slice(0, 120) : '', records: {} };
   }
   const validSession = session => isObject(session) && session.version === VERSION && ['solo', 'classroom'].includes(session.mode) && isObject(session.records);
   const put = (session, key, value) => ({ ...session, records: { ...session.records, [key]: value } });
@@ -276,7 +279,7 @@
       requireText(article.title, label + ' title');
       if (!Array.isArray(article.body) || !article.body.length || article.body.some(paragraph => !text(paragraph))) fail(label + ' text', 'Enter at least one paragraph.');
     });
-    const counts = { quiz: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('quiz')).length, words: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('words')).length, pictures: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('pictures')).length, match: lists.matching.length, flow: lists.sequences.length, leak: lists.mistakes.length, sort: lists.sorting.length, memory: lists.matching.length >= 2 ? lists.matching.length : 0 };
+    const counts = { quiz: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('quiz')).length, words: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('words')).length, pictures: lists.questions.filter(q => isObject(q) && Array.isArray(q.gameIds) && q.gameIds.includes('pictures')).length, match: lists.matching.length, flow: lists.sequences.length, leak: lists.mistakes.length, sort: lists.sorting.length, memory: lists.matching.length >= 2 ? lists.matching.length : 0, wordsearch: lists.matching.length };
     for (const game of lists.games) if (isObject(game) && game.enabled && !counts[game.id]) warn(game.title || game.id, 'This game has no items yet.');
     return { valid: errors.length === 0, errors, warnings };
   }

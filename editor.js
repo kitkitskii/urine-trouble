@@ -1,7 +1,7 @@
 (function(global){
 'use strict';
 const TYPES=['MULTIPLE CHOICE','TRUE OR FALSE','IDENTIFICATION','JUMBLED LETTERS','4 PICS, 1 WORD','TWO TRUTHS, ONE LIE'];
-const GAME_IDS=['quiz','words','match','flow','pictures','leak','sort','memory'];
+const GAME_IDS=['quiz','words','match','flow','pictures','leak','sort','memory','wordsearch'];
 const clone=value=>JSON.parse(JSON.stringify(value));
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const lines=value=>String(value??'').split(/\r?\n/).map(v=>v.trim()).filter(Boolean);

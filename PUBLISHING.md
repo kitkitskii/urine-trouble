@@ -29,7 +29,7 @@ Official guidance: https://docs.github.com/en/pages/getting-started-with-github-
 
 ## Arcade expansion
 
-The expanded eight-game, 68-question edition deployed successfully in [GitHub Pages run 41642356041](https://github.com/kitkitskii/urine-trouble/actions/runs/41642356041), commit `4b525aac2a496dba926098ebedaf492d82751924`. It includes memory cards, sorting rounds, and choice-specific answer rationales.
+The expanded nine-game, 68-question edition deployed successfully in [GitHub Pages run 41642356041](https://github.com/kitkitskii/urine-trouble/actions/runs/41642356041), commit `4b525aac2a496dba926098ebedaf492d82751924`. It includes memory cards, sorting rounds, and choice-specific answer rationales.
 
 ## Illustrated arcade interface
 
@@ -38,3 +38,7 @@ The interface includes illustrated game previews, optional five-stage Arcade Run
 ## Homepage and forgiving play
 
 The site retains the title Are You Kidney Me?, provides separate index.html and dashboard.html entries, and supports hints and unlimited answer retries. Scoring awards solved challenges once after correction.
+
+## Discovery homepage and CI continuity
+
+The next edition adds a urinary-system explorer, flip facts, learning trails, solo names, a word-search game and dynamic CI transfer-kit export. A project-only free-host address is prepared but not yet deployed because the hosting connection is pending. The Render blueprint specifies static hosting with no database or server process.

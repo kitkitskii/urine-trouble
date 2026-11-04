@@ -65,6 +65,13 @@
       "subtitle": "Find the mistake",
       "instructions": "Read the short checklist and select its one incorrect or unsafe statement. Then check your answer.",
       "enabled": true
+    },
+    {
+      "id": "wordsearch",
+      "title": "Word on the Wee",
+      "subtitle": "Classic word search",
+      "instructions": "Find each listed medical term. Choose its first letter, then its last letter. Words may run across, down, or diagonally.",
+      "enabled": true
     }
   ],
   "questions": [
@@ -2450,6 +2457,54 @@
         "AKI can cause dangerous potassium retention. Hyperkalemia can produce tall, peaked T waves on an ECG. During a diuretic phase, water and electrolyte losses may increase dehydration risk.",
         "After a kidney biopsy, flank pain together with dizziness and pallor warrants assessment for bleeding. Transplant recipients need prescribed immunosuppression and assessment of possible graft complications."
       ]
+    },
+    {
+      "id": "home-kidneys",
+      "title": "Kidneys",
+      "body": [
+        "Kidneys remove wastes and extra water from blood to form urine.",
+        "Their working units, called nephrons, filter blood and adjust the forming urine.",
+        "The starting point of the urine journey."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ]
+    },
+    {
+      "id": "home-ureters",
+      "title": "Ureters",
+      "body": [
+        "Ureters carry urine from the kidneys to the bladder.",
+        "Their muscular walls help move urine forward by peristalsis.",
+        "Kidneys \u2192 ureters \u2192 bladder."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ]
+    },
+    {
+      "id": "home-bladder",
+      "title": "Bladder",
+      "body": [
+        "The bladder stores urine until it is time to void.",
+        "Its muscular wall contracts to help push urine out during urination.",
+        "Detrusor is the name of the bladder\u2019s smooth muscle."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ]
+    },
+    {
+      "id": "home-urethra",
+      "title": "Urethra",
+      "body": [
+        "The urethra carries urine from the bladder out of the body.",
+        "Coordinated bladder contraction and sphincter relaxation allow urine to leave.",
+        "Bladder \u2192 urethra \u2192 outside the body."
+      ],
+      "sources": [
+        "https://www.niddk.nih.gov/health-information/urologic-diseases/urinary-tract-how-it-works"
+      ]
     }
   ],
   "legacyQuestionSignatures": {
@@ -2905,5 +2960,5 @@
       ]
     }
   ],
-  "contentRevision": 5
+  "contentRevision": 6
 }

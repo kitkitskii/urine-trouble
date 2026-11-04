@@ -32,11 +32,12 @@ Choose **Arcade Run** for a mix of up to five unfinished challenges, with a stag
 | **Match Made in the Medulla** | Connect matching terms and definitions. |
 | **Double Trouble** | Flip cards to match terms with definitions. |
 | **Filter Files** | Sort urinary-system cards into categories. |
+| **Word on the Wee** | Find medical terms in a classic letter grid. |
 | **The Flow Show** | Put anatomical routes and processes in order. |
 | **Pee-k at the Clues** | Enlarge picture clues and find their connecting term. |
 | **Spot the Leak** | Identify an incorrect or unsafe clinical statement. |
 
-The project includes 68 urinary-system questions, 32 picture clues, 12 matching pairs in three rounds, six ordering activities, eight clinical-mistake checklists, six learning notes, eight sorting rounds, three memory rounds, and flashcards. Together, the games contain 96 scored challenges.
+The project includes 68 urinary-system questions, 32 picture clues, 12 matching pairs in three rounds, six ordering activities, eight clinical-mistake checklists, ten learning notes, eight sorting rounds, three memory rounds, and flashcards. Together, the games contain 100 scored challenges.
 
 Choose solo practice or classroom mode for two to four teams. Solo players earn points once when a challenge is solved, including after mistakes. In classroom mode, teams answer first, then the host reveals the solution and marks each correct team. Scores remain in the browser; a CSV score sheet can be exported.
 
@@ -76,3 +77,13 @@ Complete the project-team, school, adviser, and maintainer fields before submiss
 The source uses HTML, CSS, and plain JavaScript. There is no backend, database, package installation, build command, or ChatGPT API dependency. `content.js` contains the question bank and embedded clue images. `assets.js` contains the mascot. `engine.js`, `app.js`, and `editor.js` handle the rules, games, and content editing. The remaining scripts provide portable HTML and ZIP exports.
 
 The public repository includes the source code and answer bank. The complete source can also be hosted by the school or another static host. No custom domain is registered or connected by these files.
+
+## Discovery homepage and named solo play
+
+The homepage offers an organ explorer, flip facts and a study trail. Solo sessions accept a name or nickname, which appears on the playcard and CSV score sheet. Names and scores remain in the current browser. The word-search game uses editable matching terms.
+
+## CI ownership and recovery
+
+Use **Downloads → Download CI transfer kit** for the current editable website, standalone offline copy, JSON backup, Render blueprint and [CI handover guide](CI_HANDOVER.md). Ending ChatGPT Plus does not remove the separately hosted files. Deleting the actual source account or repository can remove its hosted copy. Keep independent copies and agree a CI/school-controlled hosting account.
+
+A free project-named address on another host is pending a connected hosting account and verified deployment. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.
