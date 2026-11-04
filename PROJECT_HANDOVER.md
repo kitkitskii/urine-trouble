@@ -28,6 +28,8 @@ Complete these fields before submitting the project.
 - A teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
 - Editable HTML and a complete website ZIP that can run independently of ChatGPT.
 
+The game menu includes an optional five-stage **Arcade Run**, illustrated previews, a session playcard, and direct free play. The word game accepts keyboard letters and Backspace.
+
 ## Ownership and long-term access
 
 The group or institution should control the source-code repository and the hosting account. If a custom domain is used, its registration and DNS access should also belong to the agreed owner. This makes continued use and maintenance independent of the chat in which the website was developed.

@@ -39,11 +39,11 @@
   }
 
   function sortReviewMarkup(round, state) {
-    const cards = cardsOf(round), answers = answersOf(state);
+    const cards = cardsOf(round), categories = categoriesOf(round), answers = answersOf(state);
     if (!cards.length) return '<p class="empty">No sorting cards in this round.</p>';
     return '<ol class="sort-review">' + cards.map((card, index) => {
-      const answer = answers.find(value => value.cardId === card.id);
-      return '<li class="sort-review-item"><div class="sort-review-top"><span class="sort-review-number">' + (index + 1) + '</span><strong>' + esc(card.text) + '</strong>' + (answer ? '<span class="sort-result ' + (answer.correct ? 'correct' : 'incorrect') + '">' + (answer.correct ? 'Correct' : 'Review') + '</span>' : '') + '</div>' + (answer && !answer.correct ? '<p class="sort-your-answer">Your category: ' + esc(labelOf(round, answer.selectedCategoryId)) + '</p>' : '') + '<p class="sort-correct-category">Correct category: <strong>' + esc(labelOf(round, card.categoryId)) + '</strong></p><p>' + esc(card.explanation) + '</p></li>';
+      const answer = answers.find(value => value.cardId === card.id), folderIndex = categories.findIndex(category => category.id === card.categoryId);
+      return '<li class="sort-review-item ' + (answer ? answer.correct ? 'is-correct' : 'is-review' : '') + '"><div class="sort-review-top"><span class="sort-review-number">' + (index + 1) + '</span><strong>' + esc(card.text) + '</strong>' + (answer ? '<span class="sort-result ' + (answer.correct ? 'correct' : 'incorrect') + '">' + (answer.correct ? 'Correct' : 'Review') + '</span>' : '') + '</div>' + (answer && !answer.correct ? '<p class="sort-your-answer">Your category: ' + esc(labelOf(round, answer.selectedCategoryId)) + '</p>' : '') + '<p class="sort-correct-category">Correct category: <strong class="sort-review-folder folder-color-' + folderIndex + '"><span class="sort-folder-icon" aria-hidden="true"></span>' + esc(labelOf(round, card.categoryId)) + '</strong></p><p>' + esc(card.explanation) + '</p></li>';
     }).join('') + '</ol>';
   }
 
@@ -52,8 +52,17 @@
     if (options.closed) return sortReviewMarkup(round, state);
     const cards = cardsOf(round), index = state && Number.isInteger(state.index) ? state.index : 0, card = cards[index];
     if (!card) return cards.length ? sortReviewMarkup(round, state) : '<p class="empty">No sorting cards in this round.</p>';
-    const feedback = state && state.feedback, correct = answersOf(state).filter(answer => answer.correct).length;
-    return '<div class="sort-game"><div class="sort-progress"><span>Card ' + (index + 1) + ' / ' + cards.length + '</span><span>' + correct + ' correct</span></div><div class="sort-card"><span class="sort-card-label">FILE THIS UNDER…</span><p>' + esc(card.text) + '</p></div><div class="sort-categories" role="group" aria-label="Choose the category">' + categoriesOf(round).map(category => '<button type="button" class="sort-category ' + (feedback && feedback.selectedCategoryId === category.id ? 'selected' : '') + '" data-action="sort-choice" data-category="' + esc(category.id) + '" aria-pressed="' + String(!!feedback && feedback.selectedCategoryId === category.id) + '"' + (feedback ? ' disabled' : '') + '>' + esc(category.label) + '</button>').join('') + '</div>' + (feedback ? '<section class="sort-feedback ' + (feedback.correct ? 'good' : 'wrong') + '" aria-live="polite"><h3>' + (feedback.correct ? 'Correct category.' : 'Correct category: ' + esc(labelOf(round, feedback.correctCategoryId))) + '</h3>' + (!feedback.correct ? '<p>You chose <strong>' + esc(labelOf(round, feedback.selectedCategoryId)) + '</strong>.</p>' : '') + '<p>' + esc(feedback.explanation) + '</p></section>' : '') + '</div>';
+    const feedback = state && state.feedback, answers = answersOf(state), correct = answers.filter(answer => answer.correct).length;
+    const trail = '<ol class="sort-trail" aria-label="Cards in this round">' + cards.map((_, position) => {
+      const answer = answers[position], status = answer ? answer.correct ? 'is-complete' : 'is-review' : position === index ? 'is-current' : '';
+      return '<li class="sort-trail-step ' + status + '" aria-label="Card ' + (position + 1) + ': ' + (answer ? answer.correct ? 'correct' : 'review' : position === index ? 'current' : 'not attempted') + '"><span aria-hidden="true">' + (answer && answer.correct ? '✓' : position + 1) + '</span></li>';
+    }).join('') + '</ol>';
+    const choices = categoriesOf(round).map((category, folderIndex) => {
+      const selected = !!feedback && feedback.selectedCategoryId === category.id, isCorrect = !!feedback && feedback.correctCategoryId === category.id, isWrong = selected && !isCorrect;
+      return '<button type="button" class="sort-category folder-color-' + folderIndex + (selected ? ' selected' : '') + (isCorrect ? ' is-correct' : '') + (isWrong ? ' is-wrong' : '') + '" data-action="sort-choice" data-category="' + esc(category.id) + '" aria-pressed="' + String(selected) + '"' + (feedback ? ' disabled' : '') + '><span class="sort-folder-icon" aria-hidden="true"></span><span class="sort-category-label">' + esc(category.label) + '</span>' + (isCorrect ? '<span class="sort-category-result" aria-hidden="true">✓</span>' : isWrong ? '<span class="sort-category-result" aria-hidden="true">↪</span>' : '') + '</button>';
+    }).join('');
+    const result = feedback ? '<section class="sort-feedback ' + (feedback.correct ? 'good' : 'wrong') + '" aria-live="polite"><div class="sort-feedback-head"><span class="sort-feedback-icon" aria-hidden="true">' + (feedback.correct ? '✓' : '↪') + '</span><h3>' + (feedback.correct ? 'Correct category.' : 'Correct category: ' + esc(labelOf(round, feedback.correctCategoryId))) + '</h3></div>' + (feedback.correct ? '<p class="sort-category-badge">Filed under ' + esc(labelOf(round, feedback.correctCategoryId)) + '</p>' : '<p>You chose <strong>' + esc(labelOf(round, feedback.selectedCategoryId)) + '</strong>.</p>') + '<p>' + esc(feedback.explanation) + '</p></section>' : '';
+    return '<div class="sort-game"><div class="sort-progress"><span>Card ' + (index + 1) + ' / ' + cards.length + '</span><span>' + correct + ' correct</span></div>' + trail + '<div class="sort-card-stack"><span class="sort-paper-sheet" aria-hidden="true"></span><div class="sort-card' + (feedback ? ' is-filed ' + (feedback.correct ? 'is-correct' : 'is-review') : '') + '"><span class="sort-document-mark" aria-hidden="true">' + String(index + 1).padStart(2, '0') + '</span><span class="sort-card-label">FILE THIS UNDER…</span><p>' + esc(card.text) + '</p></div></div><div class="sort-categories" role="group" aria-label="Choose the category">' + choices + '</div>' + result + '</div>';
   }
 
   root.UTActivities = { freshSort, chooseSort, advanceSort, sortComplete, sortPerfect, sortMarkup, sortReviewMarkup };

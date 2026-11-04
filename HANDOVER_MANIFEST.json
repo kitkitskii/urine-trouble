@@ -42,24 +42,24 @@
   },
   "source_archive": {
     "filename": "Urine_Trouble_Editable_Website.zip",
-    "bytes": 1378634,
-    "sha256": "7309e1618d1ea1fbd10e87384716bf79c281e8ad5840e7e43060c4118c29087e"
+    "bytes": 1544210,
+    "sha256": "c97b8e2c24424c60dcf4ac04dcaeb40e00c169e9c00b1e475acf28f119ff0211"
   },
   "offline_html": {
     "filename": "Urine_Trouble_Editable.html",
-    "bytes": 1376285,
-    "sha256": "4f4c39dbd94a8f78c394bb6aa9d12184b9d730bf5dd429b85665792888095eb7"
+    "bytes": 1541760,
+    "sha256": "2b58ac2fc6912387cbb1520177d3e197a24938deeb8787853787f38c2f1546ac"
   },
   "source_files": [
     {
       "path": "index.html",
-      "bytes": 1000,
-      "sha256": "b2ae8eea0e90f450039909d188f1c3c57fe54b93b0b33ae6796fc1ab562729c6"
+      "bytes": 1030,
+      "sha256": "14f50cefa5285764d5f009d4850e2f8fb73dc661a3244154dde26840a5ff59a1"
     },
     {
       "path": "style.css",
-      "bytes": 42856,
-      "sha256": "f57334a006620665c54936886309678a6f4d3d220a8d7ccdd9362aa5bea8af3c"
+      "bytes": 86551,
+      "sha256": "31a02961eeb652b1165dd5fc786b7d08e322e6727bfc55f21692caff8a547b55"
     },
     {
       "path": "editor.css",
@@ -69,7 +69,7 @@
     {
       "path": "content.js",
       "bytes": 972411,
-      "sha256": "539f712229abee97d5dcce052f4342ca5432307affcc8ab539dc260dd77354ae"
+      "sha256": "f613368738d0c5a4c7a66f9bc074e76f2bfb7b33c1edf224d8963d4ee394b369"
     },
     {
       "path": "assets.js",
@@ -82,14 +82,19 @@
       "sha256": "ed7519c0bef72e5960932acea767c6da9e238c3a44d2180fbc58abb0888ac498"
     },
     {
+      "path": "run.js",
+      "bytes": 3039,
+      "sha256": "286fafe0bb0b0c9a3bdbf7d67ea88fef82e7a13c7fb424c51589b5030d7bfb75"
+    },
+    {
       "path": "memory.js",
-      "bytes": 4249,
-      "sha256": "b481673639c005018bdd7a90a8791d7571904e64ab4079a52ea914ebbade7dba"
+      "bytes": 5307,
+      "sha256": "8f38a0f2fe8e5b30d7fa9ab79f6ec5b6033c244a4ffac950c6eab9fafd452817"
     },
     {
       "path": "activities.js",
-      "bytes": 5161,
-      "sha256": "a00f793aabe52f7d3db5db247300efdc687c0f4c502ee7f6e8d1fcc9990490ce"
+      "bytes": 7143,
+      "sha256": "a20cdea4c42bf718b062ae3d8f391353af786c53fca78bb3bdd747e786eceb67"
     },
     {
       "path": "zip.js",
@@ -103,18 +108,18 @@
     },
     {
       "path": "downloads.js",
-      "bytes": 3005,
-      "sha256": "d6a679fdb79824523c57c1562d804c280c6af1c6f427f9ef3b8264b8f7da7be2"
+      "bytes": 3049,
+      "sha256": "d486427500766187c4c0a3e29b1b68947fbdc61caf3315b236da2a608e03fef5"
     },
     {
       "path": "app.js",
-      "bytes": 43739,
-      "sha256": "9db541b7b5cbf5d207067b95866ac07aebbd23466a524dbd5db884c7aec947ee"
+      "bytes": 52744,
+      "sha256": "0835fc7c8dd46e7a784ad3c76ee80031c801331b22973fcdb2901f2088d04cb8"
     },
     {
       "path": "bundle.js",
-      "bytes": 234660,
-      "sha256": "e0cf5efeaf1010e24e64c06af66284074785d582b0572fde0d78d2ea75f6dbf5"
+      "bytes": 341295,
+      "sha256": "f005a7b9d230831fce25d1745e649f816918eb74b3108c00e209bb939e0f9d3f"
     },
     {
       "path": "README.txt",
@@ -125,8 +130,8 @@
   "handover_documents": [
     {
       "filename": "ADVISER_QUICK_START.pdf",
-      "bytes": 3620,
-      "sha256": "b5ebdbc07e0f4389c4a645aa2369045d7412e8f354ded98484a650abf3e6f77c"
+      "bytes": 3669,
+      "sha256": "056b9a3e70217d66c1ab41b35a9c0c9f56a113396bc3084115d38a5f54f4353f"
     },
     {
       "filename": "CONTENT_REFERENCES.md",
@@ -135,23 +140,23 @@
     },
     {
       "filename": "MAINTENANCE_GUIDE.md",
-      "bytes": 5076,
-      "sha256": "6a17136f33e49210856c169aafe93e210acad585aa95e0cfa079b2d286804dac"
+      "bytes": 5427,
+      "sha256": "5a8be9be6d2641d27c1ff7e04fec4bf413f4841792b5e6087f8a2ff62c937cdc"
     },
     {
       "filename": "PROJECT_HANDOVER.md",
-      "bytes": 4641,
-      "sha256": "f13bb0dbaf5a4a7e1bb6967530d92426f657e4e05b29bba42081504e2370241d"
+      "bytes": 4822,
+      "sha256": "2c1d09c60f4c45c5092fc6b4a9df6d7a2fcb6983b8d43cd3f812253ea8cd38e6"
     },
     {
       "filename": "PUBLISHING.md",
-      "bytes": 1971,
-      "sha256": "ed956de6ce2c96c4a759ad88016fd47d42e36754e9572ca7771c1a3d9fcd3b51"
+      "bytes": 2295,
+      "sha256": "02d093a1522ac9cd1cf2244d599c75dd8d8d0fc4f22c125ee1b84f2ea8e941d8"
     },
     {
       "filename": "README.md",
-      "bytes": 4316,
-      "sha256": "8b670e146587e9cdbcc819493c6cac10cd0fbc2c5c68ba8392583de1adfdb221"
+      "bytes": 4618,
+      "sha256": "285863df75e5daa6f6ddbff7f42d5f06c68555048c2190f0cc23d511f1f9ece9"
     }
   ],
   "release_files": [
@@ -162,8 +167,8 @@
     },
     {
       "path": "ADVISER_QUICK_START.pdf",
-      "bytes": 3620,
-      "sha256": "b5ebdbc07e0f4389c4a645aa2369045d7412e8f354ded98484a650abf3e6f77c"
+      "bytes": 3669,
+      "sha256": "056b9a3e70217d66c1ab41b35a9c0c9f56a113396bc3084115d38a5f54f4353f"
     },
     {
       "path": "CONTENT_REFERENCES.md",
@@ -172,33 +177,33 @@
     },
     {
       "path": "MAINTENANCE_GUIDE.md",
-      "bytes": 5076,
-      "sha256": "6a17136f33e49210856c169aafe93e210acad585aa95e0cfa079b2d286804dac"
+      "bytes": 5427,
+      "sha256": "5a8be9be6d2641d27c1ff7e04fec4bf413f4841792b5e6087f8a2ff62c937cdc"
     },
     {
       "path": "PROJECT_HANDOVER.md",
-      "bytes": 4641,
-      "sha256": "f13bb0dbaf5a4a7e1bb6967530d92426f657e4e05b29bba42081504e2370241d"
+      "bytes": 4822,
+      "sha256": "2c1d09c60f4c45c5092fc6b4a9df6d7a2fcb6983b8d43cd3f812253ea8cd38e6"
     },
     {
       "path": "PUBLISHING.md",
-      "bytes": 1971,
-      "sha256": "ed956de6ce2c96c4a759ad88016fd47d42e36754e9572ca7771c1a3d9fcd3b51"
+      "bytes": 2295,
+      "sha256": "02d093a1522ac9cd1cf2244d599c75dd8d8d0fc4f22c125ee1b84f2ea8e941d8"
     },
     {
       "path": "README.md",
-      "bytes": 4316,
-      "sha256": "8b670e146587e9cdbcc819493c6cac10cd0fbc2c5c68ba8392583de1adfdb221"
+      "bytes": 4618,
+      "sha256": "285863df75e5daa6f6ddbff7f42d5f06c68555048c2190f0cc23d511f1f9ece9"
     },
     {
       "path": "activities.js",
-      "bytes": 5161,
-      "sha256": "a00f793aabe52f7d3db5db247300efdc687c0f4c502ee7f6e8d1fcc9990490ce"
+      "bytes": 7143,
+      "sha256": "a20cdea4c42bf718b062ae3d8f391353af786c53fca78bb3bdd747e786eceb67"
     },
     {
       "path": "app.js",
-      "bytes": 43739,
-      "sha256": "9db541b7b5cbf5d207067b95866ac07aebbd23466a524dbd5db884c7aec947ee"
+      "bytes": 52744,
+      "sha256": "0835fc7c8dd46e7a784ad3c76ee80031c801331b22973fcdb2901f2088d04cb8"
     },
     {
       "path": "assets.js",
@@ -207,8 +212,8 @@
     },
     {
       "path": "bundle.js",
-      "bytes": 234660,
-      "sha256": "e0cf5efeaf1010e24e64c06af66284074785d582b0572fde0d78d2ea75f6dbf5"
+      "bytes": 341295,
+      "sha256": "f005a7b9d230831fce25d1745e649f816918eb74b3108c00e209bb939e0f9d3f"
     },
     {
       "path": "content.js",
@@ -217,8 +222,8 @@
     },
     {
       "path": "downloads/START_HERE.txt",
-      "bytes": 1728,
-      "sha256": "741239fc05fe9fa6e35e7ccb6a1325d706aece73b79950de2faaa7162bc5dcaf"
+      "bytes": 1798,
+      "sha256": "2f0c054c6dc4a9242ef56e028aecb97562c5ebb5ab46651d1932df55ee3041d4"
     },
     {
       "path": "downloads/Urine_Trouble_Content_Backup.json",
@@ -227,18 +232,18 @@
     },
     {
       "path": "downloads/Urine_Trouble_Editable.html",
-      "bytes": 1376285,
-      "sha256": "4f4c39dbd94a8f78c394bb6aa9d12184b9d730bf5dd429b85665792888095eb7"
+      "bytes": 1541760,
+      "sha256": "2b58ac2fc6912387cbb1520177d3e197a24938deeb8787853787f38c2f1546ac"
     },
     {
       "path": "downloads/Urine_Trouble_Editable_Website.zip",
-      "bytes": 1378634,
-      "sha256": "7309e1618d1ea1fbd10e87384716bf79c281e8ad5840e7e43060c4118c29087e"
+      "bytes": 1544210,
+      "sha256": "c97b8e2c24424c60dcf4ac04dcaeb40e00c169e9c00b1e475acf28f119ff0211"
     },
     {
       "path": "downloads.js",
-      "bytes": 3005,
-      "sha256": "d6a679fdb79824523c57c1562d804c280c6af1c6f427f9ef3b8264b8f7da7be2"
+      "bytes": 3049,
+      "sha256": "d486427500766187c4c0a3e29b1b68947fbdc61caf3315b236da2a608e03fef5"
     },
     {
       "path": "editor.css",
@@ -257,18 +262,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 1022,
-      "sha256": "5e0fd7b281f533424dfaf2b73e0e85f385eb425a6ddba94a6f45b1e4e463330c"
+      "bytes": 1104,
+      "sha256": "09200ce4e84b15f825cbbbe13a3a04e92973ab02aead13a54cd4fc82a498feeb"
     },
     {
       "path": "memory.js",
-      "bytes": 4249,
-      "sha256": "b481673639c005018bdd7a90a8791d7571904e64ab4079a52ea914ebbade7dba"
+      "bytes": 5307,
+      "sha256": "8f38a0f2fe8e5b30d7fa9ab79f6ec5b6033c244a4ffac950c6eab9fafd452817"
+    },
+    {
+      "path": "run.js",
+      "bytes": 3039,
+      "sha256": "286fafe0bb0b0c9a3bdbf7d67ea88fef82e7a13c7fb424c51589b5030d7bfb75"
     },
     {
       "path": "style.css",
-      "bytes": 42856,
-      "sha256": "f57334a006620665c54936886309678a6f4d3d220a8d7ccdd9362aa5bea8af3c"
+      "bytes": 86551,
+      "sha256": "31a02961eeb652b1165dd5fc786b7d08e322e6727bfc55f21692caff8a547b55"
     },
     {
       "path": "zip.js",
@@ -281,5 +291,13 @@
     "references_file": "CONTENT_REFERENCES.md",
     "textbook_access": "Not read: uploaded PDF exceeds 32 MiB transfer limit",
     "answer_specific_rationales": true
+  },
+  "interface_revision": 4,
+  "features": {
+    "arcade_run_max_stages": 5,
+    "arcade_run_pause_resume": true,
+    "keyboard_word_tiles": true,
+    "illustrated_game_previews": 8,
+    "per_choice_rationales": true
   }
 }

@@ -50,3 +50,7 @@ To resume saved local progress, use the same browser and keep the file in the sa
 ## Hosting on a different provider or school domain
 
 The source ZIP is portable. Publish the folder containing `index.html` on a static host with no build command. If the school has an existing website, its administrator can host the files there or connect a project domain. The files do not require ChatGPT hosting, authentication, or services to run.
+
+## Arcade Run
+
+The run chooses up to five unfinished challenges across different enabled games. Pause returns to the menu; Continue Arcade Run resumes the stage sequence. A new session or applied content update resets it. Its score rules are the same as free play. The question bank, game labels, and rationales remain editable through Edit Content.

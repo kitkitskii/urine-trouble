@@ -30,3 +30,7 @@ Official guidance: https://docs.github.com/en/pages/getting-started-with-github-
 ## Arcade expansion
 
 The expanded eight-game, 68-question edition deployed successfully in [GitHub Pages run 41642356041](https://github.com/kitkitskii/urine-trouble/actions/runs/41642356041), commit `4b525aac2a496dba926098ebedaf492d82751924`. It includes memory cards, sorting rounds, and choice-specific answer rationales.
+
+## Illustrated arcade interface
+
+The interface includes illustrated game previews, optional five-stage Arcade Run, a compact question selector, keyboard word tiles, numbered memory cards, and folder sorting. Hosted assets use a version query so the new interface loads together; portable ZIP exports use local asset paths.

@@ -13,6 +13,10 @@ An editable urinary-system learning website for solo practice and classroom play
 
 GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirmed the [successful publication](https://github.com/kitkitskii/urine-trouble/actions/runs/41637448097). Public visitors need no GitHub or ChatGPT account. See [the publishing record](PUBLISHING.md).
 
+## Arcade Run and free play
+
+Choose **Arcade Run** for a mix of up to five unfinished challenges, with a stage trail and pause/resume. Choose any illustrated game card for free play. Both options use the same answer rationales and scoring. Word tiles support typing and Backspace as well as clicking.
+
 ## Play and learn
 
 | Game | Activity |
