@@ -4,11 +4,11 @@ An editable urinary-system learning website for solo practice and classroom use.
 
 ## Project record
 
-Complete these fields before submitting the project.
+The project-team names are supplied below. Complete the remaining fields before submitting the project.
 
 | Field | Details |
 | --- | --- |
-| Project team | ______________________________ |
+| Project team | Bill, Janez, Yesha, Aethan, Richelaine, Francine, Jochebid, Divine, and Shakira |
 | School / institution | ______________________________ |
 | Adviser | ______________________________ |
 | Academic year / submission date | ______________________________ |
@@ -26,6 +26,7 @@ Complete these fields before submitting the project.
 - Twelve matching pairs in three rounds, six ordering activities, and eight clinical-mistake checklists, eight sorting rounds, and three memory rounds: **100 scored challenges** in total.
 - Ten learning notes, flashcards, solo scores, classroom team awards, and score-sheet export.
 - A password-prompted teacher editor for website settings, game titles, instructions, questions, answer keys, accepted answers, per-choice rationales, sorting cards, pictures, points, and learning content.
+- Password-prompted website HTML, ZIP, and CI-kit downloads, using the same instructor password; CSV score-sheet export remains open during play.
 - Editable HTML and a complete website ZIP that can run independently of ChatGPT.
 
 The game menu includes an optional five-stage **Arcade Run**, illustrated previews, a session playcard, and direct free play. The word game accepts keyboard letters and Backspace.
@@ -50,9 +51,9 @@ To share an update, apply and export the edited website, then publish those expo
 
 ## Instructor password custody
 
-Keep the instructor password private and hand it over separately from public source files. The editor locks on exit, apply, reload, or **Lock editor**. **Change password** requires the current password and a new one of 12–128 characters. A change first applies to the current browser; publish the downloaded `editor-access.js` or a complete website export to update other devices. The connected Render site normally redeploys committed repository changes. No Render service URL has been verified in this handover record.
+Keep the instructor password private and hand it over separately from public source files. The existing password is shared by **Edit Content** and the website **Downloads** prompt; it has not been changed for this feature. A successful download check creates one selected export, then relocks; an instructor already in the unlocked editor may export without a second prompt. CSV score sheets do not require the password. The editor locks on exit, apply, reload, or **Lock editor**. **Change password** requires the current password and a new one of 12–128 characters. A change first applies to the current browser; publish the downloaded `editor-access.js` or a complete website export to update other devices. The connected Render site normally redeploys committed repository changes. No Render service URL has been verified in this handover record.
 
-Only a salted PBKDF2 verifier is stored in the exported files. This offline/static interface lock deters casual editor access; it is not server authentication. Visitors may change their own local copies. Publishing shared changes still requires authorized repository access. A genuine instructor-only shared administration system would need an authenticated backend. See `EDITOR_ACCESS.md` for use, updating, and recovery limits.
+Only a salted PBKDF2 verifier is stored in the exported files. This offline/static interface lock deters casual editing and website-download access; it is not server authentication or encryption. Public source and repository history remain accessible. Visitors may copy that source or change their own local copies. Publishing shared changes still requires authorized repository access. A genuine instructor-only shared administration system would need an authenticated backend. See `EDITOR_ACCESS.md` for use, updating, and recovery limits.
 
 ## Technical summary
 
@@ -62,11 +63,13 @@ Use a modern full browser on a computer for offline HTML. Saved progress for a l
 
 ## Files to retain
 
-1. The complete website ZIP and its extracted source files.
+1. The complete website ZIP and its extracted source files, obtained through password-prompted Downloads or the independent handover package.
 2. `Urine_Trouble_Editable.html` for standalone offline use.
 3. An exported question/project JSON backup after content updates.
 4. These handover and maintenance guides.
 5. The repository URL, final website URL, and agreed maintainer details.
+
+Current prebuilt HTML, ZIP, JSON backup, and quick-start text are not served as public direct-download files. The password-prompted interface generates the selected export; independent handover backups remain available.
 
 `HANDOVER_MANIFEST.json` records this supplied release and its checksums. Legitimate content updates will change those hashes. No hosting credentials or account passwords are included in the project package.
 

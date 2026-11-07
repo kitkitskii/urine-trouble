@@ -17,11 +17,17 @@ The public address is https://kitkitskii.github.io/urine-trouble/. The saved sou
 2. Make the changes. The editor supports the site title and theme, game labels and instructions, question choices and answer keys, accepted answers, per-choice rationales, sorting cards, picture clues, matching pairs, ordered steps, mistake checklists, and learning notes.
 3. Use **Apply changes** to make the edited content active in that browser. Applying changes starts a fresh score session.
 4. Test the changed questions and read their explanations.
-5. Export an updated **website ZIP**. The export includes the current content and the editor.
+5. Choose **Downloads**, select **website ZIP**, and enter the instructor password. Each successful check creates one download and relocks. Export controls remain available without a second prompt while the instructor is already in an unlocked editor. The export includes the current content and the editor.
 6. Extract the updated ZIP. In the GitHub repository, use **Add file → Upload files** and upload the exported root files, replacing the previous versions. Commit the change with a short description such as “Update catheter-care questions.”
 7. Wait for the Pages deployment to finish. Reload the public website and test the changed item. A hard refresh or a private/incognito window helps confirm the new published copy rather than a browser’s saved draft.
 
 Changes are shared with other visitors **after the hosting files are updated and published**. A local browser draft or **Apply changes** alone does not publish them.
+
+## Website downloads
+
+Use the same existing instructor password for **Downloads** and **Edit Content**. Select HTML, website ZIP, or CI transfer kit in Downloads, then enter the password. Each successful check creates one selected download and relocks; closing the prompt or navigating away cancels a pending request. CSV score-sheet export stays available during play without a password.
+
+The current deployment does not serve prebuilt HTML, ZIP, JSON backup, or quick-start text at public direct-download URLs. Keep copies from the password-prompted exports or local handover package. Public source and repository history remain visible; the interface lock does not encrypt them.
 
 ## Maintain the instructor password
 
@@ -31,7 +37,7 @@ Saving first changes the password in the current browser. Choose **Download edit
 
 Do not publish or include the plaintext password in source files, guides, or the transfer kit. Give it privately to the instructor. The source contains only a salted PBKDF2 verifier. Content JSON imports and restoring question defaults do not replace password settings. If the password is forgotten, the project maintainer must create and publish a replacement verifier; there is no online recovery service.
 
-The static/offline prompt deters casual editor access. It is **not server authentication**: visitors can modify their own browser or downloaded copies. Only authorized repository maintainers can overwrite the shared published website. A shared instructor admin service with server-enforced permissions would require an authenticated backend. See `EDITOR_ACCESS.md`.
+The static/offline prompt deters casual editing and website-download access. It is **not server authentication or encryption**: visitors can copy public source and repository history or modify their own browser and downloaded copies. Only authorized repository maintainers can overwrite the shared published website. A shared instructor admin service with server-enforced permissions would require an authenticated backend. See `EDITOR_ACCESS.md`.
 
 ## Keep backups
 
@@ -54,7 +60,7 @@ To resume saved local progress, use the same browser and keep the file in the sa
 | A recent edit is visible only on one device | Export the edited website, replace the hosting files, and wait for publication. Local drafts are device/browser specific. |
 | An old title or question still appears | Check the latest Pages deployment, then try a hard refresh or private/incognito window. A saved local draft may override the published default content in that browser. Back up the draft before restoring defaults. |
 | Images disappear after a file update | Upload the complete exported source set. Do not remove `content.js` or `assets.js`. Uploaded clue images should remain embedded through the editor. |
-| The instructor password screen appears | Enter the instructor password. If verification is unavailable, use the HTTPS website in a current full browser. The editor stays locked when verification is unavailable. |
+| The instructor password screen appears | Use the same instructor password for editing and website downloads. If verification is unavailable, use the HTTPS website in a current full browser. The protected controls stay locked when verification is unavailable. |
 | The editor blocks a change | Read the validation message. Check correct-answer choices, word-tile letter counts, required pictures, unique matching pairs, and ordered steps. |
 | Scores need to start again | Choose **New session**. In classroom mode, click a marked team again to correct an award. |
 
@@ -73,3 +79,7 @@ Retain both index.html and dashboard.html when updating the hosting files. The s
 ## Homepage, player names and word search
 
 Edit the homepage organ content in the four learning notes named Kidneys, Ureters, Bladder and Urethra. Matching definitions supply the homepage flip facts and the matching, memory and word-search games. Word search uses distinct terms of 1–20 letters. Solo names are entered when a session starts and remain in the browser; export a CSV to keep the score record. Download a fresh CI transfer kit after significant content edits.
+
+## Project credits
+
+The credited creators are Bill, Janez, Yesha, Aethan, Richelaine, Francine, Jochebid, Divine, and Shakira. Update these names in **Edit Content → Site → Project team / developers** as a comma-separated list. The homepage and About area display the credits. Older saved drafts with blank credits receive these defaults; instructor-written nonblank credits are preserved.

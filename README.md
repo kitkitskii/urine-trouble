@@ -2,6 +2,8 @@
 
 An editable urinary-system learning website for solo practice and classroom play. The game files run independently of ChatGPT and include their own images, editor, scoring, and offline export tools.
 
+**Created by:** Bill, Janez, Yesha, Aethan, Richelaine, Francine, Jochebid, Divine, and Shakira.
+
 ## Project status
 
 | Item | Status |
@@ -15,7 +17,7 @@ GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirme
 
 ## Homepage and dashboard
 
-[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=7) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=7) contains the games, session controls and playcard.
+[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=8) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=8) contains the games, session controls and playcard.
 
 Wrong attempts remain retryable; an eventual correct answer earns the challenge’s points once. Hints do not lock the answer. Sorting retries retain earlier correct cards.
 
@@ -43,8 +45,9 @@ Choose solo practice or classroom mode for two to four teams. Solo players earn 
 
 ## Offline and editable copies
 
-- [Download the standalone editable HTML](downloads/Urine_Trouble_Editable.html?raw=1).
-- [Download the complete website ZIP](downloads/Urine_Trouble_Editable_Website.zip?raw=1).
+Open the [website](https://kitkitskii.github.io/urine-trouble/index.html?v=8), choose **Downloads**, select the standalone HTML, website ZIP, or CI transfer kit, and enter the existing instructor password. Each successful check creates one selected download and relocks. An instructor already in the unlocked editor may export without entering it again. CSV score sheets remain available during play without a password.
+
+Prebuilt website archives, JSON backups, and quick-start text are no longer served at public direct-download URLs in the current deployment. Keep the independent copies created through Downloads or supplied during handover.
 
 Open the standalone HTML in a full modern browser on a computer. No account, installation, local server, or internet connection is required after downloading. Local-file saved progress depends on browser support.
 
@@ -63,11 +66,11 @@ To publish a change:
 
 The adviser can maintain the project through a GitHub collaborator account. Maintaining the site requires no ChatGPT login and no coding for ordinary content changes.
 
-## Instructor editing password
+## Instructor password for editing and website downloads
 
 The editor locks when you leave it, apply changes, reload, or choose **Lock editor**. Use **Change password** while unlocked; it requires the current password and a new one of 12–128 characters. The change is local until the downloaded `editor-access.js` or a full updated website export is committed to the hosting repository. Render normally redeploys the connected site after that commit.
 
-This offline/static prompt deters casual editor access; it is not server authentication. Visitors can change their own local copies, while publishing changes to the shared website still requires authorized repository access. Only a salted PBKDF2 verifier is exported. Keep the password privately, separate from public files. See [instructor access instructions](EDITOR_ACCESS.md).
+The same instructor password controls editing and website download prompts. This offline/static lock deters casual access; it is not server authentication or encryption. Public source and repository history remain accessible and can be copied. Visitors can change their own local copies, while publishing changes to the shared website still requires authorized repository access. Only a salted PBKDF2 verifier is exported. Keep the password privately, separate from public files. See [instructor access instructions](EDITOR_ACCESS.md).
 
 ## Adviser handover
 
@@ -76,7 +79,7 @@ This offline/static prompt deters casual editor access; it is not server authent
 - [One-page adviser quick start](ADVISER_QUICK_START.pdf)
 - [File inventory and checksums](HANDOVER_MANIFEST.json)
 
-Complete the project-team, school, adviser, and maintainer fields before submission. The current technical repository owner is `kitkitskii`; agree who should control it long term and add the adviser as a collaborator.
+The project credits list all nine creators. Complete the school, adviser, and maintainer fields before submission. The current technical repository owner is `kitkitskii`; agree who should control it long term and add the adviser as a collaborator.
 
 ## Technical notes
 
@@ -90,6 +93,6 @@ The homepage offers an organ explorer, flip facts and a study trail. Solo sessio
 
 ## CI ownership and recovery
 
-Use **Downloads → Download CI transfer kit** for the current editable website, standalone offline copy, JSON backup, Render blueprint and [CI handover guide](CI_HANDOVER.md). Ending ChatGPT Plus does not remove the separately hosted files. Deleting the actual source account or repository can remove its hosted copy. Keep independent copies and agree a CI/school-controlled hosting account.
+Use **Downloads → CI transfer kit** and enter the instructor password for the current editable website, standalone offline copy, JSON backup, Render blueprint and [CI handover guide](CI_HANDOVER.md). Ending ChatGPT Plus does not remove the separately hosted files. Deleting the actual source account or repository can remove its hosted copy. Keep independent copies and agree a CI/school-controlled hosting account.
 
 The owner reports having created a Render Blueprint; its service URL and successful deployment have not been verified in this record. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.

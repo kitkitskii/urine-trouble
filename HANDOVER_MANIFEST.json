@@ -10,7 +10,7 @@
     "repository_url": "https://github.com/kitkitskii/urine-trouble",
     "repository_id": 1444184769,
     "repository_confirmed": true,
-    "status": "Published independent website; instructor password interface included in this release",
+    "status": "Independent website with named project credits and instructor password prompts for editing and downloads",
     "current_owner": "kitkitskii",
     "source": {
       "branch": "main",
@@ -43,29 +43,31 @@
   },
   "source_archive": {
     "filename": "Urine_Trouble_Editable_Website.zip",
-    "bytes": 1801835,
-    "sha256": "04a1a902177197fcc1857df41b10f835f5205a75564409f0fdf9daf47fb9f1ec"
+    "bytes": 1816914,
+    "sha256": "58c222d7208dddc33d6630cb6ad2559a3afe1a0bb9c2eab3ead2c26f41db4377",
+    "location": "Local handover backup; website generates a current copy after instructor password"
   },
   "offline_html": {
     "filename": "Urine_Trouble_Editable.html",
-    "bytes": 1797320,
-    "sha256": "91687699698ea5b4ce2e221ef64f2d33868dc3e7a85900b2bade018cfe061c12"
+    "bytes": 1812159,
+    "sha256": "bba65a1187a706c362394ccd61d74cc3c30ffaa1189f73a4a2aa467b931fe050",
+    "location": "Local handover backup; website generates a current copy after instructor password"
   },
   "source_files": [
     {
       "path": "index.html",
       "bytes": 1280,
-      "sha256": "118fb7d29778bd4188cc4bec6256682a7be068e4fefb78c7eef92732e745f1bc"
+      "sha256": "44355a67aa402d7242714d97539e3594db74c706bfbf762cddf4b67534d06e1a"
     },
     {
       "path": "dashboard.html",
       "bytes": 1285,
-      "sha256": "0e9f062522694c5f0930a9b93029e6a1602c90ef2dc37467a7081a5f5fef4919"
+      "sha256": "580ff0374a032262b0e8fb06e4ac3c1a05b3cad499e4d39c02808ffe6705499c"
     },
     {
       "path": "style.css",
-      "bytes": 139392,
-      "sha256": "c2df461662b3515432b8d6aec1f7cc521364a8777cdfb34abd65654257188e2b"
+      "bytes": 140492,
+      "sha256": "86eca43da0c05b3c2289b2e15c27b75f5dc263eee749054b5b7c4379e35b632d"
     },
     {
       "path": "editor.css",
@@ -74,8 +76,8 @@
     },
     {
       "path": "content.js",
-      "bytes": 973913,
-      "sha256": "3df8d01dddd7430da4ef01aa9d7d7965ccc903280ddb6b9eb1c5efc741a61e56"
+      "bytes": 974005,
+      "sha256": "e6c08d5ab94aa1e4620d084279b8a68753a87604591b5cb1966c3826fc586db0"
     },
     {
       "path": "assets.js",
@@ -124,23 +126,23 @@
     },
     {
       "path": "editor.js",
-      "bytes": 34040,
-      "sha256": "c1cd8c0a4bd41b421febc211e18b9cb857496a171cd97e4a845c6088defe5186"
+      "bytes": 34059,
+      "sha256": "2a2f056be42128e8bdfa397cc3e762633514858349c8d2995e661f3af8e16af4"
     },
     {
       "path": "downloads.js",
-      "bytes": 4709,
-      "sha256": "ad608c107696ee9763e057d8bf6bb76ed5c566b59c23ed73284d648f91f369fa"
+      "bytes": 5167,
+      "sha256": "30cbf634e82d5988d17412be1eb50bed6304f162276b18ce1af7448f6c9e2c72"
     },
     {
       "path": "bundle.js",
-      "bytes": 505718,
-      "sha256": "15864bb653caaa0773eb9e1c77bead4036e9717c38eb975d7ca6ad85bb563fbe"
+      "bytes": 514914,
+      "sha256": "3036a899c2920c5daad5bd523476f8e9b815ce7388185bce0fcb15ba43bc37c3"
     },
     {
       "path": "app.js",
-      "bytes": 71930,
-      "sha256": "b4dc9473a72f8c666c2b845e4899295d6929a6dc0c401e0c9c1f27ebd5ae50eb"
+      "bytes": 75904,
+      "sha256": "1608ec8e0759199539a3f896046ef6a25fa07c6863e855066a9e21c6a2009e65"
     },
     {
       "path": "render.yaml",
@@ -149,35 +151,35 @@
     },
     {
       "path": "CI_HANDOVER.md",
-      "bytes": 10062,
-      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
+      "bytes": 10999,
+      "sha256": "74d057934097fc080e29484bd794f53dd339b4dfef04f1916867ae1ed1a8f0c5"
     },
     {
       "path": "EDITOR_ACCESS.md",
-      "bytes": 2880,
-      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
+      "bytes": 3904,
+      "sha256": "ca3c1d5fb153b2e97b02804dd74a1517cf397599fa3bb70027972e36b92d1705"
     }
   ],
   "handover_documents": [
     {
       "filename": "README.md",
-      "bytes": 7100,
-      "sha256": "78056cdd711beb25dc7ff106118363e1c3492e762f76a19bc7faabecc7811da7"
+      "bytes": 7900,
+      "sha256": "7fb512b1daf172f27bcd408449275c5304616b470df9a78f03d31df0f868493f"
     },
     {
       "filename": "PROJECT_HANDOVER.md",
-      "bytes": 6415,
-      "sha256": "09c246fc521acd7c0707f419500b0be9cb2da2cb2162403a6e15345791c99ca0"
+      "bytes": 7406,
+      "sha256": "c3da5690d17d4aeb32b74410ce13eb703505ad73f935d95186173f45edce1907"
     },
     {
       "filename": "MAINTENANCE_GUIDE.md",
-      "bytes": 7980,
-      "sha256": "dbfe3cecaf678ea64b9f0856f853418218ff89497e5cdfb2254395de7b2b6419"
+      "bytes": 9402,
+      "sha256": "3131be354b1b1f6438dfa1a96b99871d12b2b11aa18d9631f0407426a1e493c9"
     },
     {
       "filename": "ADVISER_QUICK_START.pdf",
-      "bytes": 4009,
-      "sha256": "e4b41b15448fdafff334c1ee2bbb03b7eb7e7e072feb3f82f6058a4faca78920"
+      "bytes": 4112,
+      "sha256": "fedd373993fd8a84dce12ee79bfefea1f48c13a21cda2cfe2f9d238c51ebd530"
     },
     {
       "filename": "PUBLISHING.md",
@@ -186,13 +188,13 @@
     },
     {
       "filename": "CI_HANDOVER.md",
-      "bytes": 10062,
-      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
+      "bytes": 10999,
+      "sha256": "74d057934097fc080e29484bd794f53dd339b4dfef04f1916867ae1ed1a8f0c5"
     },
     {
       "filename": "EDITOR_ACCESS.md",
-      "bytes": 2880,
-      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
+      "bytes": 3904,
+      "sha256": "ca3c1d5fb153b2e97b02804dd74a1517cf397599fa3bb70027972e36b92d1705"
     }
   ],
   "release_files": [
@@ -203,13 +205,13 @@
     },
     {
       "path": "ADVISER_QUICK_START.pdf",
-      "bytes": 4009,
-      "sha256": "e4b41b15448fdafff334c1ee2bbb03b7eb7e7e072feb3f82f6058a4faca78920"
+      "bytes": 4112,
+      "sha256": "fedd373993fd8a84dce12ee79bfefea1f48c13a21cda2cfe2f9d238c51ebd530"
     },
     {
       "path": "CI_HANDOVER.md",
-      "bytes": 10062,
-      "sha256": "29fd2c190bfa95ee3845040f99f3aa4bf03ebe4a8b088a202df9fb72daaf9fde"
+      "bytes": 10999,
+      "sha256": "74d057934097fc080e29484bd794f53dd339b4dfef04f1916867ae1ed1a8f0c5"
     },
     {
       "path": "CONTENT_REFERENCES.md",
@@ -218,18 +220,18 @@
     },
     {
       "path": "EDITOR_ACCESS.md",
-      "bytes": 2880,
-      "sha256": "0ca023c227fe6eb2029590aece66f4188b6ea43a71875deda5339702a8ac312d"
+      "bytes": 3904,
+      "sha256": "ca3c1d5fb153b2e97b02804dd74a1517cf397599fa3bb70027972e36b92d1705"
     },
     {
       "path": "MAINTENANCE_GUIDE.md",
-      "bytes": 7980,
-      "sha256": "dbfe3cecaf678ea64b9f0856f853418218ff89497e5cdfb2254395de7b2b6419"
+      "bytes": 9402,
+      "sha256": "3131be354b1b1f6438dfa1a96b99871d12b2b11aa18d9631f0407426a1e493c9"
     },
     {
       "path": "PROJECT_HANDOVER.md",
-      "bytes": 6415,
-      "sha256": "09c246fc521acd7c0707f419500b0be9cb2da2cb2162403a6e15345791c99ca0"
+      "bytes": 7406,
+      "sha256": "c3da5690d17d4aeb32b74410ce13eb703505ad73f935d95186173f45edce1907"
     },
     {
       "path": "PUBLISHING.md",
@@ -238,8 +240,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7100,
-      "sha256": "78056cdd711beb25dc7ff106118363e1c3492e762f76a19bc7faabecc7811da7"
+      "bytes": 7900,
+      "sha256": "7fb512b1daf172f27bcd408449275c5304616b470df9a78f03d31df0f868493f"
     },
     {
       "path": "access.js",
@@ -253,8 +255,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 71930,
-      "sha256": "b4dc9473a72f8c666c2b845e4899295d6929a6dc0c401e0c9c1f27ebd5ae50eb"
+      "bytes": 75904,
+      "sha256": "1608ec8e0759199539a3f896046ef6a25fa07c6863e855066a9e21c6a2009e65"
     },
     {
       "path": "assets.js",
@@ -263,43 +265,23 @@
     },
     {
       "path": "bundle.js",
-      "bytes": 505718,
-      "sha256": "15864bb653caaa0773eb9e1c77bead4036e9717c38eb975d7ca6ad85bb563fbe"
+      "bytes": 514914,
+      "sha256": "3036a899c2920c5daad5bd523476f8e9b815ce7388185bce0fcb15ba43bc37c3"
     },
     {
       "path": "content.js",
-      "bytes": 973913,
-      "sha256": "3df8d01dddd7430da4ef01aa9d7d7965ccc903280ddb6b9eb1c5efc741a61e56"
+      "bytes": 974005,
+      "sha256": "e6c08d5ab94aa1e4620d084279b8a68753a87604591b5cb1966c3826fc586db0"
     },
     {
       "path": "dashboard.html",
       "bytes": 1285,
-      "sha256": "0e9f062522694c5f0930a9b93029e6a1602c90ef2dc37467a7081a5f5fef4919"
-    },
-    {
-      "path": "downloads/START_HERE.txt",
-      "bytes": 2348,
-      "sha256": "87a8d9d99691816989ceb72ecb13d64f830b76e2fff2b6ba5667b449a0e59c54"
-    },
-    {
-      "path": "downloads/Urine_Trouble_Content_Backup.json",
-      "bytes": 997881,
-      "sha256": "8b4835de2869f985bed8622d23f6ccd45cbaaff6ab8fca0f2d36106b812b1842"
-    },
-    {
-      "path": "downloads/Urine_Trouble_Editable.html",
-      "bytes": 1797320,
-      "sha256": "91687699698ea5b4ce2e221ef64f2d33868dc3e7a85900b2bade018cfe061c12"
-    },
-    {
-      "path": "downloads/Urine_Trouble_Editable_Website.zip",
-      "bytes": 1801835,
-      "sha256": "04a1a902177197fcc1857df41b10f835f5205a75564409f0fdf9daf47fb9f1ec"
+      "sha256": "580ff0374a032262b0e8fb06e4ac3c1a05b3cad499e4d39c02808ffe6705499c"
     },
     {
       "path": "downloads.js",
-      "bytes": 4709,
-      "sha256": "ad608c107696ee9763e057d8bf6bb76ed5c566b59c23ed73284d648f91f369fa"
+      "bytes": 5167,
+      "sha256": "30cbf634e82d5988d17412be1eb50bed6304f162276b18ce1af7448f6c9e2c72"
     },
     {
       "path": "editor-access.js",
@@ -313,8 +295,8 @@
     },
     {
       "path": "editor.js",
-      "bytes": 34040,
-      "sha256": "c1cd8c0a4bd41b421febc211e18b9cb857496a171cd97e4a845c6088defe5186"
+      "bytes": 34059,
+      "sha256": "2a2f056be42128e8bdfa397cc3e762633514858349c8d2995e661f3af8e16af4"
     },
     {
       "path": "engine.js",
@@ -324,7 +306,7 @@
     {
       "path": "index.html",
       "bytes": 1280,
-      "sha256": "118fb7d29778bd4188cc4bec6256682a7be068e4fefb78c7eef92732e745f1bc"
+      "sha256": "44355a67aa402d7242714d97539e3594db74c706bfbf762cddf4b67534d06e1a"
     },
     {
       "path": "memory.js",
@@ -343,8 +325,8 @@
     },
     {
       "path": "style.css",
-      "bytes": 139392,
-      "sha256": "c2df461662b3515432b8d6aec1f7cc521364a8777cdfb34abd65654257188e2b"
+      "bytes": 140492,
+      "sha256": "86eca43da0c05b3c2289b2e15c27b75f5dc263eee749054b5b7c4379e35b632d"
     },
     {
       "path": "wordsearch.js",
@@ -363,7 +345,7 @@
     "textbook_access": "Not read: uploaded PDF exceeds 32 MiB transfer limit",
     "answer_specific_rationales": true
   },
-  "interface_revision": 7,
+  "interface_revision": 8,
   "features": {
     "arcade_run_max_stages": 5,
     "arcade_run_pause_resume": true,
@@ -383,12 +365,17 @@
     "password_change": true,
     "password_relocks_on_exit": true,
     "password_verifier_only": true,
-    "server_authentication": false
+    "server_authentication": false,
+    "named_project_credits": true,
+    "password_required_for_website_downloads": true,
+    "download_unlock_one_shot": true,
+    "free_score_csv": true,
+    "public_prebuilt_downloads": false
   },
   "entries": {
     "home": "index.html",
     "dashboard": "dashboard.html",
-    "standalone": "downloads/Urine_Trouble_Editable.html"
+    "standalone": "Downloads menu: Editable HTML, generated after instructor password"
   },
   "hosting_transition": {
     "requested": "free project-branded address without personal username",
@@ -404,5 +391,44 @@
     "password_custody": "Hand the password privately to the instructor; never add it to this package or repository",
     "scope": "Static/offline interface lock, not server-enforced authentication",
     "shared_update": "Publish the new editor-access.js or a full website export; browser edits are local"
-  }
+  },
+  "project_creators": [
+    "Bill",
+    "Janez",
+    "Yesha",
+    "Aethan",
+    "Richelaine",
+    "Francine",
+    "Jochebid",
+    "Divine",
+    "Shakira"
+  ],
+  "download_access": {
+    "password": "Same instructor password as Edit Content; unchanged in this release",
+    "scope": "Browser interface lock, not server authentication or protection of public source/history",
+    "archives": "Generated after a password check; no prebuilt archives in deployed files",
+    "score_csv": "Available without password"
+  },
+  "local_handover_files": [
+    {
+      "path": "OFFLINE/Are_You_Kidney_Me.html",
+      "bytes": 1812159,
+      "sha256": "bba65a1187a706c362394ccd61d74cc3c30ffaa1189f73a4a2aa467b931fe050"
+    },
+    {
+      "path": "BACKUP/Urine_Trouble_Editable_Website.zip",
+      "bytes": 1816914,
+      "sha256": "58c222d7208dddc33d6630cb6ad2559a3afe1a0bb9c2eab3ead2c26f41db4377"
+    },
+    {
+      "path": "BACKUP/PROJECT_DATA.json",
+      "bytes": 997777,
+      "sha256": "475ed510046635b5b4f8baa6d44714a11605299471dd1069e83520b984761c36"
+    },
+    {
+      "path": "START_HERE.txt",
+      "bytes": 2855,
+      "sha256": "aebe685c43c0daca865b52ef1dbdd710eaab25d4dcd1a1e82f48356609ae892c"
+    }
+  ]
 }

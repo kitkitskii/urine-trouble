@@ -2,6 +2,8 @@
 
 This learning website is a portable collection of HTML, CSS, JavaScript, and embedded images. Keep the project files as the lasting deliverable, together with control of the hosting account and a tested recovery copy.
 
+**Project creators:** Bill, Janez, Yesha, Aethan, Richelaine, Francine, Jochebid, Divine, and Shakira.
+
 ## What happens if a subscription or account ends?
 
 **Ending ChatGPT Plus will not delete the separately hosted website or the downloaded project files.** The website has no ChatGPT API, sign-in, or subscription dependency at runtime. ChatGPT was used to develop the files; the external hosting account serves them.
@@ -36,7 +38,7 @@ This is an operational recommendation, not a promise that a free provider will r
 ## Transfer and acceptance checklist
 
 1. Agree who owns the project and who will maintain it after submission. Record the CI/school custodian and a second maintainer.
-2. Supply the complete website ZIP, standalone editable HTML, project JSON backup, and maintenance guides. Keep copies with both the project team and the CI/school.
+2. Use **Downloads** with the instructor password to create the website ZIP, standalone editable HTML, or CI transfer kit. Supply these copies with the project JSON backup and maintenance guides to both the project team and the CI/school.
 3. Confirm the CI can open the offline HTML on a computer without ChatGPT or an internet connection.
 4. Place the hosted project under the agreed owner. Grant suitable administrator/member permissions using individual logins; do not hand over a personal password.
 5. Confirm the CI can sign in, edit one nonclinical title, export it, upload the changed files, and restore a prior version.
@@ -52,11 +54,13 @@ Unlock **Edit Content** with the instructor password, apply and test the changes
 
 ## Instructor password and publication
 
-Give the instructor the editing password privately, separately from this kit. **Edit Content** asks for it; leaving the editor, applying changes, reloading, or choosing **Lock editor** locks it again. Games remain available without the password.
+Give the instructor the password privately, separately from this kit. The same password is used for **Edit Content** and website **Downloads**; no new password is introduced for downloads. Leaving the editor, applying changes, reloading, or choosing **Lock editor** locks editing again. Games and CSV score-sheet downloads remain available without this password.
+
+For a website copy, choose **Downloads**, select HTML, website ZIP, or CI transfer kit, and enter the instructor password. Each successful check creates one selected download and relocks. Closing the prompt or navigating away cancels a pending request. An instructor already working in the unlocked editor may export without entering the password again.
 
 To replace it, unlock the editor and choose **Change password**. Enter the current password, then a new password of **12–128 characters** twice. A saved password change first applies only to that browser. Choose **Download editor-access.js**, sign into the project GitHub repository with maintenance access, upload that file at the repository root to replace its previous version, and commit. The connected Render site normally redeploys after the commit; wait for **Live** and refresh before testing the new password. Full website exports also carry the current password settings. Content JSON imports and question-default restoration do not change the lock.
 
-This is a static/offline interface lock, not server authentication. Visitors can modify their own local copies, but cannot overwrite the published website without authorized repository access. The public files contain a salted PBKDF2 verifier, not the plaintext password or an unlocked session. A genuine instructor-only shared admin service would require an authenticated backend. Keep the password private and agree how the maintainer will replace its verifier if it is forgotten.
+This is a static/offline interface lock, not server authentication or encryption. Current prebuilt HTML, ZIP, JSON backup, and quick-start text are not served at public direct-download URLs; the password-prompted interface creates the selected export. Public source and older repository history remain accessible, so a technical visitor can still copy the public source or modify a local copy. Visitors cannot overwrite the published website without authorized repository access. The public files contain a salted PBKDF2 verifier, not the plaintext password or an unlocked session. A genuine instructor-only shared admin service would require an authenticated backend. Keep the password private and agree how the maintainer will replace its verifier if it is forgotten.
 
 ## Custody record — complete before submission
 

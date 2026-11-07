@@ -1,8 +1,18 @@
-# Instructor editing access
+# Instructor editing and download access
 
 ## Open the editor
 
 Choose **Edit Content** and enter the instructor password. The editor locks again when you leave it, apply changes, reload the page, or choose **Lock editor**. Learners can play without this password. Give the instructor the password privately; keep it separate from the project files and public repository.
+
+## Download a website copy
+
+The existing instructor password also controls the website’s **Downloads** interface; the password has not been changed for this feature.
+
+1. Choose **Downloads** and select the standalone HTML, website ZIP, or CI transfer kit.
+2. Enter the instructor password to create the selected download. The download permission is used once, then locks again.
+3. To download another copy, enter the password again. Closing the prompt or leaving the page cancels a pending check.
+
+An instructor already in an unlocked editor may use its export controls without an additional prompt. **CSV score-sheet downloads remain available during play without a password.** Keep an independent offline copy after downloading; prebuilt HTML, ZIP, JSON backup, and quick-start text are no longer published as direct-download files in the current website deployment.
 
 ## Change the password
 
@@ -16,7 +26,7 @@ A full website HTML, website ZIP, or CI transfer-kit export also retains the cur
 
 ## What the lock protects
 
-This static/offline website uses a password prompt to deter casual access to the editing interface. It is **not server authentication**. A visitor can still modify their own downloaded files or browser copy. Browser edits do not overwrite the published website; that requires the repository owner's or an authorized maintainer's access.
+This static/offline website uses a password prompt to deter casual access to the editing and website-download interfaces. It is **not server authentication or encryption**. The public source and repository history remain accessible; a technical visitor can still copy public source or modify downloaded files and browser copies. Browser edits do not overwrite the published website; that requires the repository owner's or an authorized maintainer's access.
 
 The files contain only a salted PBKDF2 password verifier, never the plaintext password or an unlocked login session. No online password-recovery service is included. A forgotten password requires the project maintainer to create and publish a replacement verifier; keeping an independent backup and agreed maintainer access remains necessary.
 
@@ -25,5 +35,5 @@ For an instructor-only shared administration system with server-enforced permiss
 ## If editing does not open
 
 - Check that you have the instructor password; a learner's solo name is not an editing password.
-- Use the HTTPS website in a current full browser. Offline-file support for password verification depends on that browser. If verification is unavailable, the editor stays locked.
+- Use the HTTPS website in a current full browser. Offline-file support for password verification depends on that browser. If verification is unavailable, editing and website downloads stay locked.
 - After a shared password update, wait for hosting deployment and refresh the page. A new published verifier supersedes an older password change saved by that browser.
