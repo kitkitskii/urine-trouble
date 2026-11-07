@@ -17,7 +17,7 @@ GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirme
 
 ## Homepage and dashboard
 
-[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=8) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=8) contains the games, session controls and playcard.
+[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=9) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=9) contains the games, session controls and playcard.
 
 Wrong attempts remain retryable; an eventual correct answer earns the challenge’s points once. Hints do not lock the answer. Sorting retries retain earlier correct cards.
 
@@ -45,7 +45,7 @@ Choose solo practice or classroom mode for two to four teams. Solo players earn 
 
 ## Offline and editable copies
 
-Open the [website](https://kitkitskii.github.io/urine-trouble/index.html?v=8), choose **Downloads**, select the standalone HTML, website ZIP, or CI transfer kit, and enter the existing instructor password. Each successful check creates one selected download and relocks. An instructor already in the unlocked editor may export without entering it again. CSV score sheets remain available during play without a password.
+Open the [website](https://kitkitskii.github.io/urine-trouble/index.html?v=9), choose **Downloads**, select the standalone HTML, website ZIP, or CI transfer kit, and enter the existing instructor password. Each successful check creates one selected download and relocks. An instructor already in the unlocked editor may export without entering it again. CSV score sheets remain available during play without a password.
 
 Prebuilt website archives, JSON backups, and quick-start text are no longer served at public direct-download URLs in the current deployment. Keep the independent copies created through Downloads or supplied during handover.
 
@@ -96,3 +96,7 @@ The homepage offers an organ explorer, flip facts and a study trail. Solo sessio
 Use **Downloads → CI transfer kit** and enter the instructor password for the current editable website, standalone offline copy, JSON backup, Render blueprint and [CI handover guide](CI_HANDOVER.md). Ending ChatGPT Plus does not remove the separately hosted files. Deleting the actual source account or repository can remove its hosted copy. Keep independent copies and agree a CI/school-controlled hosting account.
 
 The owner reports having created a Render Blueprint; its service URL and successful deployment have not been verified in this record. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.
+
+## Forgotten-password guidance
+
+Choose **Forgot password?** on the editor, download, or password-change form for saved-password and maintainer recovery instructions. The guidance works offline, preserves the current form, and never displays or changes the password.

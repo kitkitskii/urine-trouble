@@ -85,3 +85,7 @@ The included render.yaml defines a static site with no database or server proces
 ## Solo identities
 
 Player names and scores stay in the current browser. Export a score CSV separately when a class record is needed. Content/website exports intentionally do not distribute students’ session names or scores.
+
+## Forgotten-password help
+
+The password forms include **Forgot password?** guidance for saved browser passwords, the private instructor record, and a maintainer-managed reset. It works offline, keeps the current form and draft intact, and does not reveal or change the password. A reset still requires an authorized maintainer to publish replacement password settings; this site does not send reset emails.

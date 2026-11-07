@@ -14,6 +14,12 @@ The existing instructor password also controls the website’s **Downloads** int
 
 An instructor already in an unlocked editor may use its export controls without an additional prompt. **CSV score-sheet downloads remain available during play without a password.** Keep an independent offline copy after downloading; prebuilt HTML, ZIP, JSON backup, and quick-start text are no longer published as direct-download files in the current website deployment.
 
+## If the password is forgotten
+
+Choose **Forgot password?** below the password form in **Edit Content**, **Downloads**, or **Change password**. Expand or collapse the help without leaving the form; selected download types and unsaved editor drafts are retained.
+
+The help explains how to check the browser's Password Manager, find the private instructor/maintainer password record, or ask an authorized repository maintainer to publish replacement password settings. It does not display passwords, send reset emails, change the current verifier, or unlock editing/downloads. The password remains unchanged when this help is used. The same guidance is embedded in offline exports.
+
 ## Change the password
 
 1. Unlock **Edit Content**, then choose **Change password**.
