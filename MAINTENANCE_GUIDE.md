@@ -35,9 +35,20 @@ The editor locks when you leave it, apply changes, reload, or choose **Lock edit
 
 Saving first changes the password in the current browser. Choose **Download editor-access.js**, then sign into GitHub with repository maintenance access. Upload that file at the repository root to replace `editor-access.js`, and commit the change. The connected Render site normally deploys the committed update automatically; wait for **Live**, refresh, and test the new password. A complete exported website ZIP carries the new verifier too.
 
-Do not publish or include the plaintext password in source files, guides, or the transfer kit. Give it privately to the instructor. The source contains only a salted PBKDF2 verifier. Content JSON imports and restoring question defaults do not replace password settings. If the password is forgotten, the project maintainer must create and publish a replacement verifier; there is no online recovery service.
+Do not publish or include the plaintext password in source files, guides, or the transfer kit. Give it privately to the instructor. The source contains only a salted PBKDF2 verifier. Content JSON imports and restoring question defaults do not replace password settings. If the password is forgotten, use the maintainer recovery tool below to create replacement settings without the old password, then publish them. There is no online recovery service.
 
 The static/offline prompt deters casual editing and website-download access. It is **not server authentication or encryption**: visitors can copy public source and repository history or modify their own browser and downloaded copies. Only authorized repository maintainers can overwrite the shared published website. A shared instructor admin service with server-enforced permissions would require an authenticated backend. See `EDITOR_ACCESS.md`.
+
+## Reset a forgotten password without the old password
+
+1. Choose **Forgot password?** in **Edit Content**, **Downloads**, or **Change password**. Check the browser's Password Manager and the private instructor record first.
+2. In the maintainer instructions, choose **Open reset tool**. You may instead save `recovery.html` and open the tool later in a current full browser.
+3. Enter a new password of **12–128 characters** twice. Create the replacement **editor-access.js** file. The browser generates a salted verifier locally; it does not send or store the password. Keep the new password privately.
+4. Sign into the project GitHub repository with maintenance access. At the root, choose **Add file → Upload files**, upload the new file to replace the existing `editor-access.js`, and commit. Check that the filename is exactly `editor-access.js`, without a browser-added number.
+5. Wait for the connected Render deployment to show **Live**, or for GitHub Pages publication to succeed. Hard-refresh or open a private/incognito window, then test the new password for both editing and website downloads.
+6. Keep an updated project backup and hand the password privately to the instructor.
+
+The helper does not change the active website, its existing browser password settings, content, scores, or unlocked state. Anyone may create a generic replacement file; applying it to the shared site still requires authorized repository access. The tool is included in modular website exports and the CI kit and can be opened or saved from the standalone offline HTML. It does not turn this static interface lock into server authentication.
 
 ## Keep backups
 

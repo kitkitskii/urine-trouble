@@ -16,9 +16,25 @@ An instructor already in an unlocked editor may use its export controls without 
 
 ## If the password is forgotten
 
-Choose **Forgot password?** below the password form in **Edit Content**, **Downloads**, or **Change password**. Expand or collapse the help without leaving the form; selected download types and unsaved editor drafts are retained.
+Choose **Forgot password?** below the password form in **Edit Content**, **Downloads**, or **Change password**. The help stays with the current form, preserving the selected download type and unsaved editor draft.
 
-The help explains how to check the browser's Password Manager, find the private instructor/maintainer password record, or ask an authorized repository maintainer to publish replacement password settings. It does not display passwords, send reset emails, change the current verifier, or unlock editing/downloads. The password remains unchanged when this help is used. The same guidance is embedded in offline exports.
+First check the browser's Password Manager for this website's address, or ask the instructor/project maintainer for the private password record. The website cannot display the current password or send a reset email.
+
+### Maintainer reset without the old password
+
+If no saved copy exists, an authorized repository maintainer can replace the password without knowing the old one:
+
+1. In **Forgot password?**, open the maintainer instructions and choose **Open reset tool**. You can also save the portable `recovery.html` tool and open it later in a current full browser.
+2. Enter a new password of **12–128 characters** twice. Create and download the replacement **editor-access.js** file. If the browser adds a number to its filename, rename it to exactly `editor-access.js` before uploading.
+3. Sign into the project GitHub repository with an account allowed to maintain it. At the repository root, choose **Add file → Upload files**, upload the new `editor-access.js` to replace the previous file, and **Commit changes**.
+4. Wait for the connected Render deployment to show **Live** (or for GitHub Pages publication to succeed). Refresh the website, using a hard refresh or private/incognito window if needed, and test the new password in both **Edit Content** and **Downloads**.
+5. Keep the new password privately and retain an updated project backup. Do not put the plaintext password in the repository, guides, or transfer kit.
+
+The tool creates the replacement settings locally using browser cryptography. It needs no old password and does not send or store the new password. The downloaded file contains a salted verifier, not a readable password.
+
+**Creating or downloading this file does not reset or unlock the running website.** The existing password remains active until an authorized maintainer publishes the replacement settings. Anyone can use the generic helper to make a file, but they cannot apply it to the shared website without repository access. No questions, scores, or browser content are erased by the helper.
+
+The recovery tool is included in modular website exports and the CI kit, and can be opened or saved from the standalone offline copy. If browser password verification is unavailable, use the HTTPS website or a current full browser that supports the tool.
 
 ## Change the password
 
@@ -34,7 +50,7 @@ A full website HTML, website ZIP, or CI transfer-kit export also retains the cur
 
 This static/offline website uses a password prompt to deter casual access to the editing and website-download interfaces. It is **not server authentication or encryption**. The public source and repository history remain accessible; a technical visitor can still copy public source or modify downloaded files and browser copies. Browser edits do not overwrite the published website; that requires the repository owner's or an authorized maintainer's access.
 
-The files contain only a salted PBKDF2 password verifier, never the plaintext password or an unlocked login session. No online password-recovery service is included. A forgotten password requires the project maintainer to create and publish a replacement verifier; keeping an independent backup and agreed maintainer access remains necessary.
+The files contain only a salted PBKDF2 password verifier, never the plaintext password or an unlocked login session. There is no online password-recovery service. The included recovery tool can create replacement settings without the old password; an authorized maintainer must publish them to reset the shared website. Keep an independent backup and agreed maintainer access.
 
 For an instructor-only shared administration system with server-enforced permissions and direct online publishing, the project would need an authenticated backend. That service is not part of this portable release.
 

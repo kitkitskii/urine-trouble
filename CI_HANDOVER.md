@@ -58,7 +58,7 @@ Give the instructor the password privately, separately from this kit. The same p
 
 For a website copy, choose **Downloads**, select HTML, website ZIP, or CI transfer kit, and enter the instructor password. Each successful check creates one selected download and relocks. Closing the prompt or navigating away cancels a pending request. An instructor already working in the unlocked editor may export without entering the password again.
 
-To replace it, unlock the editor and choose **Change password**. Enter the current password, then a new password of **12–128 characters** twice. A saved password change first applies only to that browser. Choose **Download editor-access.js**, sign into the project GitHub repository with maintenance access, upload that file at the repository root to replace its previous version, and commit. The connected Render site normally redeploys after the commit; wait for **Live** and refresh before testing the new password. Full website exports also carry the current password settings. Content JSON imports and question-default restoration do not change the lock.
+When the current password is known, unlock the editor and choose **Change password**. Enter the current password, then a new password of **12–128 characters** twice. A saved password change first applies only to that browser. Choose **Download editor-access.js**, sign into the project GitHub repository with maintenance access, upload that file at the repository root to replace its previous version, and commit. The connected Render site normally redeploys after the commit; wait for **Live** and refresh before testing the new password. Full website exports also carry the current password settings. Content JSON imports and question-default restoration do not change the lock.
 
 This is a static/offline interface lock, not server authentication or encryption. Current prebuilt HTML, ZIP, JSON backup, and quick-start text are not served at public direct-download URLs; the password-prompted interface creates the selected export. Public source and older repository history remain accessible, so a technical visitor can still copy the public source or modify a local copy. Visitors cannot overwrite the published website without authorized repository access. The public files contain a salted PBKDF2 verifier, not the plaintext password or an unlocked session. A genuine instructor-only shared admin service would require an authenticated backend. Keep the password private and agree how the maintainer will replace its verifier if it is forgotten.
 
@@ -86,6 +86,15 @@ The included render.yaml defines a static site with no database or server proces
 
 Player names and scores stay in the current browser. Export a score CSV separately when a class record is needed. Content/website exports intentionally do not distribute students’ session names or scores.
 
-## Forgotten-password help
+## Forgotten-password help and maintainer reset
 
-The password forms include **Forgot password?** guidance for saved browser passwords, the private instructor record, and a maintainer-managed reset. It works offline, keeps the current form and draft intact, and does not reveal or change the password. A reset still requires an authorized maintainer to publish replacement password settings; this site does not send reset emails.
+The **Forgot password?** guidance is available from editing, download, and password-change forms. It works offline and preserves the selected form and unsaved draft. Check the browser's Password Manager or the private instructor record first; the website cannot show the current password or send a reset email.
+
+A repository maintainer can create replacement settings without the old password:
+
+1. Open the maintainer instructions under **Forgot password?**, then choose **Open reset tool**, or save `recovery.html` for offline use.
+2. Enter a new password of **12–128 characters** twice and create the replacement `editor-access.js`. Keep the password private. The tool creates only a salted verifier and does not send or store the password.
+3. Sign into GitHub using authorized repository-maintenance access. At the project root, use **Add file → Upload files** to replace `editor-access.js`, then commit. Preserve that exact filename.
+4. Wait for the connected Render deployment to show **Live**, or for GitHub Pages publication to succeed. Hard-refresh the website if necessary, then test **Edit Content** and **Downloads** with the new password.
+
+Generating a settings file does not reset or unlock the existing website. Only an authorized maintainer can publish it to the shared site. The generic helper is public and portable; it does not grant repository access, clear content or scores, or provide server authentication. It is included in modular exports and the CI kit and can be opened or saved from the standalone copy. See [instructor access instructions](EDITOR_ACCESS.md) for the full procedure.

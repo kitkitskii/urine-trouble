@@ -55,6 +55,14 @@ Keep the instructor password private and hand it over separately from public sou
 
 Only a salted PBKDF2 verifier is stored in the exported files. This offline/static interface lock deters casual editing and website-download access; it is not server authentication or encryption. Public source and repository history remain accessible. Visitors may copy that source or change their own local copies. Publishing shared changes still requires authorized repository access. A genuine instructor-only shared administration system would need an authenticated backend. See `EDITOR_ACCESS.md` for use, updating, and recovery limits.
 
+## Forgotten-password reset
+
+The **Forgot password?** help checks saved browser passwords and the private instructor record first. If the password is lost, an authorized maintainer can use **Open reset tool** in the help, or save the portable `recovery.html` tool. The old password is not required. Enter a new password of **12–128 characters** twice to create replacement `editor-access.js` settings. The tool uses browser cryptography locally; it does not send or store the password.
+
+Creating the file does not reset or unlock the website. A maintainer must sign into the project GitHub repository, use **Add file → Upload files** at the root to replace `editor-access.js`, and commit. Wait for the connected Render deployment to show **Live** (or for GitHub Pages publication), then refresh and test both editing and downloads. Keep the actual password private and retain an updated backup.
+
+The generic helper is public and included in website and CI-kit exports; the standalone HTML can open or save it. Its file-generation function grants no repository access and erases no teaching content or scores. Publishing the replacement file requires the agreed maintainer's authorization. See `EDITOR_ACCESS.md` for the complete reset procedure.
+
 ## Technical summary
 
 The project uses HTML, CSS, and plain JavaScript. It has no application backend, database, package installation, or build command. Picture clues and the mascot are embedded in the website files. Scores and draft edits are stored locally in the browser when storage is available.

@@ -17,7 +17,7 @@ GitHub Pages uses **Deploy from a branch → main → /(root)**. GitHub confirme
 
 ## Homepage and dashboard
 
-[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=9) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=9) contains the games, session controls and playcard.
+[Home](https://kitkitskii.github.io/urine-trouble/index.html?v=10) introduces the arcade. [Dashboard](https://kitkitskii.github.io/urine-trouble/dashboard.html?v=10) contains the games, session controls and playcard.
 
 Wrong attempts remain retryable; an eventual correct answer earns the challenge’s points once. Hints do not lock the answer. Sorting retries retain earlier correct cards.
 
@@ -45,7 +45,7 @@ Choose solo practice or classroom mode for two to four teams. Solo players earn 
 
 ## Offline and editable copies
 
-Open the [website](https://kitkitskii.github.io/urine-trouble/index.html?v=9), choose **Downloads**, select the standalone HTML, website ZIP, or CI transfer kit, and enter the existing instructor password. Each successful check creates one selected download and relocks. An instructor already in the unlocked editor may export without entering it again. CSV score sheets remain available during play without a password.
+Open the [website](https://kitkitskii.github.io/urine-trouble/index.html?v=10), choose **Downloads**, select the standalone HTML, website ZIP, or CI transfer kit, and enter the existing instructor password. Each successful check creates one selected download and relocks. An instructor already in the unlocked editor may export without entering it again. CSV score sheets remain available during play without a password.
 
 Prebuilt website archives, JSON backups, and quick-start text are no longer served at public direct-download URLs in the current deployment. Keep the independent copies created through Downloads or supplied during handover.
 
@@ -97,6 +97,10 @@ Use **Downloads → CI transfer kit** and enter the instructor password for the 
 
 The owner reports having created a Render Blueprint; its service URL and successful deployment have not been verified in this record. This repository contains a static render.yaml setup; an administrator can review it through [Render deployment](https://render.com/deploy?repo=https://github.com/kitkitskii/urine-trouble). No new provider address is claimed live.
 
-## Forgotten-password guidance
+## Forgotten-password help and reset
 
-Choose **Forgot password?** on the editor, download, or password-change form for saved-password and maintainer recovery instructions. The guidance works offline, preserves the current form, and never displays or changes the password.
+Choose **Forgot password?** on the editor, download, or password-change form. Check your browser's saved passwords or the instructor's private record first. The website cannot display the current password.
+
+If it is lost, open the maintainer instructions and choose **Open reset tool**, or save the portable `recovery.html` helper. The old password is not required: enter a new password of **12–128 characters** twice to create a replacement `editor-access.js`. The helper works locally and does not send or store the password.
+
+Creating that file does not reset or unlock the live website. An authorized repository maintainer must upload it at the project root through **Add file → Upload files**, replace the existing `editor-access.js`, and commit. Wait for the connected Render deployment to show **Live**, refresh, and test the new password. The generic tool is included in website/CI exports and can be opened or saved from the standalone HTML. See [the complete reset instructions](EDITOR_ACCESS.md).

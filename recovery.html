@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173f37">
+<title>Maintainer password reset — Are You Kidney Me?</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff9e9;color:#20392f;font:16px/1.6 Arial,sans-serif}main{width:min(860px,100%);margin:auto;padding:35px 22px 55px}.brand{font-size:18px;font-weight:800;color:#204c3b;margin:0 0 25px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;color:#41654a;text-transform:uppercase;margin:0 0 10px}h1{font-size:clamp(29px,6vw,42px);line-height:1.15;margin:0 0 17px}h2{font-size:22px;line-height:1.3;margin:0 0 14px}p{margin:0 0 18px}.notice{padding:18px 20px;background:#eaf0df;border:1px solid #b7c9af;border-radius:12px;margin:25px 0}.card{padding:clamp(22px,4vw,34px);background:#fffdf4;border:1px solid #bdc7aa;border-radius:16px;margin-top:24px;box-shadow:0 7px 0 #e6e9d8}form{display:grid;gap:10px}label{font-weight:700;font-size:14px}input{width:100%;font:16px Arial,sans-serif;padding:13px;border:1px solid #9ba98d;border-radius:7px;background:white;color:#20392f;margin-bottom:9px}button{justify-self:start;appearance:none;font:700 15px Arial,sans-serif;padding:13px 18px;min-height:45px;border:1px solid #20533d;background:#2e684d;color:#fffdf4;border-radius:7px;cursor:pointer}button:hover{background:#1e503a}button:disabled{opacity:.6;cursor:wait}input:focus-visible,button:focus-visible{outline:3px solid #c9973b;outline-offset:3px}.hint{font-size:14px;color:#586b54}.status{min-height:1.6em;margin:8px 0 0;font-size:14px;overflow-wrap:anywhere}.status.error{color:#8b3e2f}.status.success{color:#245a3c}ol{padding-left:24px;margin:0}li+li{margin-top:15px}code{font:14px/1.5 monospace;background:#f0efde;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}.footer{font-size:13px;color:#5a6a55;margin-top:25px}@media(max-width:520px){main{padding:25px 17px 40px}.card{border-radius:12px}.notice{padding:16px}}
+</style>
+</head>
+<body>
+<main>
+<p class="brand">Are You Kidney Me?</p>
+<p class="eyebrow">Maintainer password reset</p>
+<h1>Create a replacement password file.</h1>
+<p>Choose a new instructor password here. This tool creates an <code>editor-access.js</code> file without asking for the old password.</p>
+<div class="notice"><strong>Creating the file does not reset the live website.</strong><br>Applying it requires a GitHub account with permission to edit the project repository. The website keeps its current password until the replacement file is published.</div>
+<section class="card" aria-labelledby="new-password-title">
+<h2 id="new-password-title">1. Choose your new password</h2>
+<p class="hint">Use 12–128 characters and keep a private record. The file contains a password verifier, never the password itself. Nothing is sent to a server.</p>
+<form id="recovery-form">
+<label for="recovery-password">New instructor password</label>
+<input id="recovery-password" name="newPassword" type="password" minlength="12" maxlength="128" autocomplete="new-password" required aria-describedby="recovery-status">
+<label for="recovery-confirm">Confirm new password</label>
+<input id="recovery-confirm" name="confirmPassword" type="password" minlength="12" maxlength="128" autocomplete="new-password" required aria-describedby="recovery-status">
+<button id="recovery-create" type="submit">Create and download settings</button>
+<p id="recovery-status" class="status" role="status" aria-live="polite"></p>
+</form>
+</section>
+<section class="card" aria-labelledby="publish-title">
+<h2 id="publish-title">2. Publish the replacement file</h2>
+<ol>
+<li>Keep the downloaded file named <code>editor-access.js</code>. Do not upload the password itself.</li>
+<li>Sign in to GitHub with an account that can maintain the project. Open the project repository and its <strong>main</strong> branch.</li>
+<li>At the repository root—the same folder as <code>index.html</code>—choose <strong>Add file → Upload files</strong>. Upload the new <code>editor-access.js</code>, replacing the existing file. Choose <strong>Commit changes</strong> and confirm.</li>
+<li>Wait for the connected Render deployment to show <strong>Live</strong>. If automatic deployment is off, deploy the latest commit in Render. GitHub Pages also rebuilds from its configured branch.</li>
+<li>Open the website and hard refresh: <strong>Ctrl + Shift + R</strong> on Windows, or <strong>⌘ + Shift + R</strong> on Mac. Test the new password in <strong>Edit Content</strong> and <strong>Downloads</strong>.</li>
+</ol>
+<p class="hint" style="margin:20px 0 0">This replaces password settings only. Games, questions, credits, and player data are not part of this file. An older downloaded offline copy keeps its own password until its settings are updated or a fresh copy is exported.</p>
+</section>
+<p class="footer">Keep this helper with the project handover files. It works in a modern browser with secure password tools, including supported offline-file browsers. It does not reveal the old password or grant repository access.</p>
+<noscript><p class="notice">Enable JavaScript in a modern browser to create a replacement password file. The publishing instructions above remain available.</p></noscript>
+</main>
+<script>
+(function(root){
+'use strict';
+const ITERATIONS=600000;
+const own=(object,key)=>Object.prototype.hasOwnProperty.call(object,key);
+const hex=bytes=>Array.from(bytes,byte=>byte.toString(16).padStart(2,'0')).join('');
+function supported(){return root.isSecureContext!==false&&typeof root.TextEncoder==='function'&&typeof root.crypto?.getRandomValues==='function'&&typeof root.crypto?.subtle?.importKey==='function'&&typeof root.crypto?.subtle?.deriveBits==='function';}
+async function createConfig(password,confirmation){
+ if(typeof password!=='string'||password.length<12||password.length>128)throw new Error('Use a password with 12 to 128 characters.');
+ if(typeof confirmation!=='string'||confirmation!==password)throw new Error('The passwords do not match.');
+ if(!supported())throw new Error('Secure password tools are unavailable. Open this helper using HTTPS in a current browser, or a browser that supports secure offline files.');
+ const salt=root.crypto.getRandomValues(new Uint8Array(16));
+ const bytes=new root.TextEncoder().encode(password);
+ let key;
+ try{key=await root.crypto.subtle.importKey('raw',bytes,'PBKDF2',false,['deriveBits']);}
+ catch(_){throw new Error('The password settings could not be created. Please try again in a current browser.');}
+ finally{bytes.fill(0);}
+ let derived;
+ try{derived=await root.crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt,iterations:ITERATIONS},key,256);}
+ catch(_){throw new Error('The password settings could not be created. Please try again in a current browser.');}
+ return{version:1,algorithm:'PBKDF2-SHA-256',iterations:ITERATIONS,salt:hex(salt),hash:hex(new Uint8Array(derived))};
+}
+function settingsSource(config){
+ if(!config||typeof config!=='object'||Array.isArray(config)||!['version','algorithm','iterations','salt','hash'].every(key=>own(config,key))||config.version!==1||config.algorithm!=='PBKDF2-SHA-256'||config.iterations!==ITERATIONS||typeof config.salt!=='string'||!/^[0-9a-f]{32}$/.test(config.salt)||typeof config.hash!=='string'||!/^[0-9a-f]{64}$/.test(config.hash))throw new Error('Choose valid replacement password settings.');
+ const clean={version:1,algorithm:'PBKDF2-SHA-256',iterations:ITERATIONS,salt:config.salt,hash:config.hash};
+ return 'window.UT_EDITOR_ACCESS_CONFIG='+JSON.stringify(clean)+';\n';
+}
+root.UTRecovery=Object.freeze({createConfig,settingsSource});
+const doc=root.document;if(!doc)return;
+const form=doc.getElementById('recovery-form'),passwordInput=doc.getElementById('recovery-password'),confirmationInput=doc.getElementById('recovery-confirm'),status=doc.getElementById('recovery-status'),button=doc.getElementById('recovery-create');
+if(!form||!passwordInput||!confirmationInput||!status||!button)return;
+let busy=false;
+function message(text,error=false){status.textContent=text;status.className='status '+(error?'error':'success');}
+if(!supported()){button.disabled=true;message('Secure password tools are unavailable. Use this helper over HTTPS in a current browser, or a browser that supports secure offline files.',true);}
+form.addEventListener('submit',async event=>{
+ event.preventDefault();if(busy)return;busy=true;button.disabled=true;passwordInput.disabled=true;confirmationInput.disabled=true;
+ const password=passwordInput.value,confirmation=confirmationInput.value;
+ message('Creating your replacement settings…');
+ try{
+  const config=await createConfig(password,confirmation),source=settingsSource(config);
+  const blob=new root.Blob([source],{type:'text/javascript;charset=utf-8'}),url=root.URL.createObjectURL(blob),link=doc.createElement('a');
+  try{link.href=url;link.download='editor-access.js';link.hidden=true;doc.body.appendChild(link);link.click();}
+  finally{link.remove();root.setTimeout(()=>root.URL.revokeObjectURL(url),1500);}
+  passwordInput.value='';confirmationInput.value='';
+  message('Settings file downloaded. Upload editor-access.js using the steps below to apply your new password. Keep the password privately; the website has not been changed by this tool.');
+ }catch(error){message(error?.message||'The settings file could not be downloaded. Please try again.',true);}
+ finally{busy=false;button.disabled=!supported();passwordInput.disabled=false;confirmationInput.disabled=false;}
+});
+})(typeof window!=='undefined'?window:globalThis);
+</script>
+</body>
+</html>
